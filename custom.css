@@ -1,0 +1,1075 @@
+/*===========================
+Font Load
+===========================*/
+
+@font-face {
+  font-family: "Champion";
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Champion";
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Champion";
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Buinton";
+  src: url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Champion";
+  src: url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Knockout";
+  src: url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*===========================
+                              Global
+                              ===========================*/
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffdd00;
+  --white-color: #ffffff;
+  --offwhite-color: #f9f9f4;
+
+  --border-radius: 12px;
+
+  --animation-primary: 0.6s cubic-bezier(0.2, 1.33, 0.25, 1);
+  --animation-primary-ease-in: 0.6s cubic-bezier(0.25, 1, 0.1, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: "Champion", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#wrapper {
+  overflow-x: clip;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+p {
+  font-family: "knockout";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  transition: all var(--animation-primary-ease-in);
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Normal Button */
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: none;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  transition: all var(--animation-primary);
+}
+.btn span {
+  margin-left: 10px;
+  transition: all var(--animation-primary);
+}
+.btn:hover {
+  background: var(--offwhite-color);
+  color: var(--primary-color);
+}
+.btn:hover span {
+  transform: translateX(6px);
+}
+
+/* Dark Button */
+.btn-primary {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+.btn-primary span {
+  color: var(--secondary-color);
+}
+.btn.btn-primary:hover {
+  background: var(--offwhite-color);
+  color: var(--primary-color);
+}
+.btn-primary:hover span {
+  color: var(--primary-color);
+}
+
+/* Light Button */
+.btn-secondary {
+  color: var(--primary-color);
+  background: var(--offwhite-color);
+}
+.btn.btn-secondary:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Tranparent */
+.btn-transparent {
+  background: transparent;
+  color: var(--white-color);
+}
+.btn-transparent span {
+  color: var(--secondary-color);
+}
+.btn-transparent:hover {
+  background: transparent;
+  color: var(--white-color);
+}
+.btn-transparent:hover span {
+  color: var(--white-color);
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.section-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.section-heading h2 {
+  font-size: 6.25rem;
+  line-height: 0.9;
+  margin: 0;
+}
+.section-heading h2 span {
+  display: block;
+  font-size: 2.6em;
+}
+
+.section-color-dark .section-heading {
+  color: var(--secondary-color);
+}
+.section-color-light .section-heading {
+  color: var(--primary-color);
+}
+
+.section-color-light {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.border-rounded {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/*===========================
+              Navigation 
+              ===========================*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 200;
+  pointer-events: none;
+}
+header .navbar {
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+  pointer-events: all;
+}
+header #main-logo {
+  width: 13%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em;
+  pointer-events: none;
+}
+header .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+header .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.nav-left .hamburger {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--white-color);
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  background: transparent;
+  border: 0;
+}
+.nav-left .hamburger span {
+  line-height: 1;
+  text-box-trim: trim-start;
+}
+.nav-left .audio-toggle {
+  background: transparent;
+  border: 0;
+}
+.nav-right .info {
+  text-transform: uppercase;
+}
+.nav-right .info img {
+  margin-top: -5px;
+}
+
+.nav-right .register .btn {
+  padding: 0.5em 0.8em;
+}
+.overlay-nav-back {
+  background-color: rgba(var(--color-black-rgb), 0.5);
+  pointer-events: all;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--animation-primary-ease-in);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+[data-navigation-status="active"] .overlay-nav-back {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-nav {
+  top: 0;
+  position: absolute;
+  left: -10vw;
+  width: calc(50% + 10vw);
+  height: 100%;
+  transform: translateX(calc(-101% + 10vw)) rotate(0.001deg);
+  background-color: var(--secondary-color);
+  padding-left: 10vw;
+  pointer-events: all;
+  overflow: hidden;
+  transition: var(--animation-primary-ease-in);
+  transition-duration: 0.6s;
+}
+
+[data-navigation-status="active"] .overlay-nav {
+  transform: translateX(0%) rotate(0.001deg);
+  transition: var(--animation-primary);
+  transition-duration: 0.8s;
+}
+
+[data-navigation-status="hover"] .overlay-nav {
+  transform: translateX(calc(-100% + 11vw)) rotate(0.001deg);
+  transition: var(--animation-primary-ease-in);
+  transition-duration: 0.6s;
+}
+
+.overlay-nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100%;
+  padding: 1.25rem 2rem;
+  overflow-x: hidden;
+}
+
+.close button {
+  border: 0;
+  background: transparent;
+}
+.close svg {
+  transform: translate(0%, 0%) rotate(0.001deg);
+  transition: transform var(--animation-primary);
+}
+
+.close button:hover svg {
+  transform: translate(0%, 0%) rotate(180deg);
+}
+
+.navbar-main {
+  text-align: center;
+}
+.primary-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link {
+  position: relative;
+  border: 0;
+  outline: 0;
+}
+
+.link .link-click {
+  cursor: pointer;
+  background-color: transparent;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color var(--animation-primary-ease-in);
+  font-size: clamp(5.375rem, 5.5vw, 8.5rem);
+  line-height: 0.9;
+}
+
+.link .link-content {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.25em;
+  transition: transform var(--animation-primary);
+  transform: translate(0%, 0%) scale(1) rotate(0.001deg);
+}
+
+.link .link-content.duplicate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-5%, 110%) scale(0.95) rotate(0.001deg);
+  transition: transform var(--animation-primary);
+}
+
+.link .link-content span {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.link .link-content.duplicate span {
+  color: var(--white-color);
+}
+
+.link .link-click:hover .link-content {
+  transform: translate(5%, -110%) scale(1.05) rotate(0.001deg);
+}
+
+.link .link-click:hover .link-content.duplicate {
+  transform: translate(0%, 0%) scale(1) rotate(0.001deg);
+}
+
+.secondary-links,
+.social-links {
+  margin-top: 1.25rem;
+  padding: 1.25rem 0;
+  text-align: center;
+  border-top: 7px solid var(--primary-color);
+}
+.secondary-links li a {
+  font-size: 1.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  transition: color var(--animation-primary);
+}
+
+.secondary-links li a:hover {
+  color: var(--white-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-section .video-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.go-section .content {
+  text-align: center;
+  text-transform: uppercase;
+}
+.go-section .content h2 {
+  font-size: 6rem;
+}
+.go-section .content h3 {
+  font-size: 2.25rem;
+  line-height: 1;
+  max-width: 25ch;
+  margin: 0 auto;
+}
+.go-section .content a {
+  margin-top: 1.5rem;
+}
+
+.distance-section .distance-box {
+  position: relative;
+}
+.distance-box .badge {
+  position: absolute;
+  top: -23%;
+  right: 4%;
+  padding: 0;
+}
+
+.distance-box .content {
+  padding: 1rem 1.5rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0fr auto;
+  transition: grid-template-rows var(--animation-primary-ease-in);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  overflow: hidden;
+}
+.distance-box .content p {
+  font-size: 1.25rem;
+  margin: 0;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height var(--animation-primary-ease-in), opacity var(--animation-primary-ease-in);
+}
+.distance-box:hover .content p {
+  height: 8rem;
+  opacity: 1;
+}
+.distance-box .content .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.distance-box .content h3 {
+  font-size: 2.375rem;
+  line-height: 0.9;
+  margin: 0;
+  text-transform: uppercase;
+}
+.distance-box .content .btn.btn-transparent {
+  padding: 0;
+}
+/* .distance-box .content .btn.btn-transparent:hover {
+  color: var(--secondary-color);
+  background: transparent;
+} */
+.distance-box:hover .content {
+  grid-template-rows: 1fr auto;
+}
+
+.swag-section h2 {
+  font-size: 14rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 0.85;
+  margin-bottom: 1.5rem;
+}
+.swag-section h2 span {
+  font-family: "Buinton";
+  font-weight: normal;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-size: 0.7em;
+  display: block;
+}
+.swag-section h3 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.swag-section .btn.btn-secondary {
+  margin-top: 1.5rem;
+}
+.swag-section .button-next {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+.swag-section .button-next svg {
+  width: auto;
+  height: auto;
+}
+
+.swag-section .button-next .arrow-bg {
+  display: inline-block;
+}
+.swag-section .button-next .arrow-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.swag-section .swag-card h4 {
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.challenge-section .content .sub-title {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  width: 50%;
+  height: auto;
+}
+.challenge-section .content h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.border-content {
+  max-width: 80%;
+  margin: 0 auto 2rem;
+  padding: 2rem 3rem;
+  border-top: 7px solid var(--primary-color);
+  border-bottom: 7px solid var(--primary-color);
+}
+.border-content p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.marquee-group {
+  position: relative;
+  overflow: hidden;
+}
+.marquee {
+  position: relative;
+}
+.marquee-scroll {
+  width: 120%;
+  margin-left: -10%;
+  display: flex;
+  position: relative;
+}
+.marquee-content {
+  display: flex;
+  position: relative;
+}
+.marquee-item {
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  padding-right: 0;
+  display: flex;
+}
+.marquee-item h2 {
+  white-space: nowrap;
+  font-size: 7.5rem;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.marquee-item svg {
+  margin: 0 1rem;
+  display: inline-block;
+  transition: transform var(--animation-primary);
+}
+[data-marquee-status="normal"] .marquee-item svg {
+  transform: rotateY(180deg);
+}
+
+.countdown-section .countdown-box {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  align-items: center;
+}
+.countdown-section .timer {
+  flex-grow: 1;
+  border-left: 5px solid currentColor;
+}
+
+.countdown-section .countdown ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 3rem 0 2rem;
+}
+.countdown-section .countdown ul li:nth-child(odd) {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.countdown-section .countdown ul li:last-child {
+  min-width: 10rem;
+}
+
+.countdown-section .countdown span {
+  display: block;
+  font-size: 15rem;
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+#footer .content-box {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+#footer .content-box h4 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+#footer .content-box .socials {
+  padding: 2rem 0;
+}
+#footer .content-box .socials ul {
+  text-transform: capitalize;
+}
+#footer .content-box .socials ul li a {
+  color: currentColor;
+  font-family: "Knockout";
+  font-weight: 500;
+}
+#footer .content-box .socials ul li a:hover {
+  color: var(--white-color);
+}
+#footer .content-box .newsletter {
+  padding: 2rem 0 2rem 2rem;
+  flex-grow: 1;
+  border-left: 5px solid currentColor;
+}
+
+.footer-logo {
+  margin-top: 2rem;
+}
+.footer-logo ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-transform: capitalize;
+}
+.footer-logo ul li a {
+  color: currentColor;
+  font-size: 10px;
+  font-family: "Knockout";
+  text-transform: uppercase;
+}
+.footer-logo ul li a:hover {
+  color: var(--white-color);
+}
+.copyright {
+  margin-top: 11rem;
+  margin-bottom: 2rem;
+}
+.copyright p {
+  font-size: 10px;
+  color: rgb(255 255 255 / 50%);
+  margin: 0;
+}
+
+.container {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 1024px) {
+  header #main-logo img {
+    max-width: 10.5vw;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1500px) {
+  .section-heading h2 {
+    font-size: 5rem;
+  }
+  .countdown-section .countdown span {
+    font-size: 13rem;
+  }
+}
+@media screen and (max-width: 1366.98px) {
+  .section-heading h2 {
+    font-size: 4rem;
+  }
+  .swag-section h2 {
+    font-size: 11rem;
+  }
+  .marquee-item h2 {
+    font-size: 6rem;
+  }
+  .countdown-section .countdown span {
+    font-size: 11rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .btn {
+    font-size: 1.25rem;
+  }
+  .section-heading h2,
+  .go-section .content h2 {
+    font-size: 3.5rem;
+  }
+  .distance-box .badge {
+    width: 40%;
+  }
+  .distance-box .content h3 {
+    font-size: 1.75rem;
+  }
+  .go-section .content h3 {
+    font-size: 1.75rem;
+  }
+  .swag-section h2 {
+    font-size: 9rem;
+  }
+  .swag-section h3 {
+    font-size: 2rem;
+  }
+  .border .content {
+    max-width: 90%;
+    padding: 2rem 2rem;
+  }
+  .marquee-item h2 {
+    font-size: 6rem;
+  }
+  .marquee-item svg {
+    width: 45px;
+  }
+  .countdown-section .countdown ul {
+    gap: 1.5rem;
+  }
+  .countdown-section .countdown ul li:last-child {
+    min-width: 6rem;
+  }
+  .countdown-section .countdown span {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  body {
+    font-size: 1rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+  header #main-logo {
+    position: static;
+    width: 70%;
+    padding: 0;
+    transform: none;
+  }
+  #main {
+    margin-top: 2rem;
+  }
+  .section-heading h2,
+  .go-section .content h2 {
+    font-size: 2.5rem;
+  }
+  .distance-box .badge {
+    top: 3%;
+    right: 3%;
+    width: 30%;
+  }
+  .go-section .content h3 {
+    font-size: 1.25rem;
+  }
+  .swag-section h2 {
+    font-size: 6rem;
+  }
+  .swag-section h3 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .swag-section .button-next .arrow-bg svg {
+    width: 50px;
+  }
+  .swag-section .button-next .arrow-icon svg {
+    width: 18px;
+  }
+  .border-content {
+    padding: 1.5rem 1rem;
+  }
+  .marquee-item h2 {
+    font-size: 3.5rem;
+  }
+  .challenge-section .content h3 {
+    font-size: 1.75rem;
+  }
+  .marquee-item svg {
+    width: 32px;
+  }
+  .countdown-section .countdown-box {
+    padding: 1rem 0 0;
+  }
+  .countdown-section .timer {
+    border-left: 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+  section {
+    padding: 5rem 0;
+  }
+  .section-heading h2 span {
+    font-size: 2.15em;
+  }
+  .hero-section {
+    padding-top: 3rem;
+  }
+  .go-section .content h2 {
+    font-size: 4rem;
+  }
+  .go-section .content {
+    margin-top: 3rem;
+  }
+  .go-section .content h3 {
+    font-size: 1.5rem;
+  }
+  .swag-section h2 {
+    font-size: 5.375rem;
+    letter-spacing: -0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .swag-section .content {
+    text-align: center;
+  }
+  .swag-section .button-next {
+    right: 10%;
+  }
+  .challenge-section .content .sub-title {
+    margin-top: 1.25rem;
+    width: 25%;
+  }
+  .challenge-section .content {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .marquee-item h2 {
+    margin-bottom: 0;
+  }
+  .countdown-section .countdown-box,
+  #footer .content-box {
+    border-width: 3px;
+  }
+  .countdown-section .countdown ul li:nth-child(even) svg {
+    width: 1.25rem;
+  }
+  .partner-section ul {
+    gap: 1rem 0;
+  }
+  .partner-section ul li {
+    max-width: 33.33%;
+    text-align: center;
+  }
+  #footer .content-box .socials {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #footer .content-box h4 {
+    margin-bottom: 0;
+  }
+  #footer .content-box .socials ul {
+    display: flex;
+    gap: 2rem;
+  }
+  #footer .content-box .newsletter {
+    border-left: 0;
+    border-top: 3px solid currentColor;
+    padding: 0.5rem 0;
+  }
+  .footer-logo {
+    margin-top: 1rem;
+  }
+  .footer-logo img {
+    width: 40%;
+  }
+  .copyright {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  section {
+    padding: 4rem 0;
+  }
+  .section-heading h4 {
+    max-width: 30ch;
+    margin: 0 auto;
+  }
+  .btn {
+    font-size: 1.1rem;
+    border-radius: 2px;
+  }
+  .btn svg {
+    width: 13px;
+    height: auto;
+  }
+  header .nav-left {
+    gap: 0.25rem;
+  }
+  header #main-logo {
+    width: 90%;
+  }
+  .overlay-nav {
+    width: 100%;
+  }
+  .overlay-nav-content {
+    padding: 1rem;
+  }
+  .secondary-links,
+  .social-links {
+    margin-top: 2.5rem;
+  }
+  .close svg {
+    width: 23px;
+  }
+  .hero-section {
+    padding-top: 2.5rem;
+  }
+  .go-section .content h3 {
+    max-width: 28ch;
+  }
+  .distance-box .content h3 {
+    font-size: 1.5rem;
+  }
+  .distance-box .content p {
+    font-size: 1rem;
+  }
+  .swag-section .button-next .arrow-bg svg {
+    width: 32px;
+  }
+  .swag-section .button-next .arrow-icon svg {
+    width: 12px;
+  }
+  .swag-section h3 {
+    font-size: 1.1rem;
+  }
+  .challenge-section .content {
+    width: 70%;
+  }
+  .challenge-section .content .sub-title {
+    width: 35%;
+  }
+  .challenge-section .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .run-section {
+    padding-bottom: 2rem;
+  }
+  .border-content {
+    border-width: 3px;
+    padding: 0.75rem 1.875rem;
+  }
+  .border-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .countdown-section img {
+    width: 35%;
+  }
+  .countdown-section .countdown ul {
+    gap: 1rem;
+    padding: 1rem 0 0;
+  }
+  .countdown-section .countdown ul li:nth-child(odd) {
+    font-size: 14px;
+  }
+  .countdown-section .countdown ul li:last-child {
+    min-width: auto;
+  }
+  .countdown-section .countdown ul li:nth-child(even) svg {
+    width: 14px;
+  }
+  .countdown-section .countdown span {
+    font-size: 5rem;
+  }
+  .partner-section ul {
+    gap: 1rem;
+  }
+  .partner-section ul li img {
+    width: 70%;
+  }
+  #footer .content-box .socials ul li a {
+    font-size: 12px;
+  }
+  .footer-logo ul {
+    gap: 0;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .footer-logo ul li {
+    line-height: 1;
+  }
+  .copyright {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 380.99px) {
+}
+@media screen and (max-width: 320.98px) {
+}
