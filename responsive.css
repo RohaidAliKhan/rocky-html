@@ -1,0 +1,343 @@
+@media screen and (min-width: 1024px) {
+  header #main-logo img {
+    max-width: 10.5vw;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1500px) {
+  .section-heading h2 {
+    font-size: 5rem;
+  }
+  .countdown-section .countdown span {
+    font-size: 13rem;
+  }
+}
+@media screen and (max-width: 1366.98px) {
+  .section-heading h2 {
+    font-size: 4rem;
+  }
+  .swag-section h2 {
+    font-size: 11rem;
+  }
+  .marquee-item h2 {
+    font-size: 6rem;
+  }
+  .countdown-section .countdown span {
+    font-size: 11rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .btn {
+    font-size: 1.25rem;
+  }
+  .section-heading h2,
+  .go-section .content h2 {
+    font-size: 3.5rem;
+  }
+  .distance-box .badge {
+    width: 40%;
+  }
+  .distance-box .content h3 {
+    font-size: 1.75rem;
+  }
+  .go-section .content h3 {
+    font-size: 1.75rem;
+  }
+  .swag-section h2 {
+    font-size: 9rem;
+  }
+  .swag-section h3 {
+    font-size: 2rem;
+  }
+  .border .content {
+    max-width: 90%;
+    padding: 2rem 2rem;
+  }
+  .marquee-item h2 {
+    font-size: 6rem;
+  }
+  .marquee-item svg {
+    width: 45px;
+  }
+  .countdown-section .countdown ul {
+    gap: 1.5rem;
+  }
+  .countdown-section .countdown ul li:last-child {
+    min-width: 6rem;
+  }
+  .countdown-section .countdown span {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  body {
+    font-size: 1rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+  header #main-logo {
+    position: static;
+    width: 70%;
+    padding: 0;
+    transform: none;
+  }
+  #main {
+    margin-top: 2rem;
+  }
+  .section-heading h2,
+  .go-section .content h2 {
+    font-size: 2.5rem;
+  }
+  .distance-box .badge {
+    top: 3%;
+    right: 3%;
+    width: 30%;
+  }
+  .go-section .content h3 {
+    font-size: 1.25rem;
+  }
+  .swag-section h2 {
+    font-size: 6rem;
+  }
+  .swag-section h3 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .swag-section .button-next .arrow-bg svg {
+    width: 50px;
+  }
+  .swag-section .button-next .arrow-icon svg {
+    width: 18px;
+  }
+  .border-content {
+    padding: 1.5rem 1rem;
+  }
+  .marquee-item h2 {
+    font-size: 3.5rem;
+  }
+  .challenge-section .content h3 {
+    font-size: 1.75rem;
+  }
+  .marquee-item svg {
+    width: 32px;
+  }
+  .countdown-section .countdown-box {
+    padding: 1rem 0 0;
+  }
+  .countdown-section .timer {
+    border-left: 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+  section {
+    padding: 5rem 0;
+  }
+  .section-heading h2 span {
+    font-size: 2.15em;
+  }
+  .hero-section {
+    padding-top: 3rem;
+  }
+  .go-section .content h2 {
+    font-size: 4rem;
+  }
+  .go-section .content {
+    margin-top: 3rem;
+  }
+  .go-section .content h3 {
+    font-size: 1.5rem;
+  }
+  .swag-section h2 {
+    font-size: 5.375rem;
+    letter-spacing: -0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .swag-section .content {
+    text-align: center;
+  }
+  .swag-section .button-next {
+    right: 10%;
+  }
+  .challenge-section .content .sub-title {
+    margin-top: 1.25rem;
+    width: 25%;
+  }
+  .challenge-section .content {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .marquee-item h2 {
+    margin-bottom: 0;
+  }
+  .countdown-section .countdown-box,
+  #footer .content-box {
+    border-width: 3px;
+  }
+  .countdown-section .countdown ul li:nth-child(even) svg {
+    width: 1.25rem;
+  }
+  .partner-section ul {
+    gap: 1rem 0;
+  }
+  .partner-section ul li {
+    max-width: 33.33%;
+    text-align: center;
+  }
+  #footer .content-box .socials {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #footer .content-box h4 {
+    margin-bottom: 0;
+  }
+  #footer .content-box .socials ul {
+    display: flex;
+    gap: 2rem;
+  }
+  #footer .content-box .newsletter {
+    border-left: 0;
+    border-top: 3px solid currentColor;
+    padding: 0.5rem 0;
+  }
+  .footer-logo {
+    margin-top: 1rem;
+  }
+  .footer-logo img {
+    width: 40%;
+  }
+  .copyright {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  section {
+    padding: 4rem 0;
+  }
+  .section-heading h4 {
+    max-width: 30ch;
+    margin: 0 auto;
+  }
+  .btn {
+    font-size: 1.1rem;
+    border-radius: 2px;
+  }
+  .btn svg {
+    width: 13px;
+    height: auto;
+  }
+  header .nav-left {
+    gap: 0.25rem;
+  }
+  header #main-logo {
+    width: 90%;
+  }
+  .overlay-nav {
+    width: 100%;
+  }
+  .overlay-nav-content {
+    padding: 1rem;
+  }
+  .secondary-links,
+  .social-links {
+    margin-top: 2.5rem;
+  }
+  .close svg {
+    width: 23px;
+  }
+  .hero-section {
+    padding-top: 2.5rem;
+  }
+  .go-section .content h3 {
+    max-width: 28ch;
+  }
+  .distance-box .content h3 {
+    font-size: 1.5rem;
+  }
+  .distance-box .content p {
+    font-size: 1rem;
+  }
+  .swag-section .button-next .arrow-bg svg {
+    width: 32px;
+  }
+  .swag-section .button-next .arrow-icon svg {
+    width: 12px;
+  }
+  .swag-section h3 {
+    font-size: 1.1rem;
+  }
+  .challenge-section .content {
+    width: 70%;
+  }
+  .challenge-section .content .sub-title {
+    width: 35%;
+  }
+  .challenge-section .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .run-section {
+    padding-bottom: 2rem;
+  }
+  .border-content {
+    border-width: 3px;
+    padding: 0.75rem 1.875rem;
+  }
+  .border-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .countdown-section img {
+    width: 35%;
+  }
+  .countdown-section .countdown ul {
+    gap: 1rem;
+    padding: 1rem 0 0;
+  }
+  .countdown-section .countdown ul li:nth-child(odd) {
+    font-size: 14px;
+  }
+  .countdown-section .countdown ul li:last-child {
+    min-width: auto;
+  }
+  .countdown-section .countdown ul li:nth-child(even) svg {
+    width: 14px;
+  }
+  .countdown-section .countdown span {
+    font-size: 5rem;
+  }
+  .partner-section ul {
+    gap: 1rem;
+  }
+  .partner-section ul li img {
+    width: 70%;
+  }
+  #footer .content-box .socials ul li a {
+    font-size: 12px;
+  }
+  .footer-logo ul {
+    gap: 0;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .footer-logo ul li {
+    line-height: 1;
+  }
+  .copyright {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 380.99px) {
+}
+@media screen and (max-width: 320.98px) {
+}

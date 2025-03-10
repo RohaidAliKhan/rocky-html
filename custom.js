@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function flipLogo() {
+  const section = document.querySelector(".hero-section.is-home");
+  if (!section) return;
   mm.add("(min-width: 1024px)", () => {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -119,6 +121,7 @@ function navigationToggle() {
 
 function bellAnimation() {
   const section = document.querySelector(".launch-section");
+  if (!section) return;
   const svg = section?.querySelector("svg");
   const bell = svg.querySelector("#bell");
   let tl = gsap.timeline({
@@ -140,6 +143,8 @@ function bellAnimation() {
 }
 
 function swagSlider() {
+  const section = document.querySelector(".swag-section");
+  if (!section) return;
   const nextBtn = document.querySelector(".button-next");
   const swiper = new Swiper(".swiper", {
     loop: true,
