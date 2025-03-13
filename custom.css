@@ -54,6 +54,7 @@ Font Load
 ===========================*/
 :root {
   --primary-color: #000000;
+  --primary-color-rgb: 0, 0, 0;
   --secondary-color: #ffdd00;
   --white-color: #ffffff;
   --offwhite-color: #f9f9f4;
@@ -101,6 +102,13 @@ figure {
 a {
   transition: all var(--animation-primary-ease-in);
 }
+a:not(.btn) {
+  color: currentColor;
+  opacity: var(--bs-link-opacity, 1);
+}
+a:not(.btn):hover {
+  --bs-link-opacity: 0.8;
+}
 
 ul,
 li {
@@ -109,7 +117,9 @@ li {
   list-style: none;
 }
 .container {
-  max-width: 95%;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /*===========================
@@ -213,6 +223,26 @@ section {
 }
 .section-heading.is-secondary h2 span {
   font-size: 1.8em;
+}
+
+.section-heading h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section-heading h3::before,
+.section-heading h3::after {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  background-image: url(wp-content/themes/rockyrun/img/icons/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .section-color-dark .section-heading {
@@ -603,13 +633,15 @@ header .nav-right {
   text-transform: uppercase;
 }
 
-.challenge-section .content .sub-title {
+.challenge-section .content .sub-title,
+.how-it-works-section .content .sub-title {
   margin-bottom: 0.5rem;
   display: inline-block;
   width: 50%;
   height: auto;
 }
-.challenge-section .content h3 {
+.challenge-section .content h3,
+.how-it-works-section .content h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -618,7 +650,7 @@ header .nav-right {
 .border-content {
   max-width: 80%;
   margin: 0 auto 2rem;
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
   border-top: 5px solid currentColor;
   border-bottom: 5px solid currentColor;
 }
@@ -628,6 +660,24 @@ header .nav-right {
 .border-content p {
   margin-bottom: 0;
   font-size: 1.25rem;
+}
+.border-content ul {
+}
+.border-content ul li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.border-content ul li::before {
+  content: "";
+  width: 1.25em;
+  height: 1.25em;
+  background: url(wp-content/themes/rockyrun/img/icons/checkmark.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }
 
 .marquee-group {
@@ -822,8 +872,6 @@ header .nav-right {
   margin: 8rem 0 15rem;
 }
 
-.accordion {
-}
 .accordion .accordion-item {
   background: transparent;
   border-radius: 0;
@@ -833,20 +881,173 @@ header .nav-right {
 .accordion .accordion-item:first-child {
   border-top: 5px solid currentColor;
 }
-.accordion .accordion-item h4 {
-}
 .accordion .accordion-button {
   background: transparent;
   box-shadow: none;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0.5rem 0;
   border: 0;
   font-size: inherit;
   font-family: "knockout";
   font-weight: 500;
   color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
 }
-.accordion .accordion-body {
+.accordion .accordion-button:after {
+  display: none;
 }
-.accordion .accordion-body p {
+.accordion .accordion-button svg line {
+  transform-origin: center;
+  transition: transform var(--animation-primary);
+  transform: rotate(90deg) translateX(-2px);
+}
+.accordion .accordion-button.collapsed svg line {
+  transform: rotate(0) translateX(0);
+}
+
+.lightbox-card {
+  position: relative;
+}
+.lightbox-card .overlay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1.875rem;
+}
+.lightbox-card .zoom-in {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.cta-section figure {
+  position: relative;
+}
+.cta-section .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 1rem 5rem;
+}
+.cta-section .overlay h2 {
+  color: var(--white-color);
+  font-size: 13.75rem;
+  font-family: "Buinton";
+  text-transform: capitalize;
+  transform: rotate(-11.85deg);
+  margin-bottom: 5rem;
+}
+
+.gear-section .gear-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 0;
+}
+.gear-section .gear-content h2 span:not(.price-badge) {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  letter-spacing: -0.05em;
+}
+.gear-section .gear-content h2 .price-badge {
+  font-size: 2.5rem;
+  font-family: "Buinton";
+  background: url(wp-content/themes/rockyrun/img/icons/price-badge-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -10px;
+  left: -2.25em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-11.86deg);
+  letter-spacing: 0;
+}
+.gear-section .gear-visual {
+  position: sticky;
+  top: 0;
+}
+.gear-section .gear-visual figure {
+  position: relative;
+}
+.gear-section .gear-visual .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--animation-primary-ease-in);
+}
+.gear-section .gear-visual .overlay.active {
+  opacity: 1;
+}
+
+.pricing-section {
+}
+.pricing-section .pricing-image {
+  position: relative;
+}
+.pricing-section .pricing-image .overlay {
+  background-color: rgb(0 0 0 / 30%);
+}
+.pricing-section .pricing-card {
+  flex-grow: 1;
+  display: flex;
+  background-color: var(--offwhite-color);
+  color: rgba(var(--primary-color-rgb), 0.4);
+  padding: 1.5rem 0;
+}
+.pricing-section .pricing-card:nth-child(even),
+.pricing-section .pricing-card.active {
+  background-color: var(--secondary-color);
+  color: rgba(var(--primary-color-rgb), 1);
+}
+.pricing-section .pricing-card .price {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-section .pricing-card .price h3 {
+  font-size: 11.25rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+}
+.pricing-section .pricing-card .price h3 sup {
+  font-size: 0.45em;
+  letter-spacing: 0;
+  top: -0.9em;
+  left: 0.25em;
+}
+.pricing-section .pricing-card .details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-left: 5px solid currentColor;
+  padding-left: 2rem;
+}
+.pricing-section .pricing-card .details h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.pricing-section .pricing-card .details p {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.pricing-section .pricing-card .details h5 {
+  margin: 1rem 0 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }

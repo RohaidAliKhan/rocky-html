@@ -10,12 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
   countDownTimer();
   initMarqueeScrollV2();
   bellAnimation();
+  stickyScrollContentFade();
 
   // setTimeout(() => {
   //   scroll.start();
   // }, 150);
 
-  flipLogo();
+  // flipLogo();
+  Fancybox.bind("[data-fancybox]", {});
+  ScrollTrigger.refresh();
 });
 
 function flipLogo() {
@@ -301,6 +304,7 @@ function initMarqueeScrollV2() {
           start: "0% 100%",
           end: "100% 0%",
           scrub: 0,
+          // markers: true,
         },
       });
 
@@ -360,4 +364,34 @@ function countDownTimer() {
     document.getElementById("minutes").innerHTML = Math.floor((distance % HOUR) / MINUTE);
     document.getElementById("seconds").innerHTML = Math.floor((distance % MINUTE) / SECOND);
   }, SECOND);
+}
+
+function stickyScrollContentFade() {
+  const section = document.querySelector(".gear-section");
+  if (!section) return;
+  const contents = section.querySelectorAll(".gear-content");
+  const visuals = section.querySelectorAll(".gear-visual .overlay");
+
+  const activateVisual = (index) => {
+    visuals.forEach((visual, i) => {
+      if (i === index) {
+        visual.classList.add("active");
+      } else {
+        visual.classList.remove("active");
+      }
+    });
+  };
+
+  activateVisual(0);
+
+  contents.forEach((content, i) => {
+    ScrollTrigger.create({
+      trigger: content,
+      start: "top center",
+      end: "bottom center",
+      markers: false,
+      onEnter: () => activateVisual(i),
+      onEnterBack: () => activateVisual(i),
+    });
+  });
 }
