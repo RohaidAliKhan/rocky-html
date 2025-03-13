@@ -642,7 +642,7 @@ header .nav-right {
   text-transform: uppercase;
 }
 
-.challenge-section .content .sub-title,
+.challenge-section .sub-title,
 .how-it-works-section .content .sub-title {
   margin-bottom: 0.5rem;
   display: inline-block;
@@ -656,6 +656,17 @@ header .nav-right {
   margin-bottom: 1rem;
 }
 
+.challenge-box {
+  position: relative;
+}
+.challenge-box .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.challenge-box .overlay img {
+}
+
 .border-content {
   max-width: 80%;
   margin: 0 auto 2rem;
@@ -663,14 +674,16 @@ header .nav-right {
   border-top: 5px solid currentColor;
   border-bottom: 5px solid currentColor;
 }
+.is-inner .border-content {
+  max-width: 100%;
+  padding: 2rem 1rem;
+}
 .border-content h4 {
   text-transform: uppercase;
 }
 .border-content p {
   margin-bottom: 0;
   font-size: 1.25rem;
-}
-.border-content ul {
 }
 .border-content ul li {
   font-size: 1.5rem;
@@ -730,6 +743,10 @@ header .nav-right {
   transform: rotateY(180deg);
 }
 
+.countdown-section {
+  margin-top: 7rem;
+  padding: 0;
+}
 .countdown-section .countdown-box {
   border-top: 5px solid;
   border-bottom: 5px solid;
@@ -931,6 +948,9 @@ header .nav-right {
   height: 3.125rem;
 }
 
+.cta-section {
+  padding-bottom: 0;
+}
 .cta-section figure {
   position: relative;
 }
@@ -999,10 +1019,9 @@ header .nav-right {
   opacity: 1;
 }
 
-.pricing-section {
-}
 .pricing-section .pricing-image {
   position: relative;
+  display: flex;
 }
 .pricing-section .pricing-image .overlay {
   background-color: rgb(0 0 0 / 30%);
@@ -1087,4 +1106,45 @@ header .nav-right {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+.training-section .section-heading {
+  margin-bottom: 3rem;
+}
+.training-section .section-heading h4 {
+  font-size: 3.75rem;
+  font-family: "Buinton";
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.training-section .training-box {
+  text-align: center;
+}
+.training-section .training-box figure {
+  position: relative;
+  margin: 0 0 1.5rem;
+}
+.training-section .training-box figure img {
+  transition: transform var(--animation-primary-ease-in);
+}
+.training-section .training-box:hover figure img {
+  transform: rotate(360deg);
+}
+.training-section .training-box figure .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.training-section .training-box figure .overlay span {
+  font-size: 10.25rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: -0.02em;
+}
+.training-section .training-box h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.training-section.section-color-light .training-box .btn-transparent,
+.training-section.section-color-light .training-box .btn-transparent span {
+  color: var(--primary-color);
 }
