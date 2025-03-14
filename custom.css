@@ -4,7 +4,10 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff2")
+      format("woff2"),
+    url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff")
+      format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -12,7 +15,10 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff2")
+      format("woff2"),
+    url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff")
+      format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -20,7 +26,10 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff2")
+      format("woff2"),
+    url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff")
+      format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -28,7 +37,9 @@ Font Load
 
 @font-face {
   font-family: "Buinton";
-  src: url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff2")
+      format("woff2"),
+    url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -36,14 +47,20 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff2")
+      format("woff2"),
+    url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Knockout";
-  src: url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff2")
+      format("woff2"),
+    url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff")
+      format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -264,7 +281,9 @@ section {
 .fs-16 {
   font-size: 1rem;
 }
-
+.w-10ch {
+  max-width: 10ch;
+}
 .w-20ch {
   max-width: 20ch;
 }
@@ -308,7 +327,7 @@ header {
 }
 header .navbar {
   padding: 1rem 0;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   pointer-events: all;
 }
 header #main-logo {
@@ -396,7 +415,7 @@ header .nav-right {
 }
 
 [data-navigation-status="hover"] .overlay-nav {
-  transform: translateX(calc(-100% + 11vw)) rotate(0.001deg);
+  transform: translateX(calc(-100% + 10.5vw)) rotate(0.001deg);
   transition: var(--animation-primary-ease-in);
   transition-duration: 0.6s;
 }
@@ -516,6 +535,15 @@ header .nav-right {
 .hero-section .video-container {
   border-radius: var(--border-radius);
   overflow: hidden;
+  position: relative;
+}
+
+.hero-section .video-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 30%);
 }
 
 .go-section .content {
@@ -543,6 +571,7 @@ header .nav-right {
   top: -23%;
   right: 4%;
   padding: 0;
+  background: transparent;
 }
 
 .distance-box .content {
@@ -566,7 +595,8 @@ header .nav-right {
   overflow: hidden;
   height: 0;
   opacity: 0;
-  transition: height var(--animation-primary-ease-in), opacity var(--animation-primary-ease-in);
+  transition: height var(--animation-primary-ease-in),
+    opacity var(--animation-primary-ease-in);
 }
 .distance-box:hover .content p {
   height: 8rem;
@@ -696,7 +726,7 @@ header .nav-right {
   content: "";
   width: 1.25em;
   height: 1.25em;
-  background: url(wp-content/themes/rockyrun/img/icons/checkmark.png);
+  background: url(wp-content/themes/rockyrun/img/icons/checkmark.webp);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -705,6 +735,7 @@ header .nav-right {
 .marquee-group {
   position: relative;
   overflow: hidden;
+  padding-top: 6px;
 }
 .marquee {
   position: relative;
@@ -729,7 +760,7 @@ header .nav-right {
 .marquee-item h2 {
   white-space: nowrap;
   font-size: 7.5rem;
-  line-height: 0.9;
+  line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -756,12 +787,12 @@ header .nav-right {
   flex-grow: 1;
   border-left: 5px solid currentColor;
 }
-
 .countdown-section .countdown ul {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
   padding: 3rem 0 2rem;
+  align-items: center;
 }
 .countdown-section .countdown ul li:nth-child(odd) {
   text-align: center;
@@ -836,13 +867,18 @@ header .nav-right {
 }
 
 /* INNER PAGES */
+.hero-section figure > img,
+.hero-section .video-container {
+  height: calc(100vh - 100px);
+  object-fit: cover;
+}
 .hero-section .overlay {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-color: rgb(0 0 0 / 20%);
 }
-.hero-section .overlay h1 {
+.hero-section h1 {
   font-size: 9.375rem;
   font-family: "Buinton";
   font-weight: normal;
@@ -853,8 +889,8 @@ header .nav-right {
   align-items: center;
   gap: 0 7rem;
 }
-.hero-section .overlay h1::before,
-.hero-section .overlay h1::after {
+.hero-section h1::before,
+.hero-section h1::after {
   content: "";
   display: inline-block;
   width: 2.5rem;
@@ -873,7 +909,7 @@ header .nav-right {
 }
 
 .explore-section {
-  background: url(wp-content/themes/rockyrun/img/explore-bg.png) no-repeat;
+  background: url(wp-content/themes/rockyrun/img/explore-bg.webp) no-repeat;
   background-size: cover;
 }
 .explore-section .nav-pills {
@@ -940,6 +976,9 @@ header .nav-right {
   justify-content: flex-end;
   padding: 1.875rem;
 }
+.flex-md-row-reverse .lightbox-card .overlay {
+  justify-content: start;
+}
 .lightbox-card .zoom-in {
   border: 0;
   box-shadow: none;
@@ -987,7 +1026,7 @@ header .nav-right {
 .gear-section .gear-content h2 .price-badge {
   font-size: 2.5rem;
   font-family: "Buinton";
-  background: url(wp-content/themes/rockyrun/img/icons/price-badge-bg.png);
+  background: url(wp-content/themes/rockyrun/img/icons/price-badge-bg.webp);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -1001,7 +1040,7 @@ header .nav-right {
   transform: rotate(-11.86deg);
   letter-spacing: 0;
 }
-.gear-section .gear-visual {
+.gear-section .is-desktop .gear-visual {
   position: sticky;
   top: 0;
 }
@@ -1146,5 +1185,44 @@ header .nav-right {
 }
 .training-section.section-color-light .training-box .btn-transparent,
 .training-section.section-color-light .training-box .btn-transparent span {
+  color: var(--primary-color);
+}
+
+.split-col .section-heading h1 {
+  font-size: 7.3125rem;
+  line-height: 1;
+  margin: 0;
+}
+.split-col .section-heading h1:before,
+.split-col .section-heading h1:after {
+  display: none;
+}
+.split-col .section-heading h4 a {
+  text-decoration: underline;
+  text-decoration-color: var(--white-color);
+  text-decoration-thickness: 3px;
+}
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+}
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border-width: 3px !important;
+  border-color: var(--primary-color) !important;
+  font-size: 1.2rem;
+  font-family: "Knockout";
+  font-weight: 500;
+}
+.contact-form textarea {
+  resize: unset;
+  height: 13rem;
+}
+.contact-form input {
+  height: 4rem;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
   color: var(--primary-color);
 }

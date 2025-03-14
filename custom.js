@@ -73,22 +73,28 @@ function smoothScrolling() {
 
 function navigationToggle() {
   // Toggle Navigation
-  document.querySelector('[data-navigation-toggle="toggle"]').addEventListener("click", function () {
-    const navStatus = document.querySelector("[data-navigation-status]");
-    const currentStatus = navStatus.getAttribute("data-navigation-status");
+  document
+    .querySelector('[data-navigation-toggle="toggle"]')
+    .addEventListener("click", function () {
+      const navStatus = document.querySelector("[data-navigation-status]");
+      const currentStatus = navStatus.getAttribute("data-navigation-status");
 
-    if (currentStatus === "not-active" || currentStatus === "hover") {
-      navStatus.setAttribute("data-navigation-status", "active");
-      scroll?.stop();
-    } else {
-      navStatus.setAttribute("data-navigation-status", "not-active");
-    }
-  });
+      if (currentStatus === "not-active" || currentStatus === "hover") {
+        navStatus.setAttribute("data-navigation-status", "active");
+        scroll?.stop();
+      } else {
+        navStatus.setAttribute("data-navigation-status", "not-active");
+      }
+    });
 
-  const hamburger = document.querySelector('.hamburger[data-navigation-toggle="toggle"]');
+  const hamburger = document.querySelector(
+    '.hamburger[data-navigation-toggle="toggle"]'
+  );
   if (hamburger) {
     hamburger.addEventListener("mouseover", function () {
-      document.querySelector("[data-navigation-status]").setAttribute("data-navigation-status", "hover");
+      document
+        .querySelector("[data-navigation-status]")
+        .setAttribute("data-navigation-status", "hover");
     });
 
     hamburger.addEventListener("mouseleave", function () {
@@ -100,11 +106,15 @@ function navigationToggle() {
   }
 
   // Close Navigation
-  const closeNavs = document.querySelectorAll('[data-navigation-toggle="close"]');
+  const closeNavs = document.querySelectorAll(
+    '[data-navigation-toggle="close"]'
+  );
   closeNavs.forEach((close) => {
     if (close) {
       close.addEventListener("click", function (e) {
-        document.querySelector("[data-navigation-status]").setAttribute("data-navigation-status", "not-active");
+        document
+          .querySelector("[data-navigation-status]")
+          .setAttribute("data-navigation-status", "not-active");
         scroll?.start();
       });
     }
@@ -138,9 +148,17 @@ function bellAnimation() {
   });
 
   gsap.set(bell, { transformOrigin: "center top" });
-  tl.to(bell, { rotation: -20, duration: 3, ease: CustomWiggle.create("wiggle", { wiggles: 4, type: "easeOut" }) }).to(
+  tl.to(bell, {
+    rotation: -20,
+    duration: 3,
+    ease: CustomWiggle.create("wiggle", { wiggles: 4, type: "easeOut" }),
+  }).to(
     "#bell-circle",
-    { x: -20, duration: 3, ease: CustomWiggle.create("bell-circle", { wiggles: 6, type: "easeOut" }) },
+    {
+      x: -20,
+      duration: 3,
+      ease: CustomWiggle.create("bell-circle", { wiggles: 6, type: "easeOut" }),
+    },
     "<"
   );
 }
@@ -240,7 +258,9 @@ function initMarqueeScrollV2() {
     let marquee = $(this);
 
     let marqueeItemsWidth = marquee.find(".marquee-content").width();
-    let marqueeSpeed = marquee.attr("data-marquee-speed") * (marqueeItemsWidth / $(window).width());
+    let marqueeSpeed =
+      marquee.attr("data-marquee-speed") *
+      (marqueeItemsWidth / $(window).width());
 
     // Speed up Marquee on Tablet & Mobile
     if ($(window).width() <= 540) {
@@ -281,10 +301,15 @@ function initMarqueeScrollV2() {
               overwrite: true,
             });
           } else {
-            gsap.to([marqueeContent], { timeScale: marqueeDirection, overwrite: true });
+            gsap.to([marqueeContent], {
+              timeScale: marqueeDirection,
+              overwrite: true,
+            });
           }
         }
-        self.direction === -1 ? marquee.attr("data-marquee-status", "normal") : marquee.attr("data-marquee-status", "inverted");
+        self.direction === -1
+          ? marquee.attr("data-marquee-status", "normal")
+          : marquee.attr("data-marquee-status", "inverted");
       },
       onEnter: () => marqueeContent.play(),
       onEnterBack: () => marqueeContent.play(),
@@ -345,7 +370,9 @@ function countDownTimer() {
 
   // Get the countdown date from a WordPress custom field (assuming it's in a div with ID 'countdown-date')
   let countdownElement = document.getElementById("countdown-date");
-  let countdownDateString = countdownElement ? countdownElement.getAttribute("data-countdown") : "Nov 8, 2025 07:00:00 GMT-0500";
+  let countdownDateString = countdownElement
+    ? countdownElement.getAttribute("data-countdown")
+    : "Nov 8, 2025 07:00:00 GMT-0500";
 
   let countDown = new Date(countdownDateString).getTime();
 
@@ -360,9 +387,15 @@ function countDownTimer() {
     }
 
     document.getElementById("days").innerHTML = Math.floor(distance / DAY);
-    document.getElementById("hours").innerHTML = Math.floor((distance % DAY) / HOUR);
-    document.getElementById("minutes").innerHTML = Math.floor((distance % HOUR) / MINUTE);
-    document.getElementById("seconds").innerHTML = Math.floor((distance % MINUTE) / SECOND);
+    document.getElementById("hours").innerHTML = Math.floor(
+      (distance % DAY) / HOUR
+    );
+    document.getElementById("minutes").innerHTML = Math.floor(
+      (distance % HOUR) / MINUTE
+    );
+    document.getElementById("seconds").innerHTML = Math.floor(
+      (distance % MINUTE) / SECOND
+    );
   }, SECOND);
 }
 
@@ -370,28 +403,31 @@ function stickyScrollContentFade() {
   const section = document.querySelector(".gear-section");
   if (!section) return;
   const contents = section.querySelectorAll(".gear-content");
-  const visuals = section.querySelectorAll(".gear-visual .overlay");
+  const visuals = section.querySelectorAll(".is-desktop .gear-visual .overlay");
 
-  const activateVisual = (index) => {
-    visuals.forEach((visual, i) => {
-      if (i === index) {
-        visual.classList.add("active");
-      } else {
-        visual.classList.remove("active");
-      }
-    });
-  };
+  mm.add("(min-width: 768px)", () => {
+    console.log("tag");
+    const activateVisual = (index) => {
+      visuals.forEach((visual, i) => {
+        if (i === index) {
+          visual.classList.add("active");
+        } else {
+          visual.classList.remove("active");
+        }
+      });
+    };
 
-  activateVisual(0);
+    activateVisual(0);
 
-  contents.forEach((content, i) => {
-    ScrollTrigger.create({
-      trigger: content,
-      start: "top center",
-      end: "bottom center",
-      markers: false,
-      onEnter: () => activateVisual(i),
-      onEnterBack: () => activateVisual(i),
+    contents.forEach((content, i) => {
+      ScrollTrigger.create({
+        trigger: content,
+        start: "top center",
+        end: "bottom center",
+        markers: false,
+        onEnter: () => activateVisual(i),
+        onEnterBack: () => activateVisual(i),
+      });
     });
   });
 }

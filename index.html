@@ -2,7 +2,10 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <title>Rocky Run</title>
     <meta name="robots" content="noindex, nofollow" />
@@ -11,15 +14,28 @@
         contain-intrinsic-size: 3000px 1500px;
       }
     </style>
-    <link rel="alternate" type="application/rss+xml" title="Rocky Run &raquo; Feed" href="feed/index.rss" />
-    <link rel="alternate" type="application/rss+xml" title="Rocky Run &raquo; Comments Feed" href="comments/feed/index.rss" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Rocky Run &raquo; Feed"
+      href="feed/index.rss"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Rocky Run &raquo; Comments Feed"
+      href="comments/feed/index.rss"
+    />
     <script>
       window._wpemojiSettings = {
         baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-        ext: ".png",
+        ext: ".webp",
         svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
         svgExt: ".svg",
-        source: { concatemoji: "https:\/\/rockyrunsite.wpenginepowered.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1" },
+        source: {
+          concatemoji:
+            "https:\/\/rockyrunsite.wpenginepowered.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1",
+        },
       };
       /*! This file is auto-generated */
       !(function (i, n) {
@@ -31,9 +47,17 @@
           } catch (e) {}
         }
         function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-          var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-            r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
           return t.every(function (e, t) {
             return e === r[t];
           });
@@ -41,21 +65,37 @@
         function u(e, t, n) {
           switch (t) {
             case "flag":
-              return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
                 ? !1
-                : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") &&
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
                     !n(
                       e,
                       "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
                       "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
                     );
             case "emoji":
-              return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b");
+              return !n(
+                e,
+                "\ud83d\udc26\u200d\u2b1b",
+                "\ud83d\udc26\u200b\u2b1b"
+              );
           }
           return !1;
         }
         function f(e, t, n) {
-          var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
             a = r.getContext("2d", { willReadFrequently: !0 }),
             o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
           return (
@@ -80,16 +120,37 @@
             var n = (function () {
               try {
                 var e = JSON.parse(sessionStorage.getItem(o));
-                if ("object" == typeof e && "number" == typeof e.timestamp && new Date().valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests;
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
               } catch (e) {}
               return null;
             })();
             if (!n) {
-              if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
                 try {
-                  var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
                     r = new Blob([e], { type: "text/javascript" }),
-                    a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" });
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
                   return void (a.onmessage = function (e) {
                     c((n = e.data)), a.terminate(), t(n);
                   });
@@ -101,9 +162,13 @@
             .then(function (e) {
               for (var t in e)
                 (n.supports[t] = e[t]),
-                  (n.supports.everything = n.supports.everything && n.supports[t]),
-                  "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
                 (n.DOMReady = !1),
                 (n.readyCallback = function () {
                   n.DOMReady = !0;
@@ -114,7 +179,11 @@
             })
             .then(function () {
               var e;
-              n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
             }));
       })((window, document), window._wpemojiSettings);
     </script>
@@ -132,7 +201,12 @@
         padding: 0 !important;
       }
     </style>
-    <link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min-ver=6.7.1.css" media="all" />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="wp-includes/css/dist/block-library/style.min-ver=6.7.1.css"
+      media="all"
+    />
     <style id="wp-block-library-theme-inline-css">
       .wp-block-audio :where(figcaption) {
         color: #555;
@@ -251,7 +325,9 @@
         border-bottom: none;
         height: 1px;
       }
-      .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+      .wp-block-separator.has-background:not(.is-style-wide):not(
+          .is-style-dots
+        ) {
         height: 2px;
       }
       .wp-block-table {
@@ -324,11 +400,31 @@
         --wp--preset--color--pale-cyan-blue: #8ed1fc;
         --wp--preset--color--vivid-cyan-blue: #0693e3;
         --wp--preset--color--vivid-purple: #9b51e0;
-        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
-        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
-        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
-        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
-        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
         --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
           135deg,
           rgb(74, 234, 220) 0%,
@@ -338,12 +434,39 @@
           rgb(251, 105, 98) 80%,
           rgb(254, 248, 76) 100%
         );
-        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
-        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
-        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
-        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
-        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
-        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
         --wp--preset--font-size--small: 13px;
         --wp--preset--font-size--medium: 20px;
         --wp--preset--font-size--large: 36px;
@@ -360,7 +483,8 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -449,10 +573,14 @@
         background-color: var(--wp--preset--color--vivid-red) !important;
       }
       .has-luminous-vivid-orange-background-color {
-        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
       }
       .has-luminous-vivid-amber-background-color {
-        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
       }
       .has-light-green-cyan-background-color {
         background-color: var(--wp--preset--color--light-green-cyan) !important;
@@ -485,7 +613,9 @@
         border-color: var(--wp--preset--color--vivid-red) !important;
       }
       .has-luminous-vivid-orange-border-color {
-        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
       }
       .has-luminous-vivid-amber-border-color {
         border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
@@ -506,22 +636,34 @@
         border-color: var(--wp--preset--color--vivid-purple) !important;
       }
       .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
       }
       .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
       }
       .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
       }
       .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
       }
       .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
       }
       .has-cool-to-warm-spectrum-gradient-background {
-        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
       }
       .has-blush-light-purple-gradient-background {
         background: var(--wp--preset--gradient--blush-light-purple) !important;
@@ -570,20 +712,61 @@
         line-height: 1.6;
       }
     </style>
-    <link rel="stylesheet" id="woocommerce-layout-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-layout-ver=9.7.0.css" media="all" />
-    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-ver=9.7.0.css" media="only screen and (max-width: 768px)" />
-    <link rel="stylesheet" id="woocommerce-general-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-ver=9.7.0.css" media="all" />
+    <link
+      rel="stylesheet"
+      id="woocommerce-layout-css"
+      href="wp-content/plugins/woocommerce/assets/css/woocommerce-layout-ver=9.7.0.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-smallscreen-css"
+      href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-ver=9.7.0.css"
+      media="only screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-general-css"
+      href="wp-content/plugins/woocommerce/assets/css/woocommerce-ver=9.7.0.css"
+      media="all"
+    />
     <style id="woocommerce-inline-inline-css">
       .woocommerce form .form-row .required {
         visibility: visible;
       }
     </style>
-    <link rel="stylesheet" id="brands-styles-css" href="wp-content/plugins/woocommerce/assets/css/brands-ver=9.7.0.css" media="all" />
-    <link rel="stylesheet" id="style-css" href="wp-content/themes/rockyrun/style-ver=3.5.4.css" media="all" />
-    <link rel="stylesheet" id="main-css" href="wp-content/themes/rockyrun/build/main-ver=3.5.4.css" media="all" />
-    <script src="wp-includes/js/jquery/jquery.min-ver=3.7.1.js" id="jquery-core-js"></script>
-    <script src="wp-includes/js/jquery/jquery-migrate.min-ver=3.4.1.js" id="jquery-migrate-js"></script>
-    <script src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min-ver=2.7.0-wc.9.7.0.js" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+    <link
+      rel="stylesheet"
+      id="brands-styles-css"
+      href="wp-content/plugins/woocommerce/assets/css/brands-ver=9.7.0.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="style-css"
+      href="wp-content/themes/rockyrun/style-ver=3.5.4.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="main-css"
+      href="wp-content/themes/rockyrun/build/main-ver=3.5.4.css"
+      media="all"
+    />
+    <script
+      src="wp-includes/js/jquery/jquery.min-ver=3.7.1.js"
+      id="jquery-core-js"
+    ></script>
+    <script
+      src="wp-includes/js/jquery/jquery-migrate.min-ver=3.4.1.js"
+      id="jquery-migrate-js"
+    ></script>
+    <script
+      src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min-ver=2.7.0-wc.9.7.0.js"
+      id="jquery-blockui-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
     <script id="wc-add-to-cart-js-extra">
       var wc_add_to_cart_params = {
         ajax_url: "\/wp-admin\/admin-ajax.php",
@@ -594,19 +777,59 @@
         cart_redirect_after_add: "no",
       };
     </script>
-    <script src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min-ver=9.7.0.js" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
-    <script src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min-ver=2.1.4-wc.9.7.0.js" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+    <script
+      src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min-ver=9.7.0.js"
+      id="wc-add-to-cart-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
+    <script
+      src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min-ver=2.1.4-wc.9.7.0.js"
+      id="js-cookie-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
     <script id="woocommerce-js-extra">
-      var woocommerce_params = { ajax_url: "\/wp-admin\/admin-ajax.php", wc_ajax_url: "\/?wc-ajax=%%endpoint%%", i18n_password_show: "Show password", i18n_password_hide: "Hide password" };
+      var woocommerce_params = {
+        ajax_url: "\/wp-admin\/admin-ajax.php",
+        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+        i18n_password_show: "Show password",
+        i18n_password_hide: "Hide password",
+      };
     </script>
-    <script src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min-ver=9.7.0.js" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+    <script
+      src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min-ver=9.7.0.js"
+      id="woocommerce-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
     <link rel="https://api.w.org/" href="wp-json/index.json" />
-    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/12.json" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php-rsd.html" />
+    <link
+      rel="alternate"
+      title="JSON"
+      type="application/json"
+      href="wp-json/wp/v2/pages/12.json"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="xmlrpc.php-rsd.html"
+    />
     <link rel="canonical" href="index.html" />
     <link rel="shortlink" href="index.html" />
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-.json" />
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-&amp;format=xml.xml" />
+    <link
+      rel="alternate"
+      title="oEmbed (JSON)"
+      type="application/json+oembed"
+      href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-.json"
+    />
+    <link
+      rel="alternate"
+      title="oEmbed (XML)"
+      type="text/xml+oembed"
+      href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-&amp;format=xml.xml"
+    />
     <noscript
       ><style>
         .woocommerce-product-gallery {
@@ -620,7 +843,8 @@
         font-style: normal;
         font-weight: 300 900;
         font-display: fallback;
-        src: url("wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2") format("woff2");
+        src: url("wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2")
+          format("woff2");
         font-stretch: normal;
       }
       @font-face {
@@ -628,12 +852,19 @@
         font-style: normal;
         font-weight: 400;
         font-display: fallback;
-        src: url("wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2") format("woff2");
+        src: url("wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2")
+          format("woff2");
       }
     </style>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.2.0/dist/lenis.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.2.0/dist/lenis.css"
+    />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
@@ -645,7 +876,15 @@
     data-audio-status="not-started"
   >
     <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
-    <audio id="audio" class="visually-hidden" src="https://project-parallax.com/assets/audio/ambient-wave.mp3" autostart="0" autostart="false" preload="none" name="media"></audio>
+    <audio
+      id="audio"
+      class="visually-hidden"
+      src="https://project-parallax.com/assets/audio/ambient-wave.mp3"
+      autostart="0"
+      autostart="false"
+      preload="none"
+      name="media"
+    ></audio>
     <div id="wrapper">
       <header>
         <nav class="navbar navbar-expand-md navbar-dark home">
@@ -654,28 +893,44 @@
               <div class="col-3 col-md-4">
                 <div class="nav-left">
                   <button class="hamburger" data-navigation-toggle="toggle">
-                    <img src="wp-content/themes/rockyrun/img/icons/menu-toggle.svg" class="img-fluid" alt="Menu Toggle" />
+                    <img
+                      src="wp-content/themes/rockyrun/img/icons/menu-toggle.svg"
+                      class="img-fluid"
+                      alt="Menu Toggle"
+                    />
                     <span class="d-none d-sm-block">menu</span>
                   </button>
                   <button class="audio-toggle" data-sound-toggle>
-                    <img src="wp-content/themes/rockyrun/img/icons/audio-toggle.svg" class="img-fluid" alt="Audio Toggle" />
+                    <img
+                      src="wp-content/themes/rockyrun/img/icons/audio-toggle.svg"
+                      class="img-fluid"
+                      alt="Audio Toggle"
+                    />
                   </button>
                 </div>
               </div>
               <div class="col-5 col-md-4 d-flex justify-content-center mx-auto">
                 <div id="main-logo">
-                  <img src="wp-content/themes/rockyrun/img/logo.svg" class="img-fluid" alt="Rocky Run Logo" />
+                  <img
+                    src="wp-content/themes/rockyrun/img/logo.svg"
+                    class="img-fluid"
+                    alt="Rocky Run Logo"
+                  />
                 </div>
               </div>
               <div class="col-3 col-md-4">
                 <div class="nav-right">
                   <div class="info d-none d-lg-flex">
                     <span id="date">Nov 8, 2025</span>
-                    <img src="wp-content/themes/rockyrun/img/icons/star.svg" class="img-fluid" alt="" />
+                    <img
+                      src="wp-content/themes/rockyrun/img/icons/star.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
                     <span id="location">Philly, PA</span>
                   </div>
                   <div class="register">
-                    <a href="#" class="btn">register</a>
+                    <a href="register.html" class="btn">register</a>
                   </div>
                 </div>
               </div>
@@ -685,21 +940,44 @@
           </div>
           <!-- /.container -->
         </nav>
-        <div class="overlay overlay-nav-back" data-navigation-toggle="close"></div>
+        <div
+          class="overlay overlay-nav-back"
+          data-navigation-toggle="close"
+        ></div>
         <div class="overlay-nav">
           <div class="overlay-nav-content" data-lenis-prevent="">
             <div class="close">
               <button data-navigation-toggle="close">
-                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="28.4667" y1="28.0607" x2="1.46668" y2="1.06066" stroke="black" stroke-width="3" />
-                  <line y1="-1.5" x2="38.1838" y2="-1.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 1 27)" stroke="black" stroke-width="3" />
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="28.4667"
+                    y1="28.0607"
+                    x2="1.46668"
+                    y2="1.06066"
+                    stroke="black"
+                    stroke-width="3"
+                  />
+                  <line
+                    y1="-1.5"
+                    x2="38.1838"
+                    y2="-1.5"
+                    transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 1 27)"
+                    stroke="black"
+                    stroke-width="3"
+                  />
                 </svg>
               </button>
             </div>
             <div class="navbar-main">
               <ul class="primary-links">
                 <li class="link">
-                  <a href="#" class="link-click">
+                  <a href="race-info.html" class="link-click">
                     <div class="link-content">
                       <span>race info</span>
                     </div>
@@ -709,7 +987,7 @@
                   </a>
                 </li>
                 <li class="link">
-                  <a href="#" class="link-click">
+                  <a href="swag.html" class="link-click">
                     <div class="link-content">
                       <span>swag</span>
                     </div>
@@ -719,7 +997,7 @@
                   </a>
                 </li>
                 <li class="link">
-                  <a href="#" class="link-click">
+                  <a href="impact.html" class="link-click">
                     <div class="link-content">
                       <span>impact</span>
                     </div>
@@ -740,27 +1018,49 @@
                 </li>
               </ul>
               <ul class="secondary-links">
-                <li><a href="#">teams</a></li>
-                <li><a href="#">training</a></li>
-                <li><a href="#">challenges</a></li>
+                <li><a href="teams.html">teams</a></li>
+                <li><a href="training.html">training</a></li>
+                <li><a href="challenges.html">challenges</a></li>
                 <li><a href="#">results</a></li>
                 <li><a href="#">photos</a></li>
-                <li><a href="#">faqs</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="faq.html">faqs</a></li>
+                <li><a href="contact.html">contact</a></li>
               </ul>
-              <a href="#" class="btn btn-primary">
+              <a href="register.html" class="btn btn-primary">
                 register now
                 <span class="d-inline-flex">
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                    <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                  <svg
+                    width="19"
+                    height="17"
+                    viewBox="0 0 19 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      y1="8.5"
+                      x2="16.6776"
+                      y2="8.5"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    ></line>
+                    <path
+                      d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    ></path>
                   </svg>
                 </span>
               </a>
               <ul class="social-links">
                 <li>
                   <a href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M39.9992 19.9999C39.9992 8.95438 31.045 0 19.9996 0C8.95422 0 0 8.95438 0 19.9999C0 29.3791 6.45747 37.2495 15.1685 39.4111V26.1119H11.0446V19.9999H15.1685V17.3664C15.1685 10.5592 18.2492 7.40398 24.9323 7.40398C26.1995 7.40398 28.3858 7.65278 29.2802 7.90078V13.4408C28.8082 13.3912 27.9882 13.3664 26.9699 13.3664C23.6907 13.3664 22.4235 14.6088 22.4235 17.8384V19.9999H28.9562L27.8338 26.1119H22.4235V39.8535C32.3265 38.6575 40 30.2255 40 19.9999H39.9992Z"
                         fill="black"
@@ -770,7 +1070,13 @@
                 </li>
                 <li>
                   <a href="#">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <g clip-path="url(#clip0_8322_2139)">
                         <path
                           d="M11.7168 0.138428C9.58881 0.238828 8.13521 0.579628 6.86521 1.07723C5.55041 1.58963 4.43601 2.27683 3.32721 3.39003C2.21721 4.50403 1.53561 5.62043 1.02681 6.93643C0.534409 8.20963 0.200409 9.66403 0.106809 11.7932C0.0132093 13.9268 -0.0079907 14.6072 0.0024093 20.0384C0.0128093 25.4688 0.0368093 26.1504 0.138409 28.2844C0.240009 30.412 0.579609 31.8648 1.07721 33.1356C1.59041 34.4504 2.27681 35.5644 3.39041 36.6736C4.50361 37.7828 5.62081 38.464 6.93761 38.9732C8.20961 39.4652 9.66441 39.8 11.7932 39.8932C13.9264 39.9872 14.6076 40.008 20.0372 39.9976C25.4692 39.9872 26.1504 39.9632 28.2836 39.862C30.4116 39.7604 31.8636 39.4196 33.1352 38.9232C34.45 38.4088 35.5644 37.7236 36.6732 36.61C37.782 35.4968 38.4636 34.3796 38.9724 33.0628C39.4648 31.7908 39.8 30.336 39.8924 28.2084C39.9856 26.074 40.0076 25.392 39.9972 19.962C39.9868 14.5312 39.9624 13.8508 39.8612 11.718C39.76 9.58883 39.4192 8.13643 38.9224 6.86523C38.4084 5.55043 37.7228 4.43723 36.6096 3.32723C35.4964 2.21843 34.3792 1.53563 33.0624 1.02803C31.7896 0.535628 30.3356 0.200028 28.2068 0.108028C26.074 0.0128283 25.3932 -0.00797171 19.9616 0.00242829C14.5312 0.0128283 13.8504 0.0360283 11.7172 0.138428M11.9504 36.2936C10.0004 36.2088 8.94161 35.8848 8.23601 35.6132C7.30161 35.2516 6.63481 34.818 5.93281 34.1216C5.23241 33.4224 4.79761 32.7576 4.43281 31.8252C4.15881 31.1196 3.82881 30.062 3.73761 28.112C3.63841 26.004 3.61561 25.3716 3.60601 20.0312C3.59561 14.6924 3.61521 14.0596 3.70721 11.95C3.79081 10.0016 4.11681 8.94123 4.38761 8.23643C4.74921 7.30083 5.18121 6.63523 5.87921 5.93323C6.57841 5.23163 7.24321 4.79803 8.17641 4.43323C8.88161 4.15763 9.93881 3.83043 11.888 3.73803C13.9972 3.63803 14.6292 3.61683 19.968 3.60643C25.308 3.59603 25.9408 3.61483 28.0504 3.70763C29.9988 3.79243 31.0592 4.11523 31.7636 4.38803C32.6988 4.74963 33.3656 5.18043 34.0668 5.87963C34.768 6.57883 35.2028 7.24243 35.5676 8.17763C35.8428 8.88083 36.1704 9.93963 36.2624 11.888C36.3628 13.9972 36.3856 14.6296 36.3952 19.9688C36.4056 25.3092 36.386 25.9416 36.2936 28.05C36.2088 30 35.8852 31.0592 35.6132 31.7656C35.2516 32.6992 34.8192 33.366 34.1208 34.068C33.4224 34.7672 32.7576 35.2032 31.8236 35.568C31.12 35.8428 30.0612 36.1708 28.1132 36.2632C26.004 36.3624 25.372 36.3852 20.0312 36.3948C14.6924 36.4052 14.0604 36.3852 11.9508 36.2936M28.2544 9.30923C28.2568 10.6336 29.334 11.706 30.6584 11.7036C31.9836 11.7012 33.056 10.6248 33.054 9.30003C33.0512 7.97563 31.9744 6.90243 30.6492 6.90483C29.324 6.90723 28.2516 7.98443 28.254 9.30883M9.73081 20.0196C9.74161 25.6916 14.3484 30.2796 20.0192 30.2684C25.6904 30.2572 30.2808 25.652 30.27 19.98C30.2588 14.31 25.6516 9.71963 19.9796 9.73043C14.3088 9.74163 9.71961 14.3488 9.73081 20.0196ZM13.3332 20.0124C13.3268 16.3312 16.3064 13.3404 19.9868 13.334C23.668 13.3268 26.6592 16.3052 26.6664 19.9872C26.6736 23.6692 23.694 26.6592 20.012 26.6664C16.3312 26.6736 13.34 23.6948 13.3332 20.0128"
@@ -797,26 +1103,55 @@
           <div class="container">
             <!-- <h1 class="mainLogo"><img src="wp-content/themes/rockyrun/img/logo.svg" class="w-100" alt="Rocky Run Logo" /></h1> -->
             <div class="video-container">
-              <img src="wp-content/themes/rockyrun/img/banner-poster.png" class="w-100" alt="" />
+              <video
+                src="wp-content/themes/rockyrun/video/banner-video.mp4"
+                autoplay
+                muted
+                playsinline
+                loop
+                poster="wp-content/themes/rockyrun/img/banner-poster.webp"
+                class="w-100"
+              ></video>
             </div>
           </div>
         </section>
         <section class="launch-section py-3 py-md-4">
           <div class="container">
-            <svg width="100%" height="auto" viewBox="0 0 1557 188" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M39.4583 183.952L17.6985 84.7235V183.952H-0.00195312V2.27148H21.5384L39.6777 103.111V2.27148H57.1221V183.952H39.4217H39.4583Z" fill="#FFDD00"></path>
+            <svg
+              width="100%"
+              height="auto"
+              viewBox="0 0 1557 188"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M39.4583 183.952L17.6985 84.7235V183.952H-0.00195312V2.27148H21.5384L39.6777 103.111V2.27148H57.1221V183.952H39.4217H39.4583Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M92.7434 186.222C78.0052 186.222 65.7539 173.512 65.7539 155.124V31.0981C65.7539 12.7103 78.0052 0 92.7434 0C107.482 0 119.733 12.7103 119.733 31.0981V155.087C119.733 173.475 107.482 186.186 92.7434 186.186V186.222ZM98.1925 29.523C98.1925 25.4206 96.1445 22.9298 92.7434 22.9298C89.1228 22.9298 87.0749 25.4206 87.0749 29.523V156.699C87.0749 160.802 89.1228 163.292 92.7434 163.292C96.1445 163.292 98.1925 160.802 98.1925 156.699V29.523Z"
                 fill="#FFDD00"
               ></path>
-              <path d="M164.168 183.952H143.542L125.402 2.27148H146.248L154.403 110.584L163.253 2.27148H182.526L164.168 183.952Z" fill="#FFDD00"></path>
-              <path d="M188.523 183.952V2.27148H232.518V24.0658H209.625V79.4855H225.058V101.28H209.625V162.157H232.518V183.952H188.523Z" fill="#FFDD00"></path>
-              <path d="M304.05 183.952V56.7755L288.178 183.952H273.44L259.141 56.5558V183.952H240.307V2.27148H271.355L283.131 104.906L298.162 2.27148H325.152V183.952H304.05Z" fill="#FFDD00"></path>
+              <path
+                d="M164.168 183.952H143.542L125.402 2.27148H146.248L154.403 110.584L163.253 2.27148H182.526L164.168 183.952Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M188.523 183.952V2.27148H232.518V24.0658H209.625V79.4855H225.058V101.28H209.625V162.157H232.518V183.952H188.523Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M304.05 183.952V56.7755L288.178 183.952H273.44L259.141 56.5558V183.952H240.307V2.27148H271.355L283.131 104.906L298.162 2.27148H325.152V183.952H304.05Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M361.649 183.952H334.221V2.27148H361.649C372.291 2.27148 385.676 7.72922 385.676 30.8788V72.6725C385.676 81.317 381.836 86.7381 375.912 91.5365C381.8 96.2983 385.676 101.756 385.676 110.4V155.381C385.676 178.531 372.291 183.988 361.649 183.988V183.952ZM364.831 31.355C364.831 26.117 363.478 24.1024 360.991 24.1024H355.542V81.7932H360.991C363.478 81.7932 364.831 79.742 364.831 74.5406V31.3916V31.355ZM364.831 109.668C364.831 104.43 363.478 102.415 360.991 102.415H355.542V162.377H360.991C363.478 162.377 364.831 160.326 364.831 155.125V109.705V109.668Z"
                 fill="#FFDD00"
               ></path>
-              <path d="M394.344 183.952V2.27148H438.339V24.0658H415.445V79.4855H430.878V101.28H415.445V162.157H438.339V183.952H394.344Z" fill="#FFDD00"></path>
+              <path
+                d="M394.344 183.952V2.27148H438.339V24.0658H415.445V79.4855H430.878V101.28H415.445V162.157H438.339V183.952H394.344Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M479.921 183.952C478.349 176.003 477.215 165.344 477.215 155.784V113.074C477.215 108.972 475.642 105.822 472.461 105.822H467.487V183.952H446.166V2.27148H473.594C484.237 2.27148 497.622 7.72922 497.622 30.8788V77.2146C497.622 85.859 493.526 91.2801 487.857 96.0785C493.526 100.84 498.06 106.298 498.06 114.942V153.55C498.06 165.124 499.633 175.124 501.023 183.988H479.921V183.952ZM476.739 31.355C476.739 26.117 475.386 24.1024 472.899 24.1024H467.45V85.1997H472.899C475.386 85.1997 476.739 83.1485 476.739 77.9471V31.3916V31.355Z"
                 fill="#FFDD00"
@@ -825,16 +1160,34 @@
                 d="M562.244 186.223C547.286 186.223 537.521 171.242 537.521 152.854V111.976C537.521 104.467 540.484 94.9435 546.811 92.2329C540.447 89.266 537.521 79.7424 537.521 72.4899V33.4433C537.521 15.0555 547.286 0.0742188 562.244 0.0742188C577.201 0.0742188 586.746 15.0555 586.746 33.4433V72.4899C586.746 79.7424 583.784 89.3026 577.457 92.2329C583.82 94.9435 586.746 104.504 586.746 111.976V152.854C586.746 171.242 576.982 186.223 562.244 186.223ZM566.559 30.6595C566.559 27.6925 564.511 25.2018 562.244 25.2018C559.757 25.2018 557.709 27.6925 557.709 30.6595V77.4348C557.709 80.4018 559.757 82.8925 562.244 82.8925C564.511 82.8925 566.559 80.4018 566.559 77.4348V30.6595ZM566.559 106.518C566.559 103.551 564.511 101.061 562.244 101.061C559.757 101.061 557.709 103.551 557.709 106.518V155.565C557.709 158.532 559.757 161.022 562.244 161.022C564.511 161.022 566.559 158.532 566.559 155.565V106.518Z"
                 fill="#FFDD00"
               ></path>
-              <path d="M615.637 18.7176V118.019H602.361V18.7176H592.816V3.73633H624.487V18.7542H615.637V18.7176Z" fill="#FFDD00"></path>
-              <path d="M650.268 118.019V68.8628H643.283V118.019H630.008V3.73633H643.283V54.4676H650.268V3.73633H663.544V118.019H650.268Z" fill="#FFDD00"></path>
-              <path d="M663.654 127.506H602.361V142.634H663.654V127.506Z" fill="#FFDD00"></path>
+              <path
+                d="M615.637 18.7176V118.019H602.361V18.7176H592.816V3.73633H624.487V18.7542H615.637V18.7176Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M650.268 118.019V68.8628H643.283V118.019H630.008V3.73633H643.283V54.4676H650.268V3.73633H663.544V118.019H650.268Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M663.654 127.506H602.361V142.634H663.654V127.506Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M945.445 109.426H939.339V185.339H918.025V3.5293H945.445C956.083 3.5293 969.464 8.99091 969.464 32.1569V81.0182C969.464 103.964 956.083 109.426 945.445 109.426ZM948.625 32.6334C948.625 27.3918 947.273 25.3757 944.787 25.3757H939.339V87.6528H944.787C947.273 87.6528 948.625 85.6001 948.625 80.3951V32.6334Z"
                 fill="#FFDD00"
               ></path>
-              <path d="M1009.9 185.339V107.153H998.784V185.339H977.689V3.5293H998.784V84.2072H1009.9V3.5293H1030.99V185.339H1009.9Z" fill="#FFDD00"></path>
-              <path d="M1040.24 185.339V3.5293H1061.55V185.339H1040.24Z" fill="#FFDD00"></path>
-              <path d="M1070.7 185.339V3.5293H1092.01V163.529H1114.68V185.339H1070.7Z" fill="#FFDD00"></path>
+              <path
+                d="M1009.9 185.339V107.153H998.784V185.339H977.689V3.5293H998.784V84.2072H1009.9V3.5293H1030.99V185.339H1009.9Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M1040.24 185.339V3.5293H1061.55V185.339H1040.24Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M1070.7 185.339V3.5293H1092.01V163.529H1114.68V185.339H1070.7Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M1155.25 185.339L1153.9 152.386H1141.43L1139.39 185.339H1120.56L1135.33 3.5293H1162.09L1177.04 185.339H1155.29H1155.25ZM1148.71 56.7159L1143.26 129.22H1152.55L1148.71 56.7159Z"
                 fill="#FFDD00"
@@ -843,14 +1196,26 @@
                 d="M1213.68 185.339H1184.43V3.5293H1213.68C1224.32 3.5293 1237.7 8.99091 1237.7 32.1569V156.674C1237.7 179.84 1224.32 185.302 1213.68 185.302V185.339ZM1216.82 32.6334C1216.82 27.3918 1215.25 25.3757 1212.98 25.3757H1205.49V163.785H1212.98C1215.25 163.785 1216.82 161.733 1216.82 156.528V32.6334Z"
                 fill="#FFDD00"
               ></path>
-              <path d="M1246.29 185.339V3.5293H1290.27V25.3391H1267.38V80.7983H1282.81V102.608H1267.38V163.529H1290.27V185.339H1246.29Z" fill="#FFDD00"></path>
-              <path d="M1298.09 185.339V3.5293H1319.41V163.529H1342.07V185.339H1298.09Z" fill="#FFDD00"></path>
+              <path
+                d="M1246.29 185.339V3.5293H1290.27V25.3391H1267.38V80.7983H1282.81V102.608H1267.38V163.529H1290.27V185.339H1246.29Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M1298.09 185.339V3.5293H1319.41V163.529H1342.07V185.339H1298.09Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M1376.88 109.426H1370.77V185.339H1349.46V3.5293H1376.88C1387.52 3.5293 1400.9 8.99091 1400.9 32.1569V81.0182C1400.9 103.964 1387.52 109.426 1376.88 109.426ZM1380.06 32.6334C1380.06 27.3918 1378.71 25.3757 1376.22 25.3757H1370.77V87.6528H1376.22C1378.71 87.6528 1380.06 85.6001 1380.06 80.3951V32.6334Z"
                 fill="#FFDD00"
               ></path>
-              <path d="M1441.33 185.339V107.153H1430.22V185.339H1409.12V3.5293H1430.22V84.2072H1441.33V3.5293H1462.43V185.339H1441.33Z" fill="#FFDD00"></path>
-              <path d="M1471.68 185.339V3.5293H1492.99V185.339H1471.68Z" fill="#FFDD00"></path>
+              <path
+                d="M1441.33 185.339V107.153H1430.22V185.339H1409.12V3.5293H1430.22V84.2072H1441.33V3.5293H1462.43V185.339H1441.33Z"
+                fill="#FFDD00"
+              ></path>
+              <path
+                d="M1471.68 185.339V3.5293H1492.99V185.339H1471.68Z"
+                fill="#FFDD00"
+              ></path>
               <path
                 d="M1535.21 185.339L1533.86 152.386H1521.39L1519.35 185.339H1500.52L1515.29 3.5293H1542.05L1557 185.339H1535.25H1535.21ZM1528.67 56.7159L1523.22 129.22H1532.51L1528.67 56.7159Z"
                 fill="#FFDD00"
@@ -885,24 +1250,55 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-4 col-6">
-                <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/go-img-left.jpg" class="w-100" alt="" /></figure>
+                <figure class="border-rounded">
+                  <img
+                    src="wp-content/themes/rockyrun/img/go-img-left.webp"
+                    class="w-100"
+                    alt=""
+                  />
+                </figure>
               </div>
               <div class="col-md-4 col-6 order-md-3">
-                <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/go-img-right.jpg" class="w-100" alt="" /></figure>
+                <figure class="border-rounded">
+                  <img
+                    src="wp-content/themes/rockyrun/img/go-img-right.webp"
+                    class="w-100"
+                    alt=""
+                  />
+                </figure>
               </div>
               <div class="col-md-4 col-12 order-md-2">
                 <div class="content">
                   <h2>go for it.</h2>
                   <h3>
-                    This is your shot—a chance to join thousands of runners from around the world for the official Rocky Run 5K, 10 Mile and 13.1 Italian Stallion Challenge on November 8th in
-                    Philadelphia, PA. So, channel your inner Rocky, register, and show the world you can go the distance.
+                    This is your shot—a chance to join thousands of runners from
+                    around the world for the official Rocky Run 5K, 10 Mile and
+                    13.1 Italian Stallion Challenge on November 8th in
+                    Philadelphia, PA. So, channel your inner Rocky, register,
+                    and show the world you can go the distance.
                   </h3>
                   <a href="#distance" class="btn btn-secondary">
                     Choose your distance
                     <span class="d-inline-flex">
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                        <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                      <svg
+                        width="19"
+                        height="17"
+                        viewBox="0 0 19 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="8.5"
+                          x2="16.6776"
+                          y2="8.5"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></line>
+                        <path
+                          d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></path>
                       </svg>
                     </span>
                   </a>
@@ -924,17 +1320,42 @@
             <div class="row">
               <div class="col-lg-4 col-md-6">
                 <div class="distance-box">
-                  <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/distance1.jpg" class="w-100" alt="" /></figure>
+                  <figure class="border-rounded">
+                    <img
+                      src="wp-content/themes/rockyrun/img/distance1.webp"
+                      class="w-100"
+                      alt=""
+                    />
+                  </figure>
                   <div class="content">
-                    <p>Fast, fun, and full of energy—our 5K is perfect for runners of all levels.</p>
+                    <p>
+                      Fast, fun, and full of energy—our 5K is perfect for
+                      runners of all levels.
+                    </p>
                     <div class="info">
                       <h3>5k</h3>
                       <a href="#" class="btn btn-transparent">
                         register now
                         <span class="d-inline-flex">
-                          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                            <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                          <svg
+                            width="19"
+                            height="17"
+                            viewBox="0 0 19 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <line
+                              y1="8.5"
+                              x2="16.6776"
+                              y2="8.5"
+                              stroke="currentColor"
+                              stroke-width="3"
+                            ></line>
+                            <path
+                              d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                              stroke="currentColor"
+                              stroke-width="3"
+                            ></path>
                           </svg>
                         </span>
                       </a>
@@ -944,17 +1365,42 @@
               </div>
               <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
                 <div class="distance-box">
-                  <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/distance2.jpg" class="w-100" alt="" /></figure>
+                  <figure class="border-rounded">
+                    <img
+                      src="wp-content/themes/rockyrun/img/distance2.webp"
+                      class="w-100"
+                      alt=""
+                    />
+                  </figure>
                   <div class="content">
-                    <p>Fast, fun, and full of energy—our 5K is perfect for runners of all levels.</p>
+                    <p>
+                      Fast, fun, and full of energy—our 5K is perfect for
+                      runners of all levels.
+                    </p>
                     <div class="info">
                       <h3>10 mile</h3>
                       <a href="#" class="btn btn-transparent">
                         register now
                         <span class="d-inline-flex">
-                          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                            <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                          <svg
+                            width="19"
+                            height="17"
+                            viewBox="0 0 19 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <line
+                              y1="8.5"
+                              x2="16.6776"
+                              y2="8.5"
+                              stroke="currentColor"
+                              stroke-width="3"
+                            ></line>
+                            <path
+                              d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                              stroke="currentColor"
+                              stroke-width="3"
+                            ></path>
                           </svg>
                         </span>
                       </a>
@@ -965,19 +1411,48 @@
               <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div class="distance-box">
                   <div class="badge">
-                    <img src="wp-content/themes/rockyrun/img/challenge-badge.png" class="w-100" alt="Badge" />
+                    <img
+                      src="wp-content/themes/rockyrun/img/challenge-badge.webp"
+                      class="w-100"
+                      alt="Badge"
+                    />
                   </div>
-                  <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/distance3.jpg" class="w-100" alt="" /></figure>
+                  <figure class="border-rounded">
+                    <img
+                      src="wp-content/themes/rockyrun/img/distance3.webp"
+                      class="w-100"
+                      alt=""
+                    />
+                  </figure>
                   <div class="content">
-                    <p>Fast, fun, and full of energy—our 5K is perfect for runners of all levels.</p>
+                    <p>
+                      Fast, fun, and full of energy—our 5K is perfect for
+                      runners of all levels.
+                    </p>
                     <div class="info">
                       <h3>13.1 mile</h3>
                       <a href="#" class="btn btn-transparent">
                         register now
                         <span class="d-inline-flex">
-                          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                            <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                          <svg
+                            width="19"
+                            height="17"
+                            viewBox="0 0 19 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <line
+                              y1="8.5"
+                              x2="16.6776"
+                              y2="8.5"
+                              stroke="currentColor"
+                              stroke-width="3"
+                            ></line>
+                            <path
+                              d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                              stroke="currentColor"
+                              stroke-width="3"
+                            ></path>
                           </svg>
                         </span>
                       </a>
@@ -999,22 +1474,44 @@
                   <a href="#" class="btn btn-secondary d-none d-md-block">
                     view the swag
                     <span class="d-inline-flex">
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                        <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                      <svg
+                        width="19"
+                        height="17"
+                        viewBox="0 0 19 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="8.5"
+                          x2="16.6776"
+                          y2="8.5"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></line>
+                        <path
+                          d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></path>
                       </svg>
                     </span>
                   </a>
                 </div>
               </div>
-              <div class="col-10 offset-2 col-md-8 offset-md-0 position-relative">
+              <div
+                class="col-10 offset-2 col-md-8 offset-md-0 position-relative"
+              >
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
                       <div class="swag-card">
                         <div class="card-img border-rounded">
-                          <img src="wp-content/themes/rockyrun/img/swag1.png" class="w-100" alt="" />
+                          <img
+                            src="wp-content/themes/rockyrun/img/swag1.webp"
+                            class="w-100"
+                            alt=""
+                          />
                         </div>
                         <h4>5k Finisher Medal</h4>
                       </div>
@@ -1022,7 +1519,11 @@
                     <div class="swiper-slide">
                       <div class="swag-card">
                         <div class="card-img border-rounded">
-                          <img src="wp-content/themes/rockyrun/img/swag1.png" class="w-100" alt="" />
+                          <img
+                            src="wp-content/themes/rockyrun/img/swag1.webp"
+                            class="w-100"
+                            alt=""
+                          />
                         </div>
                         <h4>10 Mile Finisher Medal</h4>
                       </div>
@@ -1030,7 +1531,11 @@
                     <div class="swiper-slide">
                       <div class="swag-card">
                         <div class="card-img border-rounded">
-                          <img src="wp-content/themes/rockyrun/img/swag2.png" class="w-100" alt="" />
+                          <img
+                            src="wp-content/themes/rockyrun/img/swag2.webp"
+                            class="w-100"
+                            alt=""
+                          />
                         </div>
                         <h4>5k Finisher Medal</h4>
                       </div>
@@ -1038,7 +1543,11 @@
                     <div class="swiper-slide">
                       <div class="swag-card">
                         <div class="card-img border-rounded">
-                          <img src="wp-content/themes/rockyrun/img/swag2.png" class="w-100" alt="" />
+                          <img
+                            src="wp-content/themes/rockyrun/img/swag2.webp"
+                            class="w-100"
+                            alt=""
+                          />
                         </div>
                         <h4>10 Mile Finisher Medal</h4>
                       </div>
@@ -1047,7 +1556,13 @@
                 </div>
                 <div class="button-next">
                   <div class="arrow-bg">
-                    <svg width="72" height="70" viewBox="0 0 72 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      width="72"
+                      height="70"
+                      viewBox="0 0 72 70"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M37.6935 1.26792C40.2826 -0.919694 44.2563 -0.184775 45.8688 2.77633C46.6262 4.16475 48.293 4.80325 49.7991 4.28045C53.0132 3.16414 56.4509 5.26605 56.8719 8.60426C57.0694 10.1684 58.3911 11.3597 59.9884 11.4089C63.3935 11.5139 65.8307 14.7 65.0016 17.9611C64.6132 19.4909 65.4096 21.0722 66.8811 21.6871C70.0171 23.0005 71.1239 26.838 69.1576 29.5848C68.2353 30.8725 68.4002 32.6316 69.5461 33.7286C71.9898 36.0727 71.6187 40.0451 68.7779 41.9049C67.4475 42.7769 66.957 44.476 67.6233 45.9094C69.0448 48.9669 67.2435 52.5387 63.9165 53.2608C62.3561 53.5993 61.2775 55.0092 61.3752 56.5818C61.5835 59.9393 58.5951 62.6283 55.2291 62.1141C53.6513 61.8741 52.13 62.804 51.6438 64.306C50.6086 67.5113 46.8389 68.9533 43.8874 67.2714C42.5028 66.4829 40.7449 66.8086 39.7422 68.0363C37.6046 70.6546 33.5614 70.6546 31.4237 68.0363C30.4211 66.8086 28.6632 66.485 27.2786 67.2714C24.327 68.9512 20.5573 67.5092 19.5221 64.306C19.036 62.804 17.5168 61.8741 15.9369 62.1141C12.5687 62.6283 9.58243 59.9393 9.79077 56.5818C9.88843 55.007 8.80983 53.5993 7.24942 53.2608C3.92245 52.5387 2.11898 48.9669 3.54266 45.9094C4.20892 44.476 3.72062 42.7769 2.38809 41.9049C-0.450582 40.0451 -0.823863 36.0705 1.61983 33.7286C2.76571 32.6295 2.93065 30.8725 2.0083 29.5848C0.042062 26.838 1.14671 23.0005 4.28488 21.6871C5.7563 21.0722 6.55278 19.4909 6.1643 17.9611C5.33527 14.6979 7.77028 11.5139 11.1776 11.4089C12.7749 11.3597 14.0965 10.1705 14.294 8.60426C14.715 5.26605 18.1505 3.16628 21.3668 4.28045C22.873 4.80325 24.5419 4.16475 25.2971 2.77633C26.9118 -0.186918 30.8833 -0.919694 33.4724 1.26792C34.6856 2.2921 36.4739 2.2921 37.6892 1.26792H37.6935Z"
                         fill="#F9F9F4"
@@ -1055,7 +1570,13 @@
                     </svg>
                   </div>
                   <div class="arrow-icon">
-                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      width="26"
+                      height="24"
+                      viewBox="0 0 26 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M25.0607 13.0607C25.6464 12.4749 25.6464 11.5251 25.0607 10.9393L15.5147 1.3934C14.9289 0.807611 13.9792 0.807611 13.3934 1.3934C12.8076 1.97919 12.8076 2.92893 13.3934 3.51472L21.8787 12L13.3934 20.4853C12.8076 21.0711 12.8076 22.0208 13.3934 22.6066C13.9792 23.1924 14.9289 23.1924 15.5147 22.6066L25.0607 13.0607ZM0 13.5H24V10.5H0V13.5Z"
                         fill="black"
@@ -1068,9 +1589,25 @@
                 <a href="#" class="btn btn-secondary">
                   view the swag
                   <span class="d-inline-flex">
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                      <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        y1="8.5"
+                        x2="16.6776"
+                        y2="8.5"
+                        stroke="currentColor"
+                        stroke-width="3"
+                      ></line>
+                      <path
+                        d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                        stroke="currentColor"
+                        stroke-width="3"
+                      ></path>
                     </svg>
                   </span>
                 </a>
@@ -1080,7 +1617,13 @@
         </section>
         <section class="image-section py-3 p-md-0">
           <div class="container">
-            <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/poster.png" class="w-100" alt="" /></figure>
+            <figure class="border-rounded">
+              <img
+                src="wp-content/themes/rockyrun/img/poster.webp"
+                class="w-100"
+                alt=""
+              />
+            </figure>
           </div>
         </section>
         <section class="challenge-section">
@@ -1089,18 +1632,30 @@
               <div class="col-md-12">
                 <div class="section-heading mb-4 mb-md-5">
                   <h2>rise to the <span>challenge</span></h2>
-                  <h4>tests your limits with OUR collection of epic challenges.</h4>
+                  <h4>
+                    tests your limits with OUR collection of epic challenges.
+                  </h4>
                 </div>
               </div>
             </div>
             <div class="row align-items-center">
               <div class="col-md-7">
-                <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/challenge1.jpg" class="img-fluid" alt="" /></figure>
+                <figure class="border-rounded">
+                  <img
+                    src="wp-content/themes/rockyrun/img/challenge1.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
               </div>
               <div class="col-lg-4 col-md-5 mx-auto">
                 <div class="content text-center">
                   <span class="sub-title">
-                    <svg viewBox="0 0 258 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      viewBox="0 0 258 89"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M94.0768 22.7353C94.3567 23.2896 94.5625 23.8799 94.6941 24.5062C95.0806 26.346 94.6926 28.0012 93.5301 29.4716C92.3594 30.9029 90.5409 31.8776 88.0748 32.3957C86.3915 32.7494 84.2933 32.7815 81.7801 32.492C80.5458 33.0374 79.5782 33.9764 78.8772 35.309C78.168 36.6025 77.5481 38.6129 77.0176 41.3402L74.4222 55.2511C73.7884 58.6541 73.0413 61.713 72.1812 64.4279C71.3127 67.1036 70.5631 69.08 69.9322 70.357C69.3012 71.634 68.5343 73.0417 67.6313 74.5803C67.2014 73.1174 66.0206 71.4853 64.089 69.684C62.1573 67.8827 60.5972 66.7799 59.4087 66.3756C61.8502 65.74 63.7843 64.1484 65.2109 61.6006C66.6685 59.0055 68.0894 55.4575 69.4736 50.9568C69.5417 50.6972 69.7769 49.8712 70.1792 48.4788C70.6124 47.0389 70.894 46.1419 71.0239 45.7876C71.1456 45.3942 71.4045 44.5836 71.8005 43.356C72.1966 42.1283 72.4905 41.29 72.6823 40.8409C72.905 40.3445 73.204 39.6277 73.5793 38.6906C73.9856 37.706 74.3474 36.9964 74.6648 36.5619C75.0132 36.08 75.4079 35.527 75.8491 34.903C76.3211 34.2316 76.7828 33.7054 77.2341 33.3245C77.7163 32.8962 78.2305 32.5225 78.7766 32.2034C75.3364 31.7817 72.0113 31.908 68.8014 32.5824C64.5345 33.4789 61.5087 34.932 59.7238 36.942C57.9698 38.9045 57.319 40.9623 57.7713 43.1153C58.018 44.2897 58.5327 45.1829 59.3153 45.7951C60.1288 46.3599 61.1227 46.5189 62.2971 46.2722C63.4323 46.0337 64.2823 45.5077 64.8471 44.6942C65.4511 43.8725 65.642 42.9331 65.42 41.8762C66.2253 42.4019 66.7513 43.2519 66.998 44.4263C67.3352 46.0312 67.0173 47.6308 66.0442 49.2249C65.1103 50.8108 63.5082 51.8422 61.2378 52.3192C59.0456 52.7798 57.1916 52.5153 55.6758 51.5258C54.1517 50.4972 53.1718 48.9455 52.7359 46.8708C52.1602 44.1307 52.7536 41.4105 54.5161 38.7105C56.3178 36.0022 58.7785 33.7072 61.8983 31.8256C65.0572 29.9357 68.4178 28.6166 71.98 27.8682C74.407 27.3583 77.4252 27.1329 81.0344 27.1921C84.6746 27.2039 87.0819 27.0864 88.2563 26.8397C91.153 26.2311 93.0932 24.863 94.0768 22.7353ZM105.562 50.6707L107.545 51.3576C106.582 54.7481 105.234 57.7697 103.503 60.4224C101.81 63.0669 99.7899 64.6359 97.4411 65.1293C94.8575 65.6721 93.282 64.593 92.7145 61.892C92.5747 61.2265 92.5482 60.5168 92.6351 59.7628C91.2591 64.3027 89.1032 66.8811 86.1673 67.4979C82.9182 68.1805 80.9277 66.7798 80.1957 63.2959C79.7023 60.9472 79.8477 58.1372 80.6319 54.8661C81.4552 51.5868 82.7759 48.6321 84.594 46.0021C86.4121 43.3721 88.3781 41.835 90.4919 41.3909C92.919 40.881 94.445 42.1136 95.07 45.0887C95.1523 45.4801 95.1944 45.7778 95.1964 45.9818L95.524 45.7903C95.5283 45.4215 95.5368 44.684 95.5496 43.5778C95.5934 42.4241 95.6133 41.6434 95.6093 41.2354C98.5061 40.6269 100.316 40.0013 101.039 39.3589L98.0253 57.4042C97.8684 58.2137 97.8516 58.9121 97.975 59.4993C98.1559 60.3605 98.677 60.7006 99.5382 60.5197C100.791 60.2565 101.945 59.1352 103.001 57.1559C104.048 55.1374 104.902 52.9757 105.562 50.6707ZM87.8533 62.9746C88.5188 62.8348 89.138 62.3777 89.711 61.6033C90.315 60.7816 90.8645 59.6034 91.3596 58.0689C91.8938 56.5261 92.2857 55.2788 92.5354 54.3272C92.816 53.3281 93.1905 51.9006 93.6589 50.0447C93.7276 48.2318 93.6674 46.8752 93.4782 45.9749C93.1904 44.6048 92.6159 44.0102 91.7547 44.1911C90.6977 44.4132 89.6466 45.6354 88.6012 47.8578C87.5476 50.0411 86.7668 52.4532 86.2589 55.094C85.782 57.6875 85.6998 59.728 86.0123 61.2155C86.3001 62.5856 86.9138 63.172 87.8533 62.9746ZM128.238 45.9067L130.234 46.6523C129.006 50.3435 127.573 53.4444 125.934 55.9549C124.326 58.4182 122.25 59.9171 119.706 60.4516C118.297 60.7477 117.029 60.6462 115.902 60.1472C114.775 59.6482 113.877 58.8763 113.208 57.8316C112.57 56.7395 112.059 55.7638 111.674 54.9046C111.328 54.0371 111.056 53.1336 110.859 52.1942C110.663 52.2353 110.522 52.2445 110.436 52.2218L108.732 62.2054L103.154 63.3773L109.318 26.7677C109.459 25.8799 109.476 25.1815 109.369 24.6726C109.171 23.7331 108.62 23.154 107.716 22.9352C108.765 22.674 110.274 22.173 112.244 21.4322C114.245 20.644 115.466 20.0399 115.91 19.6198L111.657 43.4432C113.525 38.7181 116.025 36.0265 119.157 35.3686C120.253 35.1383 121.239 35.2582 122.114 35.7283C122.989 36.1983 123.563 37.0793 123.834 38.3711C124.319 40.6807 123.702 42.997 121.983 45.3201C120.295 47.5958 118.077 49.3903 115.328 50.7035C115.931 52.2117 116.76 53.5295 117.814 54.6568C118.907 55.7759 120.12 56.1956 121.451 55.916C124.191 55.3403 126.453 52.0039 128.238 45.9067ZM117.076 39.1779C115.079 39.5973 113.003 43.1399 110.848 49.8055L110.792 50.1237C113.524 49.5089 115.566 48.1398 116.918 46.0164C118.271 43.8929 118.774 42.0092 118.429 40.3651C118.231 39.4256 117.78 39.0299 117.076 39.1779ZM147.736 41.3198L149.617 42.396C148.664 46.0296 146.989 49.2427 144.592 52.0352C142.234 54.8195 139.508 56.5365 136.416 57.1862C133.95 57.7043 131.864 57.4068 130.159 56.2936C128.484 55.1331 127.405 53.398 126.919 51.0885C126.146 47.4088 126.822 43.4248 128.945 39.1366C131.1 34.8009 134.017 32.2466 137.697 31.4735C140.907 30.7991 142.824 31.9495 143.449 34.9245C143.992 37.5081 143.349 39.9934 141.521 42.3803C139.724 44.7198 137.513 46.1651 134.891 46.7161C133.951 46.9135 133.1 46.9492 132.338 46.8232C132.365 47.9212 132.452 48.8226 132.6 49.5272C133.192 52.3457 134.819 53.4753 137.481 52.916C140.064 52.3732 142.297 50.8414 144.179 48.3206C146.061 45.7999 147.247 43.4662 147.736 41.3198ZM137.476 34.2175C136.458 34.4313 135.446 35.6453 134.44 37.8595C133.426 40.0346 132.774 42.3787 132.484 44.8919C134.926 44.2563 136.718 42.9602 137.86 41.0036C138.994 39.0079 139.396 37.2271 139.067 35.6612C138.829 34.526 138.298 34.0448 137.476 34.2175ZM182.232 32.9688L184.299 33.7607C183.781 36.1585 182.75 38.2552 181.206 40.051C179.654 41.8076 177.665 42.9409 175.238 43.4508L174.533 43.5988C172.391 47.6048 169.656 49.9574 166.329 50.6564C164.293 51.0841 162.49 50.7681 160.918 49.7086C159.339 48.6099 158.319 46.9645 157.858 44.7723C157.373 42.4628 157.524 39.8764 158.313 37.0131C159.132 34.1026 160.522 31.4806 162.484 29.1473C164.447 26.814 166.641 25.3925 169.068 24.8826C171.221 24.4302 172.951 24.7822 174.256 25.9384C175.601 27.0865 176.483 28.6587 176.902 30.6551C177.511 33.5519 177.189 36.7871 175.937 40.3609C179.207 39.3878 181.305 36.9238 182.232 32.9688ZM169.62 27.2189C169.386 27.2683 169.081 27.3732 168.706 27.5338C167.625 30.1723 167.356 32.7834 167.899 35.367C168.401 37.7548 169.452 39.3529 171.052 40.1611C172.409 36.1156 172.771 32.5858 172.138 29.5716C171.751 27.7318 170.912 26.9475 169.62 27.2189ZM166.08 46.8462C167.45 46.5583 168.728 45.2476 169.914 42.914C167.872 41.9531 166.527 39.9264 165.877 36.834C165.409 34.6027 165.477 32.4015 166.084 30.2304C164.934 32.1479 164.118 34.5877 163.637 37.5499C163.186 40.4648 163.142 42.7834 163.504 44.5058C163.891 46.3457 164.749 47.1258 166.08 46.8462ZM205.559 29.6619L207.543 30.3488C206.579 33.7393 205.232 36.7609 203.5 39.4136C201.808 42.0581 199.768 43.6312 197.38 44.1328C195.971 44.4289 194.827 44.2399 193.95 43.5659C193.073 42.8919 192.498 41.909 192.227 40.6172C191.849 38.8165 192.146 35.9541 193.12 32.03C194.125 28.0585 194.525 25.5835 194.319 24.6049C194.106 23.5871 193.548 23.1728 192.648 23.3619C190.808 23.7485 189.119 26.3105 187.58 31.0481L184.997 46.1827L179.418 47.3546L182.656 28.0363C182.796 27.1484 182.805 26.4109 182.681 25.8237C182.484 24.8843 181.972 24.2969 181.146 24.0617C182.156 23.8087 183.473 23.3684 185.099 22.7408C186.756 22.0657 187.806 21.5182 188.249 21.0981L187.372 26.555L187.724 26.4809C189.372 22.4562 191.683 20.1313 194.658 19.5062C195.95 19.2348 197.113 19.4197 198.147 20.0608C199.212 20.6546 199.876 21.5778 200.139 22.8304C200.443 24.2788 200.085 26.9496 199.063 30.8428C198.042 34.7359 197.642 37.211 197.864 38.2679C198.078 39.2857 198.635 39.7 199.536 39.5109C200.788 39.2477 201.942 38.1264 202.998 36.1471C204.045 34.1286 204.899 31.9669 205.559 29.6619Z"
                         fill="currentColor"
@@ -1116,27 +1671,58 @@
                     </svg>
                   </span>
                   <h3>the italian stallion</h3>
-                  <p>A back-to-back 13.1-mile bout, combining both race distances—the 5K and 10 Mile.</p>
+                  <p>
+                    A back-to-back 13.1-mile bout, combining both race
+                    distances—the 5K and 10 Mile.
+                  </p>
                   <a href="#" class="btn btn-transparent">
                     learn more
                     <span class="d-inline-flex">
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                        <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                      <svg
+                        width="19"
+                        height="17"
+                        viewBox="0 0 19 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="8.5"
+                          x2="16.6776"
+                          y2="8.5"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></line>
+                        <path
+                          d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></path>
                       </svg>
                     </span>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="row align-items-center flex-md-row-reverse mt-4 mt-md-5">
+            <div
+              class="row align-items-center flex-md-row-reverse mt-4 mt-md-5"
+            >
               <div class="col-md-7">
-                <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/challenge2.jpg" class="img-fluid" alt="" /></figure>
+                <figure class="border-rounded">
+                  <img
+                    src="wp-content/themes/rockyrun/img/challenge2.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
               </div>
               <div class="col-lg-4 col-md-5 mx-auto">
                 <div class="content text-center">
                   <span class="sub-title">
-                    <svg viewBox="0 0 271 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      viewBox="0 0 271 95"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M65.4576 78.0274C61.1986 78.9222 57.6587 78.4669 54.8379 76.6617C52.0084 74.8146 50.1725 71.8869 49.3304 67.8784C48.6725 64.7468 48.6761 61.2363 49.3413 57.3471C50.0483 53.4492 51.2552 49.7514 52.9618 46.2537C54.6597 42.7144 56.9683 39.5916 59.8877 36.8856C62.807 34.1796 65.9995 32.4625 69.4652 31.7344C72.221 31.1554 74.369 31.3145 75.909 32.2117C77.4908 33.1001 78.4703 34.4421 78.8475 36.2375C79.4089 38.9099 78.72 41.6487 76.7807 44.454C74.8831 47.2506 72.1807 49.0173 68.6732 49.7542C67.7546 49.9472 67.0569 50.0502 66.58 50.0632C68.879 48.9698 70.6806 47.0653 71.9848 44.3498C73.322 41.5838 73.7757 39.1778 73.3458 37.1318C72.9072 35.044 71.6858 34.2107 69.6815 34.6318C67.3432 35.123 64.9395 37.0668 62.4704 40.463C60.043 43.8505 58.1493 47.9106 56.7893 52.6433C55.4711 57.3673 55.2068 61.6082 55.9963 65.3662C56.6367 68.4143 57.8916 70.5485 59.7611 71.7689C61.6724 72.9805 64.0477 73.288 66.8871 72.6915C70.311 71.9721 73.4233 70.1847 76.2241 67.3292C79.0665 64.4649 80.9425 60.7355 81.852 56.141L84.0867 56.1947C82.8843 62.5075 80.598 67.5002 77.2278 71.1729C73.8906 74.7951 69.9672 77.08 65.4576 78.0274ZM105.09 53.744L107.294 54.5888C106.742 57.1464 105.642 59.3829 103.995 61.2984C102.34 63.1721 100.218 64.381 97.629 64.9249L96.8774 65.0828C94.5925 69.3558 91.6755 71.8652 88.1263 72.6109C85.955 73.067 84.0313 72.73 82.3551 71.5999C80.6702 70.4279 79.5821 68.6728 79.0908 66.3345C78.5732 63.871 78.7348 61.1121 79.5755 58.058C80.4491 54.9534 81.9325 52.1567 84.0255 49.6678C86.1185 47.179 88.4594 45.6626 91.0482 45.1187C93.3447 44.6363 95.1893 45.0117 96.582 46.245C98.0164 47.4696 98.9573 49.1466 99.4047 51.2762C100.054 54.366 99.7108 57.817 98.3753 61.629C101.863 60.591 104.101 57.9627 105.09 53.744ZM91.6372 47.6109C91.3866 47.6635 91.0614 47.7755 90.6614 47.9467C89.5087 50.7612 89.2219 53.5463 89.8009 56.3021C90.336 58.8492 91.4571 60.5538 93.1642 61.4159C94.6119 57.1007 94.998 53.3355 94.3225 50.1204C93.9102 48.1579 93.0151 47.3214 91.6372 47.6109ZM87.861 68.5466C89.3224 68.2396 90.6854 66.8414 91.95 64.3523C89.7727 63.3274 88.3376 61.1656 87.6446 57.8669C87.1445 55.4869 87.218 53.1389 87.865 50.8231C86.638 52.8684 85.7678 55.4709 85.2545 58.6306C84.7742 61.7398 84.727 64.213 85.113 66.0503C85.5253 68.0127 86.4413 68.8449 87.861 68.5466ZM129.972 50.2167L132.088 50.9494C131.06 54.5659 129.623 57.789 127.776 60.6185C125.97 63.4393 123.794 65.1173 121.247 65.6524C119.744 65.9682 118.525 65.7666 117.589 65.0477C116.653 64.3287 116.04 63.2803 115.751 61.9024C115.347 59.9816 115.665 56.9284 116.704 52.7427C117.776 48.5065 118.202 45.8664 117.983 44.8225C117.755 43.7369 117.16 43.295 116.2 43.4967C114.238 43.9091 112.436 46.6419 110.794 51.6954L108.039 67.8389L102.088 69.0889L105.541 48.4827C105.691 47.5357 105.7 46.749 105.569 46.1227C105.358 45.1206 104.812 44.4941 103.931 44.2432C105.008 43.9733 106.414 43.5037 108.148 42.8342C109.915 42.1141 111.035 41.5301 111.507 41.082L110.572 46.9027L110.948 46.8237C112.705 42.5306 115.171 40.0507 118.344 39.384C119.722 39.0945 120.963 39.2917 122.065 39.9756C123.201 40.6089 123.909 41.5937 124.19 42.9298C124.515 44.4748 124.132 47.3236 123.043 51.4763C121.953 55.629 121.527 58.2691 121.764 59.3965C121.992 60.4821 122.586 60.924 123.547 60.7223C124.883 60.4415 126.114 59.2456 127.24 57.1343C128.357 54.9812 129.268 52.6754 129.972 50.2167ZM157.661 45.5767C156.754 48.7319 155.324 51.8879 153.372 55.0448C151.419 58.2017 149.103 60.563 146.424 62.1287C146.002 66.1411 145.936 68.8362 146.226 70.2141C146.375 70.924 146.614 71.4405 146.944 71.7636L138.692 75.1322L141.964 53.9754C140.525 59.1608 138.177 62.0956 134.92 62.7799C131.454 63.508 129.331 62.0139 128.55 58.2977C128.024 55.7924 128.179 52.7952 129.015 49.306C129.894 45.808 131.302 42.6564 133.242 39.851C135.181 37.0457 137.278 35.4062 139.533 34.9325C142.247 34.3623 143.955 35.7474 144.657 39.0878L144.788 39.7141L144.9 39.6251C144.851 37.1068 144.756 35.5137 144.615 34.8456C147.956 34.1438 150.012 33.4502 150.783 32.765L147.486 52.5538L146.847 57.9197C148.766 56.4702 150.57 54.369 152.259 51.6163C153.948 48.8636 155.043 46.6062 155.545 44.8441L157.661 45.5767ZM136.718 57.955C137.428 57.8059 138.089 57.3183 138.7 56.4924C139.344 55.6158 139.93 54.3591 140.458 52.7223C141.028 51.0766 141.446 49.7462 141.712 48.7311C142.012 47.6655 142.411 46.1428 142.911 44.1631C142.984 42.2294 142.92 40.7824 142.718 39.822C142.411 38.3606 141.798 37.7264 140.88 37.9193C139.752 38.1562 138.631 39.4599 137.516 41.8305C136.392 44.1593 135.559 46.7322 135.017 49.5491C134.509 52.3155 134.421 54.492 134.754 56.0787C135.061 57.5401 135.716 58.1656 136.718 57.955ZM159.735 57.5664C158.232 57.8822 157.038 57.6971 156.152 57.0111C155.267 56.3251 154.697 55.3767 154.443 54.1658C154.206 53.0384 154.321 51.0959 154.788 48.3383L156.493 37.7781C156.661 36.9146 156.67 36.1279 156.52 35.4181C156.31 34.4159 155.785 33.7851 154.946 33.5254C155.948 33.3149 157.516 32.7892 159.65 31.9485C161.826 31.099 163.134 30.4755 163.573 30.0779L160.358 49.3262C160.191 50.1897 160.173 50.9346 160.304 51.561C160.497 52.4796 161.053 52.8424 161.972 52.6494C164.101 52.202 166.036 48.9616 167.777 42.9281L169.919 29.4641L176.1 27.4462L172.885 46.6944C172.717 47.558 172.699 48.3029 172.831 48.9292C173.024 49.8478 173.58 50.2106 174.498 50.0177C175.835 49.7369 177.066 48.5409 178.192 46.4297C179.309 44.2766 180.219 41.9708 180.924 39.5121L183.039 40.2448C182.012 43.8613 180.574 47.0844 178.727 49.9139C176.922 52.7347 174.767 54.4083 172.261 54.9346C170.758 55.2504 169.564 55.0653 168.679 54.3794C167.794 53.6934 167.224 52.745 166.969 51.5341L166.864 51.033C164.825 54.8184 162.449 56.9961 159.735 57.5664ZM189.868 51.4971C187.154 52.0673 184.888 51.7587 183.069 50.5714C181.241 49.3422 180.068 47.4959 179.551 45.0323C178.726 41.1074 179.446 36.8578 181.712 32.2837C184.01 27.659 187.122 24.9343 191.047 24.1097C194.471 23.3904 196.516 24.6174 197.183 27.7908C197.762 30.5466 197.113 33.1679 195.238 35.6546C193.362 38.1414 191.026 39.6786 188.228 40.2664C187.226 40.4769 186.256 40.5282 185.318 40.4201C185.328 41.5078 185.417 42.4484 185.584 43.2417C185.917 44.8284 186.497 45.9274 187.323 46.5386C188.149 47.1498 189.334 47.2932 190.879 46.9686C193.635 46.3896 195.991 44.7392 197.948 42.0174C199.938 39.245 201.267 36.1318 201.937 32.6777C202.598 29.1818 202.603 25.889 201.954 22.7991C201.498 20.6278 200.816 19.3541 199.909 18.978C200.827 18.785 202.291 18.2813 204.3 17.4668C206.351 16.6437 207.596 16.0333 208.035 15.6357C207.901 16.4487 207.711 17.6221 207.467 19.1558C207.255 20.639 207.119 21.6487 207.057 22.1848C207.307 22.1322 207.708 22.0697 208.26 21.9974C208.845 21.8746 209.283 21.7825 209.575 21.7211C213.751 20.8438 216.679 19.9452 218.361 19.0252C217.164 21.6308 215.964 25.1529 214.76 29.5912C213.548 33.9878 213.174 37.2926 213.639 39.5056C213.946 40.967 214.642 41.5837 215.728 41.3556C217.064 41.0749 218.349 39.824 219.583 37.6029C220.849 35.3312 221.79 33.0628 222.404 30.7975L224.533 31.5927C223.256 35.4795 221.807 38.7487 220.184 41.4003C218.561 44.052 216.497 45.641 213.992 46.1673C212.364 46.5094 210.964 46.2803 209.793 45.48C208.664 44.6708 207.919 43.4103 207.56 41.6983C207.2 39.9864 207.258 37.7725 207.734 35.0566C208.251 32.332 208.791 30.126 209.352 28.4386C209.913 26.7512 210.479 25.1934 211.051 23.7653C209.992 24.1187 208.982 24.3962 208.022 24.598C207.479 24.712 206.823 24.8063 206.054 24.8807C205.732 27.913 205.191 30.8387 204.432 33.6577C203.664 36.4349 202.635 39.1143 201.346 41.6958C200.091 44.2267 198.471 46.3762 196.488 48.1443C194.539 49.8619 192.332 50.9795 189.868 51.4971ZM185.487 38.4227C188.108 37.8283 190.008 36.4919 191.184 34.4136C192.394 32.2848 192.818 30.3644 192.459 28.6524C192.196 27.3998 191.626 26.8656 190.749 27.0498C189.663 27.2779 188.584 28.5728 187.51 30.9346C186.479 33.2877 185.804 35.7837 185.487 38.4227Z"
                         fill="currentColor"
@@ -1152,13 +1738,32 @@
                     </svg>
                   </span>
                   <h3>Mount Drago</h3>
-                  <p>A timed ascent up a gigantic hill where top finishers go home with more bling.</p>
+                  <p>
+                    A timed ascent up a gigantic hill where top finishers go
+                    home with more bling.
+                  </p>
                   <a href="#" class="btn btn-transparent">
                     learn more
                     <span class="d-inline-flex">
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
-                        <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
+                      <svg
+                        width="19"
+                        height="17"
+                        viewBox="0 0 19 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="8.5"
+                          x2="16.6776"
+                          y2="8.5"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></line>
+                        <path
+                          d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                          stroke="currentColor"
+                          stroke-width="3"
+                        ></path>
                       </svg>
                     </span>
                   </a>
@@ -1175,32 +1780,72 @@
                   <h2>run <span>on us</span></h2>
                 </div>
                 <div class="border-content">
-                  <p class="mx-auto w-40ch">Answer the bell for Special Olympics Philadelphia. Support athletes, make an impact, and earn your entry along the way.</p>
+                  <p class="mx-auto w-40ch">
+                    Answer the bell for Special Olympics Philadelphia. Support
+                    athletes, make an impact, and earn your entry along the way.
+                  </p>
                 </div>
                 <a href="#" class="btn btn-primary">
                   make an impact
                   <span class="d-inline-flex">
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3" />
-                      <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3" />
+                    <svg
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        y1="8.5"
+                        x2="16.6776"
+                        y2="8.5"
+                        stroke="currentColor"
+                        stroke-width="3"
+                      />
+                      <path
+                        d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
+                        stroke="currentColor"
+                        stroke-width="3"
+                      />
                     </svg>
                   </span>
                 </a>
               </div>
               <div class="col-md-6">
-                <figure class="border-rounded"><img src="wp-content/themes/rockyrun/img/run1.jpg" class="img-fluid" alt="" /></figure>
+                <figure class="border-rounded">
+                  <img
+                    src="wp-content/themes/rockyrun/img/run1.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
               </div>
             </div>
           </div>
         </section>
         <section class="marquee-section py-0 py-md-3">
           <div class="marquee-group">
-            <div data-marquee-scroll-speed="10" data-marquee-target="" data-marquee-direction="left" data-marquee-status="inverted" data-marquee-speed="20" class="marquee">
+            <div
+              data-marquee-scroll-speed="10"
+              data-marquee-target=""
+              data-marquee-direction="left"
+              data-marquee-status="inverted"
+              data-marquee-speed="20"
+              class="marquee"
+            >
               <div class="marquee-scroll">
                 <div class="marquee-content">
                   <div class="marquee-item">
-                    <h2>every champ was once a contender who refused to give up</h2>
-                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h2>
+                      every champ was once a contender who refused to give up
+                    </h2>
+                    <svg
+                      width="53"
+                      height="89"
+                      viewBox="0 0 53 89"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1216,8 +1861,16 @@
                     </svg>
                   </div>
                   <div class="marquee-item">
-                    <h2>every champ was once a contender who refused to give up</h2>
-                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h2>
+                      every champ was once a contender who refused to give up
+                    </h2>
+                    <svg
+                      width="53"
+                      height="89"
+                      viewBox="0 0 53 89"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1235,8 +1888,16 @@
                 </div>
                 <div class="marquee-content">
                   <div class="marquee-item">
-                    <h2>every champ was once a contender who refused to give up</h2>
-                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h2>
+                      every champ was once a contender who refused to give up
+                    </h2>
+                    <svg
+                      width="53"
+                      height="89"
+                      viewBox="0 0 53 89"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1252,8 +1913,16 @@
                     </svg>
                   </div>
                   <div class="marquee-item">
-                    <h2>every champ was once a contender who refused to give up</h2>
-                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h2>
+                      every champ was once a contender who refused to give up
+                    </h2>
+                    <svg
+                      width="53"
+                      height="89"
+                      viewBox="0 0 53 89"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1275,22 +1944,39 @@
         </section>
         <section class="gallery-section py-0">
           <div class="container">
-            <img src="wp-content/themes/rockyrun/img/gallery-placeholder.png" class="w-100" alt="" />
+            <img
+              src="wp-content/themes/rockyrun/img/gallery-placeholder.webp"
+              class="w-100"
+              alt=""
+            />
           </div>
         </section>
         <section class="countdown-section">
           <div class="container">
             <div class="countdown-box row">
               <div class="col-lg-3 content text-center">
-                <img src="wp-content/themes/rockyrun/img/countdown-title.svg" class="img-fluid" alt="" />
+                <img
+                  src="wp-content/themes/rockyrun/img/countdown-title.svg"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
               <div class="col-lg-9 timer">
-                <div id="countdown-date" data-countdown="Nov 8, 2025 07:00:00 GMT-0500"></div>
+                <div
+                  id="countdown-date"
+                  data-countdown="Nov 8, 2025 07:00:00 GMT-0500"
+                ></div>
                 <div class="countdown" id="countdown-timer">
                   <ul class="list-unstyled">
                     <li><span id="days">00</span> Days</li>
                     <li>
-                      <svg width="41" height="109" viewBox="0 0 41 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="41"
+                        height="109"
+                        viewBox="0 0 41 109"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <g clip-path="url(#clip0_8494_1599)">
                           <path
                             d="M21.3913 0.662895L25.5875 13.8813C25.7127 14.2763 26.0726 14.5442 26.4794 14.5442H40.0602C40.9687 14.5442 41.3463 15.7333 40.6109 16.2799L29.6232 24.4492C29.2946 24.6936 29.1569 25.127 29.2831 25.522L33.4794 38.7404C33.76 39.6243 32.7712 40.3597 32.0368 39.8132L21.0491 31.6439C20.7206 31.3994 20.2752 31.3994 19.9477 31.6439L8.95994 39.8132C8.22562 40.3597 7.23679 39.6243 7.51737 38.7404L11.7136 25.522C11.8388 25.127 11.7022 24.6936 11.3736 24.4492L0.387981 16.2799C-0.346341 15.7333 0.0312509 14.5442 0.938723 14.5442H14.5195C14.9253 14.5442 15.2851 14.2763 15.4113 13.8813L19.6087 0.662895C19.8892 -0.220965 21.1107 -0.220965 21.3913 0.662895Z"
@@ -1308,14 +1994,25 @@
                             <rect width="41" height="40" fill="white" />
                           </clipPath>
                           <clipPath id="clip1_8494_1599">
-                            <rect width="41" height="40" fill="white" transform="translate(0 69)" />
+                            <rect
+                              width="41"
+                              height="40"
+                              fill="white"
+                              transform="translate(0 69)"
+                            />
                           </clipPath>
                         </defs>
                       </svg>
                     </li>
                     <li><span id="hours">00</span> Hours</li>
                     <li>
-                      <svg width="41" height="109" viewBox="0 0 41 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="41"
+                        height="109"
+                        viewBox="0 0 41 109"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <g clip-path="url(#clip0_8494_1599)">
                           <path
                             d="M21.3913 0.662895L25.5875 13.8813C25.7127 14.2763 26.0726 14.5442 26.4794 14.5442H40.0602C40.9687 14.5442 41.3463 15.7333 40.6109 16.2799L29.6232 24.4492C29.2946 24.6936 29.1569 25.127 29.2831 25.522L33.4794 38.7404C33.76 39.6243 32.7712 40.3597 32.0368 39.8132L21.0491 31.6439C20.7206 31.3994 20.2752 31.3994 19.9477 31.6439L8.95994 39.8132C8.22562 40.3597 7.23679 39.6243 7.51737 38.7404L11.7136 25.522C11.8388 25.127 11.7022 24.6936 11.3736 24.4492L0.387981 16.2799C-0.346341 15.7333 0.0312509 14.5442 0.938723 14.5442H14.5195C14.9253 14.5442 15.2851 14.2763 15.4113 13.8813L19.6087 0.662895C19.8892 -0.220965 21.1107 -0.220965 21.3913 0.662895Z"
@@ -1333,14 +2030,25 @@
                             <rect width="41" height="40" fill="white" />
                           </clipPath>
                           <clipPath id="clip1_8494_1599">
-                            <rect width="41" height="40" fill="white" transform="translate(0 69)" />
+                            <rect
+                              width="41"
+                              height="40"
+                              fill="white"
+                              transform="translate(0 69)"
+                            />
                           </clipPath>
                         </defs>
                       </svg>
                     </li>
                     <li><span id="minutes">00</span> Minutes</li>
                     <li>
-                      <svg width="41" height="109" viewBox="0 0 41 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="41"
+                        height="109"
+                        viewBox="0 0 41 109"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <g clip-path="url(#clip0_8494_1599)">
                           <path
                             d="M21.3913 0.662895L25.5875 13.8813C25.7127 14.2763 26.0726 14.5442 26.4794 14.5442H40.0602C40.9687 14.5442 41.3463 15.7333 40.6109 16.2799L29.6232 24.4492C29.2946 24.6936 29.1569 25.127 29.2831 25.522L33.4794 38.7404C33.76 39.6243 32.7712 40.3597 32.0368 39.8132L21.0491 31.6439C20.7206 31.3994 20.2752 31.3994 19.9477 31.6439L8.95994 39.8132C8.22562 40.3597 7.23679 39.6243 7.51737 38.7404L11.7136 25.522C11.8388 25.127 11.7022 24.6936 11.3736 24.4492L0.387981 16.2799C-0.346341 15.7333 0.0312509 14.5442 0.938723 14.5442H14.5195C14.9253 14.5442 15.2851 14.2763 15.4113 13.8813L19.6087 0.662895C19.8892 -0.220965 21.1107 -0.220965 21.3913 0.662895Z"
@@ -1358,7 +2066,12 @@
                             <rect width="41" height="40" fill="white" />
                           </clipPath>
                           <clipPath id="clip1_8494_1599">
-                            <rect width="41" height="40" fill="white" transform="translate(0 69)" />
+                            <rect
+                              width="41"
+                              height="40"
+                              fill="white"
+                              transform="translate(0 69)"
+                            />
                           </clipPath>
                         </defs>
                       </svg>
@@ -1372,12 +2085,44 @@
         </section>
         <section class="partner-section py-4 py-md-5">
           <div class="container">
-            <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-around">
-              <li><img src="wp-content/themes/rockyrun/img/partners-logo/partner1.png" class="img-fluid" alt="Underarmor Logo" /></li>
-              <li><img src="wp-content/themes/rockyrun/img/partners-logo/partner2.png" class="img-fluid" alt="" /></li>
-              <li><img src="wp-content/themes/rockyrun/img/partners-logo/partner3.png" class="img-fluid" alt="" /></li>
-              <li><img src="wp-content/themes/rockyrun/img/partners-logo/partner4.png" class="img-fluid" alt="" /></li>
-              <li><img src="wp-content/themes/rockyrun/img/partners-logo/partner5.png" class="img-fluid" alt="" /></li>
+            <ul
+              class="list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-around"
+            >
+              <li>
+                <img
+                  src="wp-content/themes/rockyrun/img/partners-logo/partner1.webp"
+                  class="img-fluid"
+                  alt="Underarmor Logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="wp-content/themes/rockyrun/img/partners-logo/partner2.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="wp-content/themes/rockyrun/img/partners-logo/partner3.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="wp-content/themes/rockyrun/img/partners-logo/partner4.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="wp-content/themes/rockyrun/img/partners-logo/partner5.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </li>
             </ul>
           </div>
         </section>
@@ -1392,8 +2137,20 @@
                   <h4>connect</h4>
                   <ul class="list-unstyled">
                     <li><a href="#">contact</a></li>
-                    <li><a href="https://www.facebook.com/rockybalboarun/" target="_blank">facebook</a></li>
-                    <li><a href="https://www.instagram.com/rockybalboarun/" target="_blank">instagram</a></li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/rockybalboarun/"
+                        target="_blank"
+                        >facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/rockybalboarun/"
+                        target="_blank"
+                        >instagram</a
+                      >
+                    </li>
                   </ul>
                 </div>
                 <div class="col-md-7 newsletter">
@@ -1404,7 +2161,11 @@
           </div>
           <div class="row footer-logo">
             <div class="col-7 g-0">
-              <img src="wp-content/themes/rockyrun/img/footer-logo.svg" class="img-fluid" alt="Rocky Run Logo" />
+              <img
+                src="wp-content/themes/rockyrun/img/footer-logo.svg"
+                class="img-fluid"
+                alt="Rocky Run Logo"
+              />
             </div>
             <div class="col-5 g-0 d-flex justify-content-end">
               <ul class="list-inline">
@@ -1415,8 +2176,13 @@
             <div class="col-12 g-0">
               <div class="copyright">
                 <p>
-                  ROCKY-ROCKY V TM & &copy; 1976 – 2025 Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. ROCKY BALBOA &copy; 2006 – 2025 Metro-Goldwyn-Mayer Pictures Inc., and Revolution Studios
-                  Distribution Company, LLC. ROCKY BALBOA is a trademark of Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. &copy; 2025 RUN MFG, INC. ALL RIGHTS RESERVED.
+                  ROCKY-ROCKY V TM & &copy; 1976 – 2025 Metro-Goldwyn-Mayer
+                  Studios Inc. All Rights Reserved. ROCKY BALBOA &copy; 2006 –
+                  2025 Metro-Goldwyn-Mayer Pictures Inc., and Revolution Studios
+                  Distribution Company, LLC.<br />
+                  ROCKY BALBOA is a trademark of Metro-Goldwyn-Mayer Studios
+                  Inc. All Rights Reserved. &copy; 2025 RUN MFG, INC. ALL RIGHTS
+                  RESERVED.
                 </p>
               </div>
             </div>
@@ -1436,12 +2202,31 @@
         document.body.className = c;
       })();
     </script>
-    <link rel="stylesheet" id="wc-blocks-style-css" href="wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-ver=wc-9.7.0.css" media="all" />
-    <script src="wp-content/themes/rockyrun/build/main-ver=3.5.4.js" id="mainjs-js"></script>
-    <script src="wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min-ver=9.7.0.js" id="sourcebuster-js-js"></script>
+    <link
+      rel="stylesheet"
+      id="wc-blocks-style-css"
+      href="wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-ver=wc-9.7.0.css"
+      media="all"
+    />
+    <script
+      src="wp-content/themes/rockyrun/build/main-ver=3.5.4.js"
+      id="mainjs-js"
+    ></script>
+    <script
+      src="wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min-ver=9.7.0.js"
+      id="sourcebuster-js-js"
+    ></script>
     <script id="wc-order-attribution-js-extra">
       var wc_order_attribution = {
-        params: { lifetime: 1.0e-5, session: 30, base64: false, ajaxurl: "https:\/\/rockyrunsite.wpenginepowered.com\/wp-admin\/admin-ajax.php", prefix: "wc_order_attribution_", allowTracking: true },
+        params: {
+          lifetime: 1.0e-5,
+          session: 30,
+          base64: false,
+          ajaxurl:
+            "https:\/\/rockyrunsite.wpenginepowered.com\/wp-admin\/admin-ajax.php",
+          prefix: "wc_order_attribution_",
+          allowTracking: true,
+        },
         fields: {
           source_type: "current.typ",
           referrer: "current_add.rf",
@@ -1462,7 +2247,10 @@
         },
       };
     </script>
-    <script src="wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min-ver=9.7.0.js" id="wc-order-attribution-js"></script>
+    <script
+      src="wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min-ver=9.7.0.js"
+      id="wc-order-attribution-js"
+    ></script>
 
     <!-- Additional JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
