@@ -5,6 +5,9 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .overlay-nav-content {
+    gap: 2rem;
+  }
 }
 @media screen and (max-width: 1500px) {
   .section-heading h2 {
@@ -14,7 +17,12 @@
     font-size: 13rem;
   }
 }
+@media screen and (max-width: 1440px) {
+}
 @media screen and (max-width: 1366.98px) {
+  .link .link-click {
+    font-size: 4rem;
+  }
   .section-heading h2 {
     font-size: 4rem;
   }
@@ -112,12 +120,8 @@
     gap: 0 3rem;
     margin-bottom: 5rem;
   }
-  .qna-banner .section-heading .overlay h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-  .qna-banner .section-heading h4 {
-    margin-top: 2rem;
+  .split-col .section-heading h1 {
+    font-size: 4.2rem;
   }
   .distance-box .badge {
     top: 3%;
@@ -165,6 +169,9 @@
   }
   .countdown-section .timer {
     border-left: 0;
+  }
+  #footer .newsletter-input {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -270,6 +277,10 @@
   section {
     padding: 4rem 0;
   }
+  .hero-section .video-container video {
+    height: calc(100vh - 100px);
+    object-fit: cover;
+  }
   .section-heading h4 {
     max-width: 30ch;
     margin: 0 auto;
@@ -278,6 +289,10 @@
     font-size: 4.5rem;
     gap: 0 2rem;
     margin-bottom: 3rem;
+  }
+  .split-col .section-heading h1 {
+    font-size: 4.2rem;
+    margin-block: 2.5rem;
   }
   .btn {
     font-size: 1.1rem;
@@ -295,6 +310,9 @@
   }
   .overlay-nav {
     width: 100%;
+    left: 0;
+    padding: 0;
+    transform: translateX(-100%) rotate(0.001deg);
   }
   .overlay-nav-content {
     padding: 1rem;
@@ -353,6 +371,18 @@
     font-size: 1rem;
     line-height: 1.4;
   }
+  .pricing-section .pricing-image .overlay > img {
+    width: 30%;
+  }
+  .pricing-section .pricing-image h4 {
+    margin: 1em 0 0;
+  }
+  .pricing-section .pricing-card .price h3 {
+    font-size: 5.2rem;
+  }
+  .pricing-section .pricing-card .details h4 {
+    font-size: 1.5rem;
+  }
   .cta-section .overlay {
     padding: 1rem 1rem 2.5rem;
   }
@@ -398,6 +428,9 @@
   }
   .footer-logo ul li {
     line-height: 1;
+  }
+  #footer .newsletter-form {
+    margin-top: 1.5rem;
   }
   .copyright {
     margin-top: 3rem;
