@@ -898,27 +898,56 @@
                   <button class="hamburger" data-navigation-toggle="toggle">
                     <img
                       src="wp-content/themes/rockyrun/img/icons/menu-toggle.svg"
-                      class="img-fluid"
+                      class=""
                       alt="Menu Toggle"
                     />
                     <span class="d-none d-sm-block">menu</span>
                   </button>
                   <button class="audio-toggle" data-sound-toggle>
-                    <img
+                    <!-- <img
                       src="wp-content/themes/rockyrun/img/icons/audio-toggle.svg"
-                      class="img-fluid"
+                      class=""
                       alt="Audio Toggle"
-                    />
+                    /> -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.6502 5.32027L8.68023 9.42027H5.39023C5.17023 9.42027 4.99023 9.60027 4.99023 9.82027V16.1903C4.99023 16.4103 5.17023 16.5903 5.39023 16.5903H8.68023L12.6502 20.6903C12.9002 20.9503 13.3402 20.7703 13.3402 20.4103V5.60027C13.3402 5.24027 12.9002 5.06027 12.6502 5.32027Z"
+                        fill="#FFDD00"
+                      />
+                      <path
+                        d="M21.76 10.6799L20.71 9.62988L18.39 11.9499L16.07 9.62988L15.02 10.6799L17.34 12.9999L15.02 15.3199L16.07 16.3699L18.39 14.0499L20.71 16.3699L21.76 15.3199L19.45 12.9999L21.76 10.6799Z"
+                        fill="#FFDD00"
+                      />
+                      <path
+                        d="M13 26C5.83 26 0 20.17 0 13C0 5.83 5.83 0 13 0C20.17 0 26 5.83 26 13C26 20.17 20.17 26 13 26ZM13 1.49C6.65 1.49 1.49 6.65 1.49 13C1.49 19.35 6.65 24.51 13 24.51C19.35 24.51 24.51 19.35 24.51 13C24.51 6.65 19.35 1.49 13 1.49Z"
+                        fill="#FFDD00"
+                      />
+                      <path
+                        d="M17.18 9.35938L15.96 10.2194C16.39 11.0494 16.64 11.9994 16.64 12.9994C16.64 13.9994 16.39 14.9394 15.96 15.7794L17.18 16.6394C17.78 15.5594 18.12 14.3194 18.12 12.9994C18.12 11.6794 17.78 10.4394 17.18 9.35938Z"
+                        fill="#FFDD00"
+                      />
+                      <path
+                        d="M19.6302 7.63965L18.4102 8.49965C19.1702 9.82965 19.6102 11.3596 19.6102 12.9996C19.6102 14.6396 19.1702 16.1696 18.4102 17.4996L19.6302 18.3596C20.5602 16.7896 21.1002 14.9596 21.1002 12.9996C21.1002 11.0396 20.5602 9.20965 19.6302 7.63965Z"
+                        fill="#FFDD00"
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
               <div class="col-5 col-md-4 d-flex justify-content-center mx-auto">
                 <div id="main-logo">
-                  <img
-                    src="wp-content/themes/rockyrun/img/logo.svg"
-                    class="img-fluid"
-                    alt="Rocky Run Logo"
-                  />
+                  <a href="/">
+                    <img
+                      src="wp-content/themes/rockyrun/img/logo.svg"
+                      class="img-fluid"
+                      alt="Rocky Run Logo"
+                  /></a>
                 </div>
               </div>
               <div class="col-3 col-md-4">
@@ -1508,17 +1537,26 @@
                 </div>
                 <div class="col-md-7 newsletter">
                   <h4>newsletter signup</h4>
+                  <div class="newsletter-form">
+                    <input
+                      type="email"
+                      placeholder="you@thecontender.com"
+                      class="newsletter-input"
+                    />
+                    <button class="btn newsletter-button">SUBMIT</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row footer-logo">
             <div class="col-7 g-0">
-              <img
-                src="wp-content/themes/rockyrun/img/footer-logo.svg"
-                class="img-fluid"
-                alt="Rocky Run Logo"
-              />
+              <a href="/">
+                <img
+                  src="wp-content/themes/rockyrun/img/footer-logo.svg"
+                  class="img-fluid"
+                  alt="Rocky Run Logo"
+              /></a>
             </div>
             <div class="col-5 g-0 d-flex justify-content-end">
               <ul class="list-inline">
@@ -1532,9 +1570,10 @@
                   ROCKY-ROCKY V TM & &copy; 1976 – 2025 Metro-Goldwyn-Mayer
                   Studios Inc. All Rights Reserved. ROCKY BALBOA &copy; 2006 –
                   2025 Metro-Goldwyn-Mayer Pictures Inc., and Revolution Studios
-                  Distribution Company, LLC. ROCKY BALBOA is a trademark of
-                  Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. &copy;
-                  2025 RUN MFG, INC. ALL RIGHTS RESERVED.
+                  Distribution Company, LLC.<br />
+                  ROCKY BALBOA is a trademark of Metro-Goldwyn-Mayer Studios
+                  Inc. All Rights Reserved. &copy; 2025 RUN MFG, INC. ALL RIGHTS
+                  RESERVED.
                 </p>
               </div>
             </div>

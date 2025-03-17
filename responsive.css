@@ -8,6 +8,9 @@
   .overlay-nav-content {
     gap: 2rem;
   }
+  .link .link-click {
+    font-size: 6.5rem;
+  }
 }
 @media screen and (max-width: 1500px) {
   .section-heading h2 {
@@ -18,11 +21,17 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .social-links {
+    padding-bottom: 0;
+  }
+  .link .link-click {
+    font-size: 4.5rem;
+  }
 }
 @media screen and (max-width: 1366.98px) {
-  .link .link-click {
+  /* .link .link-click {
     font-size: 4rem;
-  }
+  } */
   .section-heading h2 {
     font-size: 4rem;
   }
@@ -43,6 +52,12 @@
   }
   .btn {
     font-size: 1.25rem;
+  }
+  .overlay-nav-content {
+    gap: 4rem;
+  }
+  .link .link-click {
+    font-size: 6.5rem;
   }
   .section-heading h2,
   .go-section .content h2 {
@@ -110,6 +125,9 @@
   }
   #main {
     margin-top: 2rem;
+  }
+  .link .link-click {
+    font-size: 5rem;
   }
   .section-heading h2,
   .go-section .content h2 {
@@ -301,6 +319,9 @@
   .btn svg {
     width: 13px;
     height: auto;
+  }
+  .link .link-click {
+    font-size: 4rem;
   }
   header .nav-left {
     gap: 0.25rem;
