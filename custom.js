@@ -2,7 +2,7 @@ let scroll;
 let mm = gsap.matchMedia();
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(Flip, ScrollTrigger, CustomEase, CustomWiggle);
-
+  pageLoad();
   smoothScrolling();
   toggleSound();
   navigationToggle();
@@ -20,6 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
   Fancybox.bind("[data-fancybox]", {});
   ScrollTrigger.refresh();
 });
+
+function pageLoad() {
+  const isHome = document.querySelector("body.home");
+  if (isHome) {
+    gsap.from([".navbar"], { autoAlpha: 0 });
+  } else {
+    gsap.from([".navbar", ".hero-section"], { y: 10, autoAlpha: 0, stagger: 0.2 });
+  }
+}
 
 function flipLogo() {
   const section = document.querySelector(".hero-section.is-home");

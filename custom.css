@@ -1251,3 +1251,7 @@ header .nav-right {
 .contact-form textarea::placeholder {
   color: var(--primary-color);
 }
+
+.visibility-hidden {
+  visibility: hidden;
+}
