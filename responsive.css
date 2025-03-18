@@ -490,6 +490,9 @@
   .secondary-links,
   .social-links {
     margin-top: 1rem;
-    padding: 1rem 0 0;
+    padding: 1rem 0;
+  }
+  .social-links {
+    padding-bottom: 0;
   }
 }
