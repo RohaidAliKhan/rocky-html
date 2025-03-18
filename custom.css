@@ -683,6 +683,7 @@ header .nav-right {
   justify-content: center;
 }
 .challenge-box .overlay img {
+  width: 50%;
 }
 
 .border-content {
@@ -844,7 +845,7 @@ header .nav-right {
   flex: 1;
   background: var(--primary-color);
   border: none;
-  color: grey;
+  color: rgba(var(--color-black-rgb), 0.5);
   padding: 5px;
   outline: none;
   font-size: 2.625rem;
@@ -917,8 +918,8 @@ header .nav-right {
 .hero-section h1::after {
   content: "";
   display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 0.27em;
+  height: 0.27em;
   background-image: url(wp-content/themes/rockyrun/img/icons/star.svg);
   background-repeat: no-repeat;
   background-size: contain;
