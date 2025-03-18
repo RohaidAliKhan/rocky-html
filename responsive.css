@@ -463,3 +463,33 @@
 }
 @media screen and (max-width: 320.98px) {
 }
+
+@media screen and (max-height: 900px) {
+  .overlay-nav-content {
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+  .link .link-click {
+    font-size: 5.5rem;
+  }
+  .close button svg {
+    width: 20px;
+  }
+  .social-links {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .link .link-click {
+    font-size: 4.5rem;
+  }
+  .secondary-links li a {
+    font-size: 1.25rem;
+  }
+  .secondary-links,
+  .social-links {
+    margin-top: 1rem;
+    padding: 1rem 0 0;
+  }
+}

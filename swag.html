@@ -2,10 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>Rocky Run</title>
     <meta name="robots" content="noindex, nofollow" />
@@ -14,18 +11,8 @@
         contain-intrinsic-size: 3000px 1500px;
       }
     </style>
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Rocky Run &raquo; Feed"
-      href="feed/index.rss"
-    />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Rocky Run &raquo; Comments Feed"
-      href="comments/feed/index.rss"
-    />
+    <link rel="alternate" type="application/rss+xml" title="Rocky Run &raquo; Feed" href="feed/index.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Rocky Run &raquo; Comments Feed" href="comments/feed/index.rss" />
     <script>
       window._wpemojiSettings = {
         baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -33,8 +20,7 @@
         svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
         svgExt: ".svg",
         source: {
-          concatemoji:
-            "https:\/\/rockyrunsite.wpenginepowered.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1",
+          concatemoji: "https:\/\/rockyrunsite.wpenginepowered.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1",
         },
       };
       /*! This file is auto-generated */
@@ -47,17 +33,9 @@
           } catch (e) {}
         }
         function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
-          var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-            ),
-            r =
-              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-              e.fillText(n, 0, 0),
-              new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-              ));
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+          var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+            r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
           return t.every(function (e, t) {
             return e === r[t];
           });
@@ -65,37 +43,21 @@
         function u(e, t, n) {
           switch (t) {
             case "flag":
-              return n(
-                e,
-                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
-              )
+              return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")
                 ? !1
-                : !n(
-                    e,
-                    "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
-                  ) &&
+                : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") &&
                     !n(
                       e,
                       "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
                       "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
                     );
             case "emoji":
-              return !n(
-                e,
-                "\ud83d\udc26\u200d\u2b1b",
-                "\ud83d\udc26\u200b\u2b1b"
-              );
+              return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b");
           }
           return !1;
         }
         function f(e, t, n) {
-          var r =
-              "undefined" != typeof WorkerGlobalScope &&
-              self instanceof WorkerGlobalScope
-                ? new OffscreenCanvas(300, 150)
-                : i.createElement("canvas"),
+          var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
             a = r.getContext("2d", { willReadFrequently: !0 }),
             o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
           return (
@@ -120,33 +82,14 @@
             var n = (function () {
               try {
                 var e = JSON.parse(sessionStorage.getItem(o));
-                if (
-                  "object" == typeof e &&
-                  "number" == typeof e.timestamp &&
-                  new Date().valueOf() < e.timestamp + 604800 &&
-                  "object" == typeof e.supportTests
-                )
-                  return e.supportTests;
+                if ("object" == typeof e && "number" == typeof e.timestamp && new Date().valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests;
               } catch (e) {}
               return null;
             })();
             if (!n) {
-              if (
-                "undefined" != typeof Worker &&
-                "undefined" != typeof OffscreenCanvas &&
-                "undefined" != typeof URL &&
-                URL.createObjectURL &&
-                "undefined" != typeof Blob
-              )
+              if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
                 try {
-                  var e =
-                      "postMessage(" +
-                      f.toString() +
-                      "(" +
-                      [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
-                      ) +
-                      "));",
+                  var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
                     r = new Blob([e], { type: "text/javascript" }),
                     a = new Worker(URL.createObjectURL(r), {
                       name: "wpTestEmojiSupports",
@@ -162,13 +105,9 @@
             .then(function (e) {
               for (var t in e)
                 (n.supports[t] = e[t]),
-                  (n.supports.everything =
-                    n.supports.everything && n.supports[t]),
-                  "flag" !== t &&
-                    (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
-                n.supports.everythingExceptFlag && !n.supports.flag),
+                  (n.supports.everything = n.supports.everything && n.supports[t]),
+                  "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag),
                 (n.DOMReady = !1),
                 (n.readyCallback = function () {
                   n.DOMReady = !0;
@@ -179,11 +118,7 @@
             })
             .then(function () {
               var e;
-              n.supports.everything ||
-                (n.readyCallback(),
-                (e = n.source || {}).concatemoji
-                  ? t(e.concatemoji)
-                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+              n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
             }));
       })((window, document), window._wpemojiSettings);
     </script>
@@ -201,12 +136,7 @@
         padding: 0 !important;
       }
     </style>
-    <link
-      rel="stylesheet"
-      id="wp-block-library-css"
-      href="wp-includes/css/dist/block-library/style.min-ver=6.7.1.css"
-      media="all"
-    />
+    <link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min-ver=6.7.1.css" media="all" />
     <style id="wp-block-library-theme-inline-css">
       .wp-block-audio :where(figcaption) {
         color: #555;
@@ -325,9 +255,7 @@
         border-bottom: none;
         height: 1px;
       }
-      .wp-block-separator.has-background:not(.is-style-wide):not(
-          .is-style-dots
-        ) {
+      .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
         height: 2px;
       }
       .wp-block-table {
@@ -400,31 +328,11 @@
         --wp--preset--color--pale-cyan-blue: #8ed1fc;
         --wp--preset--color--vivid-cyan-blue: #0693e3;
         --wp--preset--color--vivid-purple: #9b51e0;
-        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
-          135deg,
-          rgba(6, 147, 227, 1) 0%,
-          rgb(155, 81, 224) 100%
-        );
-        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
-          135deg,
-          rgb(122, 220, 180) 0%,
-          rgb(0, 208, 130) 100%
-        );
-        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
-          135deg,
-          rgba(252, 185, 0, 1) 0%,
-          rgba(255, 105, 0, 1) 100%
-        );
-        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
-          135deg,
-          rgba(255, 105, 0, 1) 0%,
-          rgb(207, 46, 46) 100%
-        );
-        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
-          135deg,
-          rgb(238, 238, 238) 0%,
-          rgb(169, 184, 195) 100%
-        );
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
         --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
           135deg,
           rgb(74, 234, 220) 0%,
@@ -434,39 +342,12 @@
           rgb(251, 105, 98) 80%,
           rgb(254, 248, 76) 100%
         );
-        --wp--preset--gradient--blush-light-purple: linear-gradient(
-          135deg,
-          rgb(255, 206, 236) 0%,
-          rgb(152, 150, 240) 100%
-        );
-        --wp--preset--gradient--blush-bordeaux: linear-gradient(
-          135deg,
-          rgb(254, 205, 165) 0%,
-          rgb(254, 45, 45) 50%,
-          rgb(107, 0, 62) 100%
-        );
-        --wp--preset--gradient--luminous-dusk: linear-gradient(
-          135deg,
-          rgb(255, 203, 112) 0%,
-          rgb(199, 81, 192) 50%,
-          rgb(65, 88, 208) 100%
-        );
-        --wp--preset--gradient--pale-ocean: linear-gradient(
-          135deg,
-          rgb(255, 245, 203) 0%,
-          rgb(182, 227, 212) 50%,
-          rgb(51, 167, 181) 100%
-        );
-        --wp--preset--gradient--electric-grass: linear-gradient(
-          135deg,
-          rgb(202, 248, 128) 0%,
-          rgb(113, 206, 126) 100%
-        );
-        --wp--preset--gradient--midnight: linear-gradient(
-          135deg,
-          rgb(2, 3, 129) 0%,
-          rgb(40, 116, 252) 100%
-        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
         --wp--preset--font-size--small: 13px;
         --wp--preset--font-size--medium: 20px;
         --wp--preset--font-size--large: 36px;
@@ -483,8 +364,7 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -573,14 +453,10 @@
         background-color: var(--wp--preset--color--vivid-red) !important;
       }
       .has-luminous-vivid-orange-background-color {
-        background-color: var(
-          --wp--preset--color--luminous-vivid-orange
-        ) !important;
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
       }
       .has-luminous-vivid-amber-background-color {
-        background-color: var(
-          --wp--preset--color--luminous-vivid-amber
-        ) !important;
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
       }
       .has-light-green-cyan-background-color {
         background-color: var(--wp--preset--color--light-green-cyan) !important;
@@ -613,9 +489,7 @@
         border-color: var(--wp--preset--color--vivid-red) !important;
       }
       .has-luminous-vivid-orange-border-color {
-        border-color: var(
-          --wp--preset--color--luminous-vivid-orange
-        ) !important;
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
       }
       .has-luminous-vivid-amber-border-color {
         border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
@@ -636,34 +510,22 @@
         border-color: var(--wp--preset--color--vivid-purple) !important;
       }
       .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-        background: var(
-          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
-        ) !important;
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
       }
       .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-        background: var(
-          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
-        ) !important;
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
       }
       .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-        background: var(
-          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
-        ) !important;
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
       }
       .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-        background: var(
-          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
-        ) !important;
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
       }
       .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-        background: var(
-          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
-        ) !important;
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
       }
       .has-cool-to-warm-spectrum-gradient-background {
-        background: var(
-          --wp--preset--gradient--cool-to-warm-spectrum
-        ) !important;
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
       }
       .has-blush-light-purple-gradient-background {
         background: var(--wp--preset--gradient--blush-light-purple) !important;
@@ -712,61 +574,20 @@
         line-height: 1.6;
       }
     </style>
-    <link
-      rel="stylesheet"
-      id="woocommerce-layout-css"
-      href="wp-content/plugins/woocommerce/assets/css/woocommerce-layout-ver=9.7.0.css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="woocommerce-smallscreen-css"
-      href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-ver=9.7.0.css"
-      media="only screen and (max-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      id="woocommerce-general-css"
-      href="wp-content/plugins/woocommerce/assets/css/woocommerce-ver=9.7.0.css"
-      media="all"
-    />
+    <link rel="stylesheet" id="woocommerce-layout-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-layout-ver=9.7.0.css" media="all" />
+    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-ver=9.7.0.css" media="only screen and (max-width: 768px)" />
+    <link rel="stylesheet" id="woocommerce-general-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-ver=9.7.0.css" media="all" />
     <style id="woocommerce-inline-inline-css">
       .woocommerce form .form-row .required {
         visibility: visible;
       }
     </style>
-    <link
-      rel="stylesheet"
-      id="brands-styles-css"
-      href="wp-content/plugins/woocommerce/assets/css/brands-ver=9.7.0.css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="style-css"
-      href="wp-content/themes/rockyrun/style-ver=3.5.4.css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="main-css"
-      href="wp-content/themes/rockyrun/build/main-ver=3.5.4.css"
-      media="all"
-    />
-    <script
-      src="wp-includes/js/jquery/jquery.min-ver=3.7.1.js"
-      id="jquery-core-js"
-    ></script>
-    <script
-      src="wp-includes/js/jquery/jquery-migrate.min-ver=3.4.1.js"
-      id="jquery-migrate-js"
-    ></script>
-    <script
-      src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min-ver=2.7.0-wc.9.7.0.js"
-      id="jquery-blockui-js"
-      defer
-      data-wp-strategy="defer"
-    ></script>
+    <link rel="stylesheet" id="brands-styles-css" href="wp-content/plugins/woocommerce/assets/css/brands-ver=9.7.0.css" media="all" />
+    <link rel="stylesheet" id="style-css" href="wp-content/themes/rockyrun/style-ver=3.5.4.css" media="all" />
+    <link rel="stylesheet" id="main-css" href="wp-content/themes/rockyrun/build/main-ver=3.5.4.css" media="all" />
+    <script src="wp-includes/js/jquery/jquery.min-ver=3.7.1.js" id="jquery-core-js"></script>
+    <script src="wp-includes/js/jquery/jquery-migrate.min-ver=3.4.1.js" id="jquery-migrate-js"></script>
+    <script src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min-ver=2.7.0-wc.9.7.0.js" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
     <script id="wc-add-to-cart-js-extra">
       var wc_add_to_cart_params = {
         ajax_url: "\/wp-admin\/admin-ajax.php",
@@ -777,18 +598,8 @@
         cart_redirect_after_add: "no",
       };
     </script>
-    <script
-      src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min-ver=9.7.0.js"
-      id="wc-add-to-cart-js"
-      defer
-      data-wp-strategy="defer"
-    ></script>
-    <script
-      src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min-ver=2.1.4-wc.9.7.0.js"
-      id="js-cookie-js"
-      defer
-      data-wp-strategy="defer"
-    ></script>
+    <script src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min-ver=9.7.0.js" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+    <script src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min-ver=2.1.4-wc.9.7.0.js" id="js-cookie-js" defer data-wp-strategy="defer"></script>
     <script id="woocommerce-js-extra">
       var woocommerce_params = {
         ajax_url: "\/wp-admin\/admin-ajax.php",
@@ -797,39 +608,14 @@
         i18n_password_hide: "Hide password",
       };
     </script>
-    <script
-      src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min-ver=9.7.0.js"
-      id="woocommerce-js"
-      defer
-      data-wp-strategy="defer"
-    ></script>
+    <script src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min-ver=9.7.0.js" id="woocommerce-js" defer data-wp-strategy="defer"></script>
     <link rel="https://api.w.org/" href="wp-json/index.json" />
-    <link
-      rel="alternate"
-      title="JSON"
-      type="application/json"
-      href="wp-json/wp/v2/pages/12.json"
-    />
-    <link
-      rel="EditURI"
-      type="application/rsd+xml"
-      title="RSD"
-      href="xmlrpc.php-rsd.html"
-    />
+    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/12.json" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php-rsd.html" />
     <link rel="canonical" href="index.html" />
     <link rel="shortlink" href="index.html" />
-    <link
-      rel="alternate"
-      title="oEmbed (JSON)"
-      type="application/json+oembed"
-      href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-.json"
-    />
-    <link
-      rel="alternate"
-      title="oEmbed (XML)"
-      type="text/xml+oembed"
-      href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-&amp;format=xml.xml"
-    />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-.json" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed-url=https---rockyrunsite.wpenginepowered.com-&amp;format=xml.xml" />
     <noscript
       ><style>
         .woocommerce-product-gallery {
@@ -843,8 +629,7 @@
         font-style: normal;
         font-weight: 300 900;
         font-display: fallback;
-        src: url("wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2")
-          format("woff2");
+        src: url("wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2") format("woff2");
         font-stretch: normal;
       }
       @font-face {
@@ -852,23 +637,13 @@
         font-style: normal;
         font-weight: 400;
         font-display: fallback;
-        src: url("wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2")
-          format("woff2");
+        src: url("wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2") format("woff2");
       }
     </style>
     <!-- Custom CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/lenis@1.2.0/dist/lenis.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.2.0/dist/lenis.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
@@ -880,14 +655,7 @@
     data-audio-status="not-started"
   >
     <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
-    <audio
-      id="audio"
-      class="visually-hidden"
-      src="https://project-parallax.com/assets/audio/ambient-wave.mp3"
-      controls
-      muted
-      autplay
-    ></audio>
+    <audio id="audio" class="visually-hidden" src="https://project-parallax.com/assets/audio/ambient-wave.mp3" autostart="0" autostart="false" preload="none" name="media"></audio>
     <div id="wrapper">
       <header>
         <nav class="navbar navbar-expand-md navbar-dark home">
@@ -896,11 +664,7 @@
               <div class="col-3 col-md-4">
                 <div class="nav-left">
                   <button class="hamburger" data-navigation-toggle="toggle">
-                    <img
-                      src="wp-content/themes/rockyrun/img/icons/menu-toggle.svg"
-                      class=""
-                      alt="Menu Toggle"
-                    />
+                    <img src="wp-content/themes/rockyrun/img/icons/menu-toggle.svg" class="w-100" alt="Menu Toggle" />
                     <span class="d-none d-sm-block">menu</span>
                   </button>
                   <button class="audio-toggle" data-sound-toggle>
@@ -909,19 +673,9 @@
                       class=""
                       alt="Audio Toggle"
                     /> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                       <path
                         d="M12.6502 5.32027L8.68023 9.42027H5.39023C5.17023 9.42027 4.99023 9.60027 4.99023 9.82027V16.1903C4.99023 16.4103 5.17023 16.5903 5.39023 16.5903H8.68023L12.6502 20.6903C12.9002 20.9503 13.3402 20.7703 13.3402 20.4103V5.60027C13.3402 5.24027 12.9002 5.06027 12.6502 5.32027Z"
-                        fill="#FFDD00"
-                      />
-                      <path
-                        d="M21.76 10.6799L20.71 9.62988L18.39 11.9499L16.07 9.62988L15.02 10.6799L17.34 12.9999L15.02 15.3199L16.07 16.3699L18.39 14.0499L20.71 16.3699L21.76 15.3199L19.45 12.9999L21.76 10.6799Z"
                         fill="#FFDD00"
                       />
                       <path
@@ -929,10 +683,18 @@
                         fill="#FFDD00"
                       />
                       <path
+                        class="mute"
+                        d="M21.76 10.6799L20.71 9.62988L18.39 11.9499L16.07 9.62988L15.02 10.6799L17.34 12.9999L15.02 15.3199L16.07 16.3699L18.39 14.0499L20.71 16.3699L21.76 15.3199L19.45 12.9999L21.76 10.6799Z"
+                        fill="#FFDD00"
+                      />
+
+                      <path
+                        class="volume"
                         d="M17.18 9.35938L15.96 10.2194C16.39 11.0494 16.64 11.9994 16.64 12.9994C16.64 13.9994 16.39 14.9394 15.96 15.7794L17.18 16.6394C17.78 15.5594 18.12 14.3194 18.12 12.9994C18.12 11.6794 17.78 10.4394 17.18 9.35938Z"
                         fill="#FFDD00"
                       />
                       <path
+                        class="volume"
                         d="M19.6302 7.63965L18.4102 8.49965C19.1702 9.82965 19.6102 11.3596 19.6102 12.9996C19.6102 14.6396 19.1702 16.1696 18.4102 17.4996L19.6302 18.3596C20.5602 16.7896 21.1002 14.9596 21.1002 12.9996C21.1002 11.0396 20.5602 9.20965 19.6302 7.63965Z"
                         fill="#FFDD00"
                       />
@@ -942,23 +704,14 @@
               </div>
               <div class="col-5 col-md-4 d-flex justify-content-center mx-auto">
                 <div id="main-logo">
-                  <a href="/">
-                    <img
-                      src="wp-content/themes/rockyrun/img/logo.svg"
-                      class="img-fluid"
-                      alt="Rocky Run Logo"
-                  /></a>
+                  <a href="/"> <img src="wp-content/themes/rockyrun/img/logo.svg" class="img-fluid" alt="Rocky Run Logo" /></a>
                 </div>
               </div>
               <div class="col-3 col-md-4">
                 <div class="nav-right">
                   <div class="info d-none d-lg-flex">
                     <span id="date">Nov 8, 2025</span>
-                    <img
-                      src="wp-content/themes/rockyrun/img/icons/star.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
+                    <img src="wp-content/themes/rockyrun/img/icons/star.svg" class="img-fluid" alt="" />
                     <span id="location">Philly, PA</span>
                   </div>
                   <div class="register">
@@ -972,37 +725,14 @@
           </div>
           <!-- /.container -->
         </nav>
-        <div
-          class="overlay overlay-nav-back"
-          data-navigation-toggle="close"
-        ></div>
+        <div class="overlay overlay-nav-back" data-navigation-toggle="close"></div>
         <div class="overlay-nav">
           <div class="overlay-nav-content" data-lenis-prevent="">
             <div class="close">
               <button data-navigation-toggle="close">
-                <svg
-                  width="31"
-                  height="30"
-                  viewBox="0 0 31 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="28.4667"
-                    y1="28.0607"
-                    x2="1.46668"
-                    y2="1.06066"
-                    stroke="black"
-                    stroke-width="3"
-                  />
-                  <line
-                    y1="-1.5"
-                    x2="38.1838"
-                    y2="-1.5"
-                    transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 1 27)"
-                    stroke="black"
-                    stroke-width="3"
-                  />
+                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="28.4667" y1="28.0607" x2="1.46668" y2="1.06066" stroke="black" stroke-width="3" />
+                  <line y1="-1.5" x2="38.1838" y2="-1.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 1 27)" stroke="black" stroke-width="3" />
                 </svg>
               </button>
             </div>
@@ -1061,38 +791,16 @@
               <a href="register.html" class="btn btn-primary">
                 register now
                 <span class="d-inline-flex">
-                  <svg
-                    width="19"
-                    height="17"
-                    viewBox="0 0 19 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <line
-                      y1="8.5"
-                      x2="16.6776"
-                      y2="8.5"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    ></line>
-                    <path
-                      d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
-                      stroke="currentColor"
-                      stroke-width="3"
-                    ></path>
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3"></line>
+                    <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3"></path>
                   </svg>
                 </span>
               </a>
               <ul class="social-links">
                 <li>
                   <a href="#">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 40 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M39.9992 19.9999C39.9992 8.95438 31.045 0 19.9996 0C8.95422 0 0 8.95438 0 19.9999C0 29.3791 6.45747 37.2495 15.1685 39.4111V26.1119H11.0446V19.9999H15.1685V17.3664C15.1685 10.5592 18.2492 7.40398 24.9323 7.40398C26.1995 7.40398 28.3858 7.65278 29.2802 7.90078V13.4408C28.8082 13.3912 27.9882 13.3664 26.9699 13.3664C23.6907 13.3664 22.4235 14.6088 22.4235 17.8384V19.9999H28.9562L27.8338 26.1119H22.4235V39.8535C32.3265 38.6575 40 30.2255 40 19.9999H39.9992Z"
                         fill="black"
@@ -1102,13 +810,7 @@
                 </li>
                 <li>
                   <a href="#">
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 40 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_8322_2139)">
                         <path
                           d="M11.7168 0.138428C9.58881 0.238828 8.13521 0.579628 6.86521 1.07723C5.55041 1.58963 4.43601 2.27683 3.32721 3.39003C2.21721 4.50403 1.53561 5.62043 1.02681 6.93643C0.534409 8.20963 0.200409 9.66403 0.106809 11.7932C0.0132093 13.9268 -0.0079907 14.6072 0.0024093 20.0384C0.0128093 25.4688 0.0368093 26.1504 0.138409 28.2844C0.240009 30.412 0.579609 31.8648 1.07721 33.1356C1.59041 34.4504 2.27681 35.5644 3.39041 36.6736C4.50361 37.7828 5.62081 38.464 6.93761 38.9732C8.20961 39.4652 9.66441 39.8 11.7932 39.8932C13.9264 39.9872 14.6076 40.008 20.0372 39.9976C25.4692 39.9872 26.1504 39.9632 28.2836 39.862C30.4116 39.7604 31.8636 39.4196 33.1352 38.9232C34.45 38.4088 35.5644 37.7236 36.6732 36.61C37.782 35.4968 38.4636 34.3796 38.9724 33.0628C39.4648 31.7908 39.8 30.336 39.8924 28.2084C39.9856 26.074 40.0076 25.392 39.9972 19.962C39.9868 14.5312 39.9624 13.8508 39.8612 11.718C39.76 9.58883 39.4192 8.13643 38.9224 6.86523C38.4084 5.55043 37.7228 4.43723 36.6096 3.32723C35.4964 2.21843 34.3792 1.53563 33.0624 1.02803C31.7896 0.535628 30.3356 0.200028 28.2068 0.108028C26.074 0.0128283 25.3932 -0.00797171 19.9616 0.00242829C14.5312 0.0128283 13.8504 0.0360283 11.7172 0.138428M11.9504 36.2936C10.0004 36.2088 8.94161 35.8848 8.23601 35.6132C7.30161 35.2516 6.63481 34.818 5.93281 34.1216C5.23241 33.4224 4.79761 32.7576 4.43281 31.8252C4.15881 31.1196 3.82881 30.062 3.73761 28.112C3.63841 26.004 3.61561 25.3716 3.60601 20.0312C3.59561 14.6924 3.61521 14.0596 3.70721 11.95C3.79081 10.0016 4.11681 8.94123 4.38761 8.23643C4.74921 7.30083 5.18121 6.63523 5.87921 5.93323C6.57841 5.23163 7.24321 4.79803 8.17641 4.43323C8.88161 4.15763 9.93881 3.83043 11.888 3.73803C13.9972 3.63803 14.6292 3.61683 19.968 3.60643C25.308 3.59603 25.9408 3.61483 28.0504 3.70763C29.9988 3.79243 31.0592 4.11523 31.7636 4.38803C32.6988 4.74963 33.3656 5.18043 34.0668 5.87963C34.768 6.57883 35.2028 7.24243 35.5676 8.17763C35.8428 8.88083 36.1704 9.93963 36.2624 11.888C36.3628 13.9972 36.3856 14.6296 36.3952 19.9688C36.4056 25.3092 36.386 25.9416 36.2936 28.05C36.2088 30 35.8852 31.0592 35.6132 31.7656C35.2516 32.6992 34.8192 33.366 34.1208 34.068C33.4224 34.7672 32.7576 35.2032 31.8236 35.568C31.12 35.8428 30.0612 36.1708 28.1132 36.2632C26.004 36.3624 25.372 36.3852 20.0312 36.3948C14.6924 36.4052 14.0604 36.3852 11.9508 36.2936M28.2544 9.30923C28.2568 10.6336 29.334 11.706 30.6584 11.7036C31.9836 11.7012 33.056 10.6248 33.054 9.30003C33.0512 7.97563 31.9744 6.90243 30.6492 6.90483C29.324 6.90723 28.2516 7.98443 28.254 9.30883M9.73081 20.0196C9.74161 25.6916 14.3484 30.2796 20.0192 30.2684C25.6904 30.2572 30.2808 25.652 30.27 19.98C30.2588 14.31 25.6516 9.71963 19.9796 9.73043C14.3088 9.74163 9.71961 14.3488 9.73081 20.0196ZM13.3332 20.0124C13.3268 16.3312 16.3064 13.3404 19.9868 13.334C23.668 13.3268 26.6592 16.3052 26.6664 19.9872C26.6736 23.6692 23.694 26.6592 20.012 26.6664C16.3312 26.6736 13.34 23.6948 13.3332 20.0128"
@@ -1134,11 +836,7 @@
         <section class="hero-section pb-0">
           <div class="container">
             <figure class="border-rounded position-relative">
-              <img
-                src="wp-content/themes/rockyrun/img/swag-banner.webp"
-                class="w-100"
-                alt=""
-              />
+              <img src="wp-content/themes/rockyrun/img/swag-banner.webp" class="w-100" alt="" />
               <div class="overlay">
                 <h1>swag</h1>
               </div>
@@ -1147,25 +845,12 @@
         </section>
         <section class="marquee-section py-0 py-md-3">
           <div class="marquee-group">
-            <div
-              data-marquee-scroll-speed="10"
-              data-marquee-target=""
-              data-marquee-direction="left"
-              data-marquee-status="inverted"
-              data-marquee-speed="20"
-              class="marquee"
-            >
+            <div data-marquee-scroll-speed="10" data-marquee-target="" data-marquee-direction="left" data-marquee-status="inverted" data-marquee-speed="20" class="marquee">
               <div class="marquee-scroll">
                 <div class="marquee-content">
                   <div class="marquee-item">
                     <h2>finisher MEdals</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1182,13 +867,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>finisher MEdals</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1205,13 +884,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>finisher MEdals</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1230,13 +903,7 @@
                 <div class="marquee-content">
                   <div class="marquee-item">
                     <h2>finisher MEdals</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1253,13 +920,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>finisher MEdals</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1276,13 +937,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>finisher MEdals</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1312,49 +967,23 @@
                 </div>
                 <div class="border-content">
                   <p>
-                    The Rocky Run 5K Finisher Medal is a bold tribute to your
-                    grit and determination. Designed with the spirit of
-                    Philadelphia in mind, it features striking metallic details,
-                    a dynamic silhouette of Rocky in victory, and a thick,
-                    heavyweight feel that earns its place around your neck.
+                    The Rocky Run 5K Finisher Medal is a bold tribute to your grit and determination. Designed with the spirit of Philadelphia in mind, it features striking metallic details, a dynamic
+                    silhouette of Rocky in victory, and a thick, heavyweight feel that earns its place around your neck.
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="border-rounded lightbox-card">
-                  <img
-                    src="wp-content/themes/rockyrun/img/5k-finisher-medal.webp"
-                    class="img-fluid w-100"
-                    alt=""
-                  />
+                  <img src="wp-content/themes/rockyrun/img/5k-finisher-medal.webp" class="img-fluid w-100" alt="" />
                   <div class="overlay">
-                    <a
-                      href="wp-content/themes/rockyrun/img/5k-finisher-medal.webp"
-                      class="zoom-in"
-                      data-fancybox="gallery"
-                    >
-                      <svg
-                        viewBox="0 0 57 57"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                    <a href="wp-content/themes/rockyrun/img/5k-finisher-medal.webp" class="zoom-in" data-fancybox="gallery">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M30.1901 1.03245C32.2638 -0.748894 35.4465 -0.150458 36.738 2.26072C37.3447 3.39129 38.6796 3.91121 39.8859 3.48551C42.4603 2.57652 45.2136 4.28807 45.5508 7.00632C45.709 8.27996 46.7676 9.25002 48.0469 9.29014C50.7742 9.37563 52.7262 11.97 52.0622 14.6255C51.7511 15.8712 52.389 17.1588 53.5675 17.6595C56.0792 18.729 56.9657 21.8538 55.3909 24.0905C54.6522 25.1391 54.7843 26.5715 55.702 27.4647C57.6593 29.3735 57.3621 32.6081 55.0867 34.1225C54.0212 34.8326 53.6283 36.2162 54.162 37.3834C55.3005 39.8731 53.8578 42.7815 51.1931 43.3695C49.9433 43.6451 49.0794 44.7932 49.1576 46.0738C49.3245 48.8077 46.931 50.9973 44.235 50.5786C42.9713 50.3832 41.7528 51.1404 41.3634 52.3634C40.5343 54.9735 37.515 56.1477 35.151 54.7781C34.042 54.1361 32.6341 54.4013 31.831 55.401C30.1189 57.533 26.8806 57.533 25.1684 55.401C24.3654 54.4013 22.9574 54.1378 21.8484 54.7781C19.4844 56.146 16.4651 54.9718 15.636 52.3634C15.2466 51.1404 14.0299 50.3832 12.7644 50.5786C10.0667 50.9973 7.67492 48.8077 7.84179 46.0738C7.92001 44.7914 7.05611 43.6451 5.80633 43.3695C3.14163 42.7815 1.69717 39.8731 2.83744 37.3834C3.37108 36.2162 2.97998 34.8326 1.91271 34.1225C-0.360888 32.6081 -0.659862 29.3717 1.29738 27.4647C2.21516 26.5697 2.34727 25.1391 1.60852 24.0905C0.033689 21.8538 0.918445 18.729 3.43192 17.6595C4.61043 17.1588 5.24836 15.8712 4.93722 14.6255C4.27322 11.9683 6.2235 9.37563 8.95252 9.29014C10.2318 9.25002 11.2904 8.2817 11.4486 7.00632C11.7858 4.28807 14.5374 2.57826 17.1135 3.48551C18.3198 3.91121 19.6565 3.39129 20.2614 2.26072C21.5546 -0.152203 24.7356 -0.748894 26.8093 1.03245C27.781 1.86642 29.2133 1.86642 30.1867 1.03245H30.1901Z"
                           fill="#F6F6F6"
                         />
-                        <path
-                          d="M45.6001 27.2267L12.5401 27.2266"
-                          stroke="black"
-                          stroke-width="4"
-                        />
-                        <line
-                          x1="29.3601"
-                          y1="11.2656"
-                          x2="29.3601"
-                          y2="44.3256"
-                          stroke="black"
-                          stroke-width="4"
-                        />
+                        <path d="M45.6001 27.2267L12.5401 27.2266" stroke="black" stroke-width="4" />
+                        <line x1="29.3601" y1="11.2656" x2="29.3601" y2="44.3256" stroke="black" stroke-width="4" />
                       </svg>
                     </a>
                   </div>
@@ -1369,49 +998,23 @@
                 </div>
                 <div class="border-content">
                   <p>
-                    The Rocky Run 5K Finisher Medal is a bold tribute to your
-                    grit and determination. Designed with the spirit of
-                    Philadelphia in mind, it features striking metallic details,
-                    a dynamic silhouette of Rocky in victory, and a thick,
-                    heavyweight feel that earns its place around your neck.
+                    The Rocky Run 5K Finisher Medal is a bold tribute to your grit and determination. Designed with the spirit of Philadelphia in mind, it features striking metallic details, a dynamic
+                    silhouette of Rocky in victory, and a thick, heavyweight feel that earns its place around your neck.
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="border-rounded lightbox-card">
-                  <img
-                    src="wp-content/themes/rockyrun/img/10-finisher-medal.webp"
-                    class="img-fluid w-100"
-                    alt=""
-                  />
+                  <img src="wp-content/themes/rockyrun/img/10-finisher-medal.webp" class="img-fluid w-100" alt="" />
                   <div class="overlay">
-                    <a
-                      href="wp-content/themes/rockyrun/img/10-finisher-medal.webp"
-                      class="zoom-in"
-                      data-fancybox="gallery"
-                    >
-                      <svg
-                        viewBox="0 0 57 57"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                    <a href="wp-content/themes/rockyrun/img/10-finisher-medal.webp" class="zoom-in" data-fancybox="gallery">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M30.1901 1.03245C32.2638 -0.748894 35.4465 -0.150458 36.738 2.26072C37.3447 3.39129 38.6796 3.91121 39.8859 3.48551C42.4603 2.57652 45.2136 4.28807 45.5508 7.00632C45.709 8.27996 46.7676 9.25002 48.0469 9.29014C50.7742 9.37563 52.7262 11.97 52.0622 14.6255C51.7511 15.8712 52.389 17.1588 53.5675 17.6595C56.0792 18.729 56.9657 21.8538 55.3909 24.0905C54.6522 25.1391 54.7843 26.5715 55.702 27.4647C57.6593 29.3735 57.3621 32.6081 55.0867 34.1225C54.0212 34.8326 53.6283 36.2162 54.162 37.3834C55.3005 39.8731 53.8578 42.7815 51.1931 43.3695C49.9433 43.6451 49.0794 44.7932 49.1576 46.0738C49.3245 48.8077 46.931 50.9973 44.235 50.5786C42.9713 50.3832 41.7528 51.1404 41.3634 52.3634C40.5343 54.9735 37.515 56.1477 35.151 54.7781C34.042 54.1361 32.6341 54.4013 31.831 55.401C30.1189 57.533 26.8806 57.533 25.1684 55.401C24.3654 54.4013 22.9574 54.1378 21.8484 54.7781C19.4844 56.146 16.4651 54.9718 15.636 52.3634C15.2466 51.1404 14.0299 50.3832 12.7644 50.5786C10.0667 50.9973 7.67492 48.8077 7.84179 46.0738C7.92001 44.7914 7.05611 43.6451 5.80633 43.3695C3.14163 42.7815 1.69717 39.8731 2.83744 37.3834C3.37108 36.2162 2.97998 34.8326 1.91271 34.1225C-0.360888 32.6081 -0.659862 29.3717 1.29738 27.4647C2.21516 26.5697 2.34727 25.1391 1.60852 24.0905C0.033689 21.8538 0.918445 18.729 3.43192 17.6595C4.61043 17.1588 5.24836 15.8712 4.93722 14.6255C4.27322 11.9683 6.2235 9.37563 8.95252 9.29014C10.2318 9.25002 11.2904 8.2817 11.4486 7.00632C11.7858 4.28807 14.5374 2.57826 17.1135 3.48551C18.3198 3.91121 19.6565 3.39129 20.2614 2.26072C21.5546 -0.152203 24.7356 -0.748894 26.8093 1.03245C27.781 1.86642 29.2133 1.86642 30.1867 1.03245H30.1901Z"
                           fill="#F6F6F6"
                         />
-                        <path
-                          d="M45.6001 27.2267L12.5401 27.2266"
-                          stroke="black"
-                          stroke-width="4"
-                        />
-                        <line
-                          x1="29.3601"
-                          y1="11.2656"
-                          x2="29.3601"
-                          y2="44.3256"
-                          stroke="black"
-                          stroke-width="4"
-                        />
+                        <path d="M45.6001 27.2267L12.5401 27.2266" stroke="black" stroke-width="4" />
+                        <line x1="29.3601" y1="11.2656" x2="29.3601" y2="44.3256" stroke="black" stroke-width="4" />
                       </svg>
                     </a>
                   </div>
@@ -1420,60 +1023,30 @@
             </div>
             <div class="row align-items-center mt-5">
               <div class="col-md-6 text-center mb-5 mb-md-0">
-                <img
-                  src="wp-content/themes/rockyrun/img/swag-badge.webp"
-                  class="img-fluid mb-4"
-                  alt=""
-                />
+                <img src="wp-content/themes/rockyrun/img/swag-badge.webp" class="img-fluid mb-4" alt="" />
                 <div class="section-heading is-secondary">
                   <h2><span>13.1 MILE</span></h2>
                   <h3>finisher medal</h3>
                 </div>
                 <div class="border-content">
                   <p>
-                    The Italian Stallion Challenge Medal is one of the largest
-                    in all of running at 4.5" and features a bold spinning
-                    design. It’s a heavyweight tribute to those who conquer both
-                    the 5K and 10 Mile. Winners also earn the 5K and 10 Mile
-                    medals, making this a true champion’s collection.
+                    The Italian Stallion Challenge Medal is one of the largest in all of running at 4.5" and features a bold spinning design. It’s a heavyweight tribute to those who conquer both the
+                    5K and 10 Mile. Winners also earn the 5K and 10 Mile medals, making this a true champion’s collection.
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="border-rounded lightbox-card">
-                  <img
-                    src="wp-content/themes/rockyrun/img/13-finisher-medal.webp"
-                    class="img-fluid w-100"
-                    alt=""
-                  />
+                  <img src="wp-content/themes/rockyrun/img/13-finisher-medal.webp" class="img-fluid w-100" alt="" />
                   <div class="overlay">
-                    <a
-                      href="wp-content/themes/rockyrun/img/13-finisher-medal.webp"
-                      class="zoom-in"
-                      data-fancybox="gallery"
-                    >
-                      <svg
-                        viewBox="0 0 57 57"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                    <a href="wp-content/themes/rockyrun/img/13-finisher-medal.webp" class="zoom-in" data-fancybox="gallery">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M30.1901 1.03245C32.2638 -0.748894 35.4465 -0.150458 36.738 2.26072C37.3447 3.39129 38.6796 3.91121 39.8859 3.48551C42.4603 2.57652 45.2136 4.28807 45.5508 7.00632C45.709 8.27996 46.7676 9.25002 48.0469 9.29014C50.7742 9.37563 52.7262 11.97 52.0622 14.6255C51.7511 15.8712 52.389 17.1588 53.5675 17.6595C56.0792 18.729 56.9657 21.8538 55.3909 24.0905C54.6522 25.1391 54.7843 26.5715 55.702 27.4647C57.6593 29.3735 57.3621 32.6081 55.0867 34.1225C54.0212 34.8326 53.6283 36.2162 54.162 37.3834C55.3005 39.8731 53.8578 42.7815 51.1931 43.3695C49.9433 43.6451 49.0794 44.7932 49.1576 46.0738C49.3245 48.8077 46.931 50.9973 44.235 50.5786C42.9713 50.3832 41.7528 51.1404 41.3634 52.3634C40.5343 54.9735 37.515 56.1477 35.151 54.7781C34.042 54.1361 32.6341 54.4013 31.831 55.401C30.1189 57.533 26.8806 57.533 25.1684 55.401C24.3654 54.4013 22.9574 54.1378 21.8484 54.7781C19.4844 56.146 16.4651 54.9718 15.636 52.3634C15.2466 51.1404 14.0299 50.3832 12.7644 50.5786C10.0667 50.9973 7.67492 48.8077 7.84179 46.0738C7.92001 44.7914 7.05611 43.6451 5.80633 43.3695C3.14163 42.7815 1.69717 39.8731 2.83744 37.3834C3.37108 36.2162 2.97998 34.8326 1.91271 34.1225C-0.360888 32.6081 -0.659862 29.3717 1.29738 27.4647C2.21516 26.5697 2.34727 25.1391 1.60852 24.0905C0.033689 21.8538 0.918445 18.729 3.43192 17.6595C4.61043 17.1588 5.24836 15.8712 4.93722 14.6255C4.27322 11.9683 6.2235 9.37563 8.95252 9.29014C10.2318 9.25002 11.2904 8.2817 11.4486 7.00632C11.7858 4.28807 14.5374 2.57826 17.1135 3.48551C18.3198 3.91121 19.6565 3.39129 20.2614 2.26072C21.5546 -0.152203 24.7356 -0.748894 26.8093 1.03245C27.781 1.86642 29.2133 1.86642 30.1867 1.03245H30.1901Z"
                           fill="#F6F6F6"
                         />
-                        <path
-                          d="M45.6001 27.2267L12.5401 27.2266"
-                          stroke="black"
-                          stroke-width="4"
-                        />
-                        <line
-                          x1="29.3601"
-                          y1="11.2656"
-                          x2="29.3601"
-                          y2="44.3256"
-                          stroke="black"
-                          stroke-width="4"
-                        />
+                        <path d="M45.6001 27.2267L12.5401 27.2266" stroke="black" stroke-width="4" />
+                        <line x1="29.3601" y1="11.2656" x2="29.3601" y2="44.3256" stroke="black" stroke-width="4" />
                       </svg>
                     </a>
                   </div>
@@ -1484,25 +1057,12 @@
         </section>
         <section class="marquee-section section-color-light py-0 py-md-3">
           <div class="marquee-group">
-            <div
-              data-marquee-scroll-speed="10"
-              data-marquee-target=""
-              data-marquee-direction="left"
-              data-marquee-status="inverted"
-              data-marquee-speed="20"
-              class="marquee"
-            >
+            <div data-marquee-scroll-speed="10" data-marquee-target="" data-marquee-direction="left" data-marquee-status="inverted" data-marquee-speed="20" class="marquee">
               <div class="marquee-scroll">
                 <div class="marquee-content">
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1519,13 +1079,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1542,13 +1096,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1565,13 +1113,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1590,13 +1132,7 @@
                 <div class="marquee-content">
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1613,13 +1149,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1636,13 +1166,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1659,13 +1183,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race shirt</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1695,49 +1213,23 @@
                 </div>
                 <div class="border-content">
                   <p>
-                    The Rocky Run Race Shirt is a battle-ready tribute to Super
-                    Fight II, Rocky’s legendary rematch with Apollo. Designed
-                    for fighters and finishers alike, it features premium
-                    performance fabric, and the heart of a true underdog. Wear
-                    it and step into the ring—your race, your rematch.
+                    The Rocky Run Race Shirt is a battle-ready tribute to Super Fight II, Rocky’s legendary rematch with Apollo. Designed for fighters and finishers alike, it features premium
+                    performance fabric, and the heart of a true underdog. Wear it and step into the ring—your race, your rematch.
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="border-rounded lightbox-card">
-                  <img
-                    src="wp-content/themes/rockyrun/img/race-shirt-1.webp"
-                    class="img-fluid w-100"
-                    alt=""
-                  />
+                  <img src="wp-content/themes/rockyrun/img/race-shirt-1.webp" class="img-fluid w-100" alt="" />
                   <div class="overlay">
-                    <a
-                      href="wp-content/themes/rockyrun/img/race-shirt-1.webp"
-                      class="zoom-in"
-                      data-fancybox="gallery"
-                    >
-                      <svg
-                        viewBox="0 0 57 57"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                    <a href="wp-content/themes/rockyrun/img/race-shirt-1.webp" class="zoom-in" data-fancybox="gallery">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M30.1901 1.03245C32.2638 -0.748894 35.4465 -0.150458 36.738 2.26072C37.3447 3.39129 38.6796 3.91121 39.8859 3.48551C42.4603 2.57652 45.2136 4.28807 45.5508 7.00632C45.709 8.27996 46.7676 9.25002 48.0469 9.29014C50.7742 9.37563 52.7262 11.97 52.0622 14.6255C51.7511 15.8712 52.389 17.1588 53.5675 17.6595C56.0792 18.729 56.9657 21.8538 55.3909 24.0905C54.6522 25.1391 54.7843 26.5715 55.702 27.4647C57.6593 29.3735 57.3621 32.6081 55.0867 34.1225C54.0212 34.8326 53.6283 36.2162 54.162 37.3834C55.3005 39.8731 53.8578 42.7815 51.1931 43.3695C49.9433 43.6451 49.0794 44.7932 49.1576 46.0738C49.3245 48.8077 46.931 50.9973 44.235 50.5786C42.9713 50.3832 41.7528 51.1404 41.3634 52.3634C40.5343 54.9735 37.515 56.1477 35.151 54.7781C34.042 54.1361 32.6341 54.4013 31.831 55.401C30.1189 57.533 26.8806 57.533 25.1684 55.401C24.3654 54.4013 22.9574 54.1378 21.8484 54.7781C19.4844 56.146 16.4651 54.9718 15.636 52.3634C15.2466 51.1404 14.0299 50.3832 12.7644 50.5786C10.0667 50.9973 7.67492 48.8077 7.84179 46.0738C7.92001 44.7914 7.05611 43.6451 5.80633 43.3695C3.14163 42.7815 1.69717 39.8731 2.83744 37.3834C3.37108 36.2162 2.97998 34.8326 1.91271 34.1225C-0.360888 32.6081 -0.659862 29.3717 1.29738 27.4647C2.21516 26.5697 2.34727 25.1391 1.60852 24.0905C0.033689 21.8538 0.918445 18.729 3.43192 17.6595C4.61043 17.1588 5.24836 15.8712 4.93722 14.6255C4.27322 11.9683 6.2235 9.37563 8.95252 9.29014C10.2318 9.25002 11.2904 8.2817 11.4486 7.00632C11.7858 4.28807 14.5374 2.57826 17.1135 3.48551C18.3198 3.91121 19.6565 3.39129 20.2614 2.26072C21.5546 -0.152203 24.7356 -0.748894 26.8093 1.03245C27.781 1.86642 29.2133 1.86642 30.1867 1.03245H30.1901Z"
                           fill="#F6F6F6"
                         />
-                        <path
-                          d="M45.6001 27.2267L12.5401 27.2266"
-                          stroke="black"
-                          stroke-width="4"
-                        />
-                        <line
-                          x1="29.3601"
-                          y1="11.2656"
-                          x2="29.3601"
-                          y2="44.3256"
-                          stroke="black"
-                          stroke-width="4"
-                        />
+                        <path d="M45.6001 27.2267L12.5401 27.2266" stroke="black" stroke-width="4" />
+                        <line x1="29.3601" y1="11.2656" x2="29.3601" y2="44.3256" stroke="black" stroke-width="4" />
                       </svg>
                     </a>
                   </div>
@@ -1748,25 +1240,12 @@
         </section>
         <section class="marquee-section py-0 py-md-3">
           <div class="marquee-group">
-            <div
-              data-marquee-scroll-speed="10"
-              data-marquee-target=""
-              data-marquee-direction="left"
-              data-marquee-status="inverted"
-              data-marquee-speed="20"
-              class="marquee"
-            >
+            <div data-marquee-scroll-speed="10" data-marquee-target="" data-marquee-direction="left" data-marquee-status="inverted" data-marquee-speed="20" class="marquee">
               <div class="marquee-scroll">
                 <div class="marquee-content">
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1783,13 +1262,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1806,13 +1279,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1829,13 +1296,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1854,13 +1315,7 @@
                 <div class="marquee-content">
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1877,13 +1332,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1900,13 +1349,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1923,13 +1366,7 @@
                   </div>
                   <div class="marquee-item">
                     <h2>race bibs</h2>
-                    <svg
-                      width="53"
-                      height="89"
-                      viewBox="0 0 53 89"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="53" height="89" viewBox="0 0 53 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4350_724)">
                         <path
                           d="M31.284 39.6302L52.9327 0.744929C53.2109 0.244399 52.5636 -0.25613 52.1536 0.147238L3.67842 47.7917C3.36212 48.1038 3.58177 48.6456 4.024 48.6456L21.2826 48.6309C21.6604 48.6309 21.9006 49.0401 21.716 49.3728L0.067377 88.2551C-0.210846 88.7556 0.436389 89.2562 0.846401 88.8528L49.3245 41.2083C49.6408 40.8962 49.4212 40.3545 48.979 40.3545L31.7204 40.3692C31.3426 40.3692 31.1024 39.9599 31.2869 39.6272L31.284 39.6302Z"
@@ -1959,49 +1396,23 @@
                 </div>
                 <div class="border-content">
                   <p>
-                    The Rocky Run Race Bib is your badge of honor on race day.
-                    Featuring a bold design inspired by Philly’s fighting
-                    spirit, it includes your race number and chip timing for an
-                    authentic, seamless experience. Pin it on, dig deep, and
-                    chase victory.
+                    The Rocky Run Race Bib is your badge of honor on race day. Featuring a bold design inspired by Philly’s fighting spirit, it includes your race number and chip timing for an
+                    authentic, seamless experience. Pin it on, dig deep, and chase victory.
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="border-rounded lightbox-card">
-                  <img
-                    src="wp-content/themes/rockyrun/img/race-bib.webp"
-                    class="img-fluid w-100"
-                    alt=""
-                  />
+                  <img src="wp-content/themes/rockyrun/img/race-bib.webp" class="img-fluid w-100" alt="" />
                   <div class="overlay">
-                    <a
-                      href="wp-content/themes/rockyrun/img/race-bib.webp"
-                      class="zoom-in"
-                      data-fancybox="gallery"
-                    >
-                      <svg
-                        viewBox="0 0 57 57"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                    <a href="wp-content/themes/rockyrun/img/race-bib.webp" class="zoom-in" data-fancybox="gallery">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M30.1901 1.03245C32.2638 -0.748894 35.4465 -0.150458 36.738 2.26072C37.3447 3.39129 38.6796 3.91121 39.8859 3.48551C42.4603 2.57652 45.2136 4.28807 45.5508 7.00632C45.709 8.27996 46.7676 9.25002 48.0469 9.29014C50.7742 9.37563 52.7262 11.97 52.0622 14.6255C51.7511 15.8712 52.389 17.1588 53.5675 17.6595C56.0792 18.729 56.9657 21.8538 55.3909 24.0905C54.6522 25.1391 54.7843 26.5715 55.702 27.4647C57.6593 29.3735 57.3621 32.6081 55.0867 34.1225C54.0212 34.8326 53.6283 36.2162 54.162 37.3834C55.3005 39.8731 53.8578 42.7815 51.1931 43.3695C49.9433 43.6451 49.0794 44.7932 49.1576 46.0738C49.3245 48.8077 46.931 50.9973 44.235 50.5786C42.9713 50.3832 41.7528 51.1404 41.3634 52.3634C40.5343 54.9735 37.515 56.1477 35.151 54.7781C34.042 54.1361 32.6341 54.4013 31.831 55.401C30.1189 57.533 26.8806 57.533 25.1684 55.401C24.3654 54.4013 22.9574 54.1378 21.8484 54.7781C19.4844 56.146 16.4651 54.9718 15.636 52.3634C15.2466 51.1404 14.0299 50.3832 12.7644 50.5786C10.0667 50.9973 7.67492 48.8077 7.84179 46.0738C7.92001 44.7914 7.05611 43.6451 5.80633 43.3695C3.14163 42.7815 1.69717 39.8731 2.83744 37.3834C3.37108 36.2162 2.97998 34.8326 1.91271 34.1225C-0.360888 32.6081 -0.659862 29.3717 1.29738 27.4647C2.21516 26.5697 2.34727 25.1391 1.60852 24.0905C0.033689 21.8538 0.918445 18.729 3.43192 17.6595C4.61043 17.1588 5.24836 15.8712 4.93722 14.6255C4.27322 11.9683 6.2235 9.37563 8.95252 9.29014C10.2318 9.25002 11.2904 8.2817 11.4486 7.00632C11.7858 4.28807 14.5374 2.57826 17.1135 3.48551C18.3198 3.91121 19.6565 3.39129 20.2614 2.26072C21.5546 -0.152203 24.7356 -0.748894 26.8093 1.03245C27.781 1.86642 29.2133 1.86642 30.1867 1.03245H30.1901Z"
                           fill="#F6F6F6"
                         />
-                        <path
-                          d="M45.6001 27.2267L12.5401 27.2266"
-                          stroke="black"
-                          stroke-width="4"
-                        />
-                        <line
-                          x1="29.3601"
-                          y1="11.2656"
-                          x2="29.3601"
-                          y2="44.3256"
-                          stroke="black"
-                          stroke-width="4"
-                        />
+                        <path d="M45.6001 27.2267L12.5401 27.2266" stroke="black" stroke-width="4" />
+                        <line x1="29.3601" y1="11.2656" x2="29.3601" y2="44.3256" stroke="black" stroke-width="4" />
                       </svg>
                     </a>
                   </div>
@@ -2013,35 +1424,15 @@
         <section class="cta-section pt-3">
           <div class="container">
             <figure class="border-rounded">
-              <img
-                src="wp-content/themes/rockyrun/img/cta-getgear.webp"
-                class="w-100"
-                alt=""
-              />
+              <img src="wp-content/themes/rockyrun/img/cta-getgear.webp" class="w-100" alt="" />
               <div class="overlay">
                 <h2>Get the Gear</h2>
                 <a href="#" class="btn btn-primary">
                   shop rocky run
                   <span class="d-inline-flex">
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        y1="8.5"
-                        x2="16.6776"
-                        y2="8.5"
-                        stroke="currentColor"
-                        stroke-width="3"
-                      />
-                      <path
-                        d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029"
-                        stroke="currentColor"
-                        stroke-width="3"
-                      />
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line y1="8.5" x2="16.6776" y2="8.5" stroke="currentColor" stroke-width="3" />
+                      <path d="M9.38176 2.00098L16.1581 8.50195L9.38176 15.0029" stroke="currentColor" stroke-width="3" />
                     </svg>
                   </span>
                 </a>
@@ -2053,28 +1444,15 @@
           <div class="container">
             <div class="countdown-box row">
               <div class="col-lg-3 content text-center">
-                <img
-                  src="wp-content/themes/rockyrun/img/countdown-title.svg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="wp-content/themes/rockyrun/img/countdown-title.svg" class="img-fluid" alt="" />
               </div>
               <div class="col-lg-9 timer">
-                <div
-                  id="countdown-date"
-                  data-countdown="Nov 8, 2025 07:00:00 GMT-0500"
-                ></div>
+                <div id="countdown-date" data-countdown="Nov 8, 2025 07:00:00 GMT-0500"></div>
                 <div class="countdown" id="countdown-timer">
                   <ul class="list-unstyled">
                     <li><span id="days">00</span> Days</li>
                     <li>
-                      <svg
-                        width="41"
-                        height="109"
-                        viewBox="0 0 41 109"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg width="41" height="109" viewBox="0 0 41 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_8494_1599)">
                           <path
                             d="M21.3913 0.662895L25.5875 13.8813C25.7127 14.2763 26.0726 14.5442 26.4794 14.5442H40.0602C40.9687 14.5442 41.3463 15.7333 40.6109 16.2799L29.6232 24.4492C29.2946 24.6936 29.1569 25.127 29.2831 25.522L33.4794 38.7404C33.76 39.6243 32.7712 40.3597 32.0368 39.8132L21.0491 31.6439C20.7206 31.3994 20.2752 31.3994 19.9477 31.6439L8.95994 39.8132C8.22562 40.3597 7.23679 39.6243 7.51737 38.7404L11.7136 25.522C11.8388 25.127 11.7022 24.6936 11.3736 24.4492L0.387981 16.2799C-0.346341 15.7333 0.0312509 14.5442 0.938723 14.5442H14.5195C14.9253 14.5442 15.2851 14.2763 15.4113 13.8813L19.6087 0.662895C19.8892 -0.220965 21.1107 -0.220965 21.3913 0.662895Z"
@@ -2092,25 +1470,14 @@
                             <rect width="41" height="40" fill="white" />
                           </clipPath>
                           <clipPath id="clip1_8494_1599">
-                            <rect
-                              width="41"
-                              height="40"
-                              fill="white"
-                              transform="translate(0 69)"
-                            />
+                            <rect width="41" height="40" fill="white" transform="translate(0 69)" />
                           </clipPath>
                         </defs>
                       </svg>
                     </li>
                     <li><span id="hours">00</span> Hours</li>
                     <li>
-                      <svg
-                        width="41"
-                        height="109"
-                        viewBox="0 0 41 109"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg width="41" height="109" viewBox="0 0 41 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_8494_1599)">
                           <path
                             d="M21.3913 0.662895L25.5875 13.8813C25.7127 14.2763 26.0726 14.5442 26.4794 14.5442H40.0602C40.9687 14.5442 41.3463 15.7333 40.6109 16.2799L29.6232 24.4492C29.2946 24.6936 29.1569 25.127 29.2831 25.522L33.4794 38.7404C33.76 39.6243 32.7712 40.3597 32.0368 39.8132L21.0491 31.6439C20.7206 31.3994 20.2752 31.3994 19.9477 31.6439L8.95994 39.8132C8.22562 40.3597 7.23679 39.6243 7.51737 38.7404L11.7136 25.522C11.8388 25.127 11.7022 24.6936 11.3736 24.4492L0.387981 16.2799C-0.346341 15.7333 0.0312509 14.5442 0.938723 14.5442H14.5195C14.9253 14.5442 15.2851 14.2763 15.4113 13.8813L19.6087 0.662895C19.8892 -0.220965 21.1107 -0.220965 21.3913 0.662895Z"
@@ -2128,25 +1495,14 @@
                             <rect width="41" height="40" fill="white" />
                           </clipPath>
                           <clipPath id="clip1_8494_1599">
-                            <rect
-                              width="41"
-                              height="40"
-                              fill="white"
-                              transform="translate(0 69)"
-                            />
+                            <rect width="41" height="40" fill="white" transform="translate(0 69)" />
                           </clipPath>
                         </defs>
                       </svg>
                     </li>
                     <li><span id="minutes">00</span> Minutes</li>
                     <li>
-                      <svg
-                        width="41"
-                        height="109"
-                        viewBox="0 0 41 109"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg width="41" height="109" viewBox="0 0 41 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_8494_1599)">
                           <path
                             d="M21.3913 0.662895L25.5875 13.8813C25.7127 14.2763 26.0726 14.5442 26.4794 14.5442H40.0602C40.9687 14.5442 41.3463 15.7333 40.6109 16.2799L29.6232 24.4492C29.2946 24.6936 29.1569 25.127 29.2831 25.522L33.4794 38.7404C33.76 39.6243 32.7712 40.3597 32.0368 39.8132L21.0491 31.6439C20.7206 31.3994 20.2752 31.3994 19.9477 31.6439L8.95994 39.8132C8.22562 40.3597 7.23679 39.6243 7.51737 38.7404L11.7136 25.522C11.8388 25.127 11.7022 24.6936 11.3736 24.4492L0.387981 16.2799C-0.346341 15.7333 0.0312509 14.5442 0.938723 14.5442H14.5195C14.9253 14.5442 15.2851 14.2763 15.4113 13.8813L19.6087 0.662895C19.8892 -0.220965 21.1107 -0.220965 21.3913 0.662895Z"
@@ -2164,12 +1520,7 @@
                             <rect width="41" height="40" fill="white" />
                           </clipPath>
                           <clipPath id="clip1_8494_1599">
-                            <rect
-                              width="41"
-                              height="40"
-                              fill="white"
-                              transform="translate(0 69)"
-                            />
+                            <rect width="41" height="40" fill="white" transform="translate(0 69)" />
                           </clipPath>
                         </defs>
                       </svg>
@@ -2183,43 +1534,21 @@
         </section>
         <section class="partner-section py-4 py-md-5">
           <div class="container">
-            <ul
-              class="list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-around"
-            >
+            <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-around">
               <li>
-                <img
-                  src="wp-content/themes/rockyrun/img/partners-logo/partner1.webp"
-                  class="img-fluid"
-                  alt="Underarmor Logo"
-                />
+                <img src="wp-content/themes/rockyrun/img/partners-logo/partner1.webp" class="img-fluid" alt="Underarmor Logo" />
               </li>
               <li>
-                <img
-                  src="wp-content/themes/rockyrun/img/partners-logo/partner2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="wp-content/themes/rockyrun/img/partners-logo/partner2.webp" class="img-fluid" alt="" />
               </li>
               <li>
-                <img
-                  src="wp-content/themes/rockyrun/img/partners-logo/partner3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="wp-content/themes/rockyrun/img/partners-logo/partner3.webp" class="img-fluid" alt="" />
               </li>
               <li>
-                <img
-                  src="wp-content/themes/rockyrun/img/partners-logo/partner4.webp"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="wp-content/themes/rockyrun/img/partners-logo/partner4.webp" class="img-fluid" alt="" />
               </li>
               <li>
-                <img
-                  src="wp-content/themes/rockyrun/img/partners-logo/partner5.webp"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="wp-content/themes/rockyrun/img/partners-logo/partner5.webp" class="img-fluid" alt="" />
               </li>
             </ul>
           </div>
@@ -2236,29 +1565,17 @@
                   <ul class="list-unstyled">
                     <li><a href="#">contact</a></li>
                     <li>
-                      <a
-                        href="https://www.facebook.com/rockybalboarun/"
-                        target="_blank"
-                        >facebook</a
-                      >
+                      <a href="https://www.facebook.com/rockybalboarun/" target="_blank">facebook</a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.instagram.com/rockybalboarun/"
-                        target="_blank"
-                        >instagram</a
-                      >
+                      <a href="https://www.instagram.com/rockybalboarun/" target="_blank">instagram</a>
                     </li>
                   </ul>
                 </div>
                 <div class="col-md-7 newsletter">
                   <h4>newsletter signup</h4>
                   <div class="newsletter-form">
-                    <input
-                      type="email"
-                      placeholder="you@thecontender.com"
-                      class="newsletter-input"
-                    />
+                    <input type="email" placeholder="you@thecontender.com" class="newsletter-input" />
                     <button class="btn newsletter-button">SUBMIT</button>
                   </div>
                 </div>
@@ -2267,12 +1584,7 @@
           </div>
           <div class="row footer-logo">
             <div class="col-7 g-0">
-              <a href="/">
-                <img
-                  src="wp-content/themes/rockyrun/img/footer-logo.svg"
-                  class="img-fluid"
-                  alt="Rocky Run Logo"
-              /></a>
+              <a href="/"> <img src="wp-content/themes/rockyrun/img/footer-logo.svg" class="img-fluid" alt="Rocky Run Logo" /></a>
             </div>
             <div class="col-5 g-0 d-flex justify-content-end">
               <ul class="list-inline">
@@ -2283,13 +1595,9 @@
             <div class="col-12 g-0">
               <div class="copyright">
                 <p>
-                  ROCKY-ROCKY V TM & &copy; 1976 – 2025 Metro-Goldwyn-Mayer
-                  Studios Inc. All Rights Reserved. ROCKY BALBOA &copy; 2006 –
-                  2025 Metro-Goldwyn-Mayer Pictures Inc., and Revolution Studios
+                  ROCKY-ROCKY V TM & &copy; 1976 – 2025 Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. ROCKY BALBOA &copy; 2006 – 2025 Metro-Goldwyn-Mayer Pictures Inc., and Revolution Studios
                   Distribution Company, LLC.<br />
-                  ROCKY BALBOA is a trademark of Metro-Goldwyn-Mayer Studios
-                  Inc. All Rights Reserved. &copy; 2025 RUN MFG, INC. ALL RIGHTS
-                  RESERVED.
+                  ROCKY BALBOA is a trademark of Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. &copy; 2025 RUN MFG, INC. ALL RIGHTS RESERVED.
                 </p>
               </div>
             </div>
@@ -2309,28 +1617,16 @@
         document.body.className = c;
       })();
     </script>
-    <link
-      rel="stylesheet"
-      id="wc-blocks-style-css"
-      href="wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-ver=wc-9.7.0.css"
-      media="all"
-    />
-    <script
-      src="wp-content/themes/rockyrun/build/main-ver=3.5.4.js"
-      id="mainjs-js"
-    ></script>
-    <script
-      src="wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min-ver=9.7.0.js"
-      id="sourcebuster-js-js"
-    ></script>
+    <link rel="stylesheet" id="wc-blocks-style-css" href="wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-ver=wc-9.7.0.css" media="all" />
+    <script src="wp-content/themes/rockyrun/build/main-ver=3.5.4.js" id="mainjs-js"></script>
+    <script src="wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min-ver=9.7.0.js" id="sourcebuster-js-js"></script>
     <script id="wc-order-attribution-js-extra">
       var wc_order_attribution = {
         params: {
           lifetime: 1.0e-5,
           session: 30,
           base64: false,
-          ajaxurl:
-            "https:\/\/rockyrunsite.wpenginepowered.com\/wp-admin\/admin-ajax.php",
+          ajaxurl: "https:\/\/rockyrunsite.wpenginepowered.com\/wp-admin\/admin-ajax.php",
           prefix: "wc_order_attribution_",
           allowTracking: true,
         },
@@ -2354,10 +1650,7 @@
         },
       };
     </script>
-    <script
-      src="wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min-ver=9.7.0.js"
-      id="wc-order-attribution-js"
-    ></script>
+    <script src="wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min-ver=9.7.0.js" id="wc-order-attribution-js"></script>
 
     <!-- Additional JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

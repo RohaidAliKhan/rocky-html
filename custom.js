@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //   scroll.start();
   // }, 150);
 
-  // flipLogo();
+  flipLogo();
   Fancybox.bind("[data-fancybox]", {});
   ScrollTrigger.refresh();
 });
@@ -25,23 +25,25 @@ function flipLogo() {
   const section = document.querySelector(".hero-section.is-home");
   if (!section) return;
   mm.add("(min-width: 1024px)", () => {
+    gsap.set("#main-logo", { pointerEvents: "none" });
+
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".navbar",
         start: "top top",
         end: "+=15%",
-        scrub: true,
+        scrub: 0.3,
         // markers: true,
         onLeave: () => gsap.set("#main-logo", { pointerEvents: "auto" }),
         onEnterBack: () => gsap.set("#main-logo", { pointerEvents: "none" }),
         onLeaveBack: () => gsap.set("#main-logo", { pointerEvents: "none" }),
       },
     });
-    tl.from("#main-logo img", {
+    tl.from("#main-logo", {
       y: "15vw",
       scale: 8.8,
       ease: "none",
-    }).from(".video-container", { marginTop: "24vw" }, "<");
+    }).from(".video-container", { marginTop: "24vw", ease: "none" }, "<");
   });
 }
 
@@ -58,6 +60,18 @@ function smoothScrolling() {
       });
     });
 
+    // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+    scroll.on("scroll", ScrollTrigger.update);
+
+    // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+    // This ensures Lenis's smooth scroll animation updates on each GSAP tick
+    gsap.ticker.add((time) => {
+      scroll.raf(time * 1000); // Convert time from seconds to milliseconds
+    });
+
+    // Disable lag smoothing in GSAP to prevent any delay in scroll animations
+    gsap.ticker.lagSmoothing(0);
+
     // scroll.scrollTo("top");
 
     // if (window.location.hash) {
@@ -73,28 +87,22 @@ function smoothScrolling() {
 
 function navigationToggle() {
   // Toggle Navigation
-  document
-    .querySelector('[data-navigation-toggle="toggle"]')
-    .addEventListener("click", function () {
-      const navStatus = document.querySelector("[data-navigation-status]");
-      const currentStatus = navStatus.getAttribute("data-navigation-status");
+  document.querySelector('[data-navigation-toggle="toggle"]').addEventListener("click", function () {
+    const navStatus = document.querySelector("[data-navigation-status]");
+    const currentStatus = navStatus.getAttribute("data-navigation-status");
 
-      if (currentStatus === "not-active" || currentStatus === "hover") {
-        navStatus.setAttribute("data-navigation-status", "active");
-        scroll?.stop();
-      } else {
-        navStatus.setAttribute("data-navigation-status", "not-active");
-      }
-    });
+    if (currentStatus === "not-active" || currentStatus === "hover") {
+      navStatus.setAttribute("data-navigation-status", "active");
+      scroll?.stop();
+    } else {
+      navStatus.setAttribute("data-navigation-status", "not-active");
+    }
+  });
 
-  const hamburger = document.querySelector(
-    '.hamburger[data-navigation-toggle="toggle"]'
-  );
+  const hamburger = document.querySelector('.hamburger[data-navigation-toggle="toggle"]');
   if (hamburger) {
     hamburger.addEventListener("mouseover", function () {
-      document
-        .querySelector("[data-navigation-status]")
-        .setAttribute("data-navigation-status", "hover");
+      document.querySelector("[data-navigation-status]").setAttribute("data-navigation-status", "hover");
     });
 
     hamburger.addEventListener("mouseleave", function () {
@@ -106,15 +114,11 @@ function navigationToggle() {
   }
 
   // Close Navigation
-  const closeNavs = document.querySelectorAll(
-    '[data-navigation-toggle="close"]'
-  );
+  const closeNavs = document.querySelectorAll('[data-navigation-toggle="close"]');
   closeNavs.forEach((close) => {
     if (close) {
       close.addEventListener("click", function (e) {
-        document
-          .querySelector("[data-navigation-status]")
-          .setAttribute("data-navigation-status", "not-active");
+        document.querySelector("[data-navigation-status]").setAttribute("data-navigation-status", "not-active");
         scroll?.start();
       });
     }
@@ -212,34 +216,12 @@ function swagSlider() {
 }
 
 function toggleSound() {
-  document.querySelectorAll("[data-sound-toggle]").forEach((toggle) => {
-    toggle.addEventListener("click", function () {
-      let audioStatusElement = document.querySelector("[data-audio-status]");
-      let audioElement = document.getElementById("audio");
-      let status = audioStatusElement.getAttribute("data-audio-status");
-      if (status === "not-active" || status === "not-started") {
-        audioStatusElement.setAttribute("data-audio-status", "active");
-        audioElement.setAttribute("data-audio-status", "active");
-        audioElement.currentTime = 0;
-        audioElement.volume = 0.5;
-        audioElement.play();
-      } else {
-        audioStatusElement.setAttribute("data-audio-status", "not-active");
-        audioElement.currentTime = 0;
-        audioElement.volume = 0;
-      }
-    });
-  });
-  //   document.querySelector("[data-sound-toggle]").addEventListener("click", function () {
+  // document.querySelectorAll("[data-sound-toggle]").forEach((toggle) => {
+  //   toggle.addEventListener("click", function () {
   //     let audioStatusElement = document.querySelector("[data-audio-status]");
   //     let audioElement = document.getElementById("audio");
-  //     if (audioStatusElement.getAttribute("data-audio-status") === "not-started") {
-  //       audioElement.currentTime = 0;
-  //       audioElement.volume = 0.5;
-  //       audioElement.play();
-  //       audioStatusElement.setAttribute("data-audio-status", "active");
-  //     }
-  //     if (audioStatusElement.getAttribute("data-audio-status") === "not-active") {
+  //     let status = audioStatusElement.getAttribute("data-audio-status");
+  //     if (status === "not-active" || status === "not-started") {
   //       audioStatusElement.setAttribute("data-audio-status", "active");
   //       audioElement.setAttribute("data-audio-status", "active");
   //       audioElement.currentTime = 0;
@@ -251,6 +233,62 @@ function toggleSound() {
   //       audioElement.volume = 0;
   //     }
   //   });
+  // });
+
+  let tl = gsap.timeline({ paused: true, duration: 0.1 });
+
+  gsap.set([".volume", ".mute"], { transformOrigin: "center center" });
+  gsap.set(".volume", { autoAlpha: 0, scale: 0 });
+
+  tl.to(".mute", { autoAlpha: 0, scale: 0 });
+  tl.to(".volume", { autoAlpha: 1, scale: 1 }, 0);
+  // with Cookie
+  let audioElement = document.getElementById("audio");
+  let audioStatusElement = document.querySelector("[data-audio-status]");
+
+  // Check mute state from cookies
+  let isMuted = getCookie("audio-muted") === "true";
+
+  if (!isMuted) {
+    audioStatusElement.setAttribute("data-audio-status", "active");
+    audioElement.volume = 0.5;
+
+    // Play audio after ensuring it can start
+    audioElement.play().catch((e) => {
+      console.log("Autoplay blocked:", e);
+      audioStatusElement.setAttribute("data-audio-status", "not-active");
+      setCookie("audio-muted", "true", 7);
+    });
+
+    // If playback is blocked initially, resume it when possible
+    audioElement.addEventListener("canplaythrough", () => {
+      audioElement.play().catch((e) => console.log("Playback error:", e));
+    });
+  } else {
+    audioStatusElement.setAttribute("data-audio-status", "not-active");
+    audioElement.volume = 0;
+  }
+
+  // Handle click events for toggling sound
+  document.querySelectorAll("[data-sound-toggle]").forEach((toggle) => {
+    toggle.addEventListener("click", function () {
+      let status = audioStatusElement.getAttribute("data-audio-status");
+
+      if (status === "not-active") {
+        audioStatusElement.setAttribute("data-audio-status", "active");
+        audioElement.volume = 0.5;
+        audioElement.play();
+        setCookie("audio-muted", "false", 7); // Save for 7 days
+        tl.play();
+      } else {
+        audioStatusElement.setAttribute("data-audio-status", "not-active");
+        audioElement.volume = 0;
+        audioElement.pause();
+        setCookie("audio-muted", "true", 7);
+        tl.reverse();
+      }
+    });
+  });
 }
 
 function initMarqueeScrollV2() {
@@ -258,9 +296,7 @@ function initMarqueeScrollV2() {
     let marquee = $(this);
 
     let marqueeItemsWidth = marquee.find(".marquee-content").width();
-    let marqueeSpeed =
-      marquee.attr("data-marquee-speed") *
-      (marqueeItemsWidth / $(window).width());
+    let marqueeSpeed = marquee.attr("data-marquee-speed") * (marqueeItemsWidth / $(window).width());
 
     // Speed up Marquee on Tablet & Mobile
     if ($(window).width() <= 540) {
@@ -307,9 +343,7 @@ function initMarqueeScrollV2() {
             });
           }
         }
-        self.direction === -1
-          ? marquee.attr("data-marquee-status", "normal")
-          : marquee.attr("data-marquee-status", "inverted");
+        self.direction === -1 ? marquee.attr("data-marquee-status", "normal") : marquee.attr("data-marquee-status", "inverted");
       },
       onEnter: () => marqueeContent.play(),
       onEnterBack: () => marqueeContent.play(),
@@ -370,9 +404,7 @@ function countDownTimer() {
 
   // Get the countdown date from a WordPress custom field (assuming it's in a div with ID 'countdown-date')
   let countdownElement = document.getElementById("countdown-date");
-  let countdownDateString = countdownElement
-    ? countdownElement.getAttribute("data-countdown")
-    : "Nov 8, 2025 07:00:00 GMT-0500";
+  let countdownDateString = countdownElement ? countdownElement.getAttribute("data-countdown") : "Nov 8, 2025 07:00:00 GMT-0500";
 
   let countDown = new Date(countdownDateString).getTime();
 
@@ -387,15 +419,9 @@ function countDownTimer() {
     }
 
     document.getElementById("days").innerHTML = Math.floor(distance / DAY);
-    document.getElementById("hours").innerHTML = Math.floor(
-      (distance % DAY) / HOUR
-    );
-    document.getElementById("minutes").innerHTML = Math.floor(
-      (distance % HOUR) / MINUTE
-    );
-    document.getElementById("seconds").innerHTML = Math.floor(
-      (distance % MINUTE) / SECOND
-    );
+    document.getElementById("hours").innerHTML = Math.floor((distance % DAY) / HOUR);
+    document.getElementById("minutes").innerHTML = Math.floor((distance % HOUR) / MINUTE);
+    document.getElementById("seconds").innerHTML = Math.floor((distance % MINUTE) / SECOND);
   }, SECOND);
 }
 
@@ -430,4 +456,19 @@ function stickyScrollContentFade() {
       });
     });
   });
+}
+
+function getCookie(name) {
+  let match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+  return match ? match[2] : null;
+}
+
+function setCookie(name, value, days) {
+  let expires = "";
+  if (days) {
+    let date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + value + "; path=/" + expires;
 }

@@ -4,10 +4,7 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff2")
-      format("woff2"),
-    url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff")
-      format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Heavyweight.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -15,10 +12,7 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff2")
-      format("woff2"),
-    url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff")
-      format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Lightweight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -26,10 +20,7 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff2")
-      format("woff2"),
-    url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff")
-      format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Champion-HTF-Bantamweight.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -37,9 +28,7 @@ Font Load
 
 @font-face {
   font-family: "Buinton";
-  src: url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff2")
-      format("woff2"),
-    url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff") format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Buinton-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,20 +36,14 @@ Font Load
 
 @font-face {
   font-family: "Champion";
-  src: url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff2")
-      format("woff2"),
-    url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff")
-      format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/ChampionSansCondLLTrial-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Knockout";
-  src: url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff2")
-      format("woff2"),
-    url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff")
-      format("woff");
+  src: url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Knockout-HTF32-JuniorCruiserwt.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -315,6 +298,11 @@ section {
 /*===========================
   Navigation 
 ===========================*/
+#main-logo a {
+  display: block;
+  transition: none;
+  opacity: 1;
+}
 header {
   position: fixed;
   top: 0;
@@ -596,8 +584,7 @@ header .nav-right {
   overflow: hidden;
   height: 0;
   opacity: 0;
-  transition: height var(--animation-primary-ease-in),
-    opacity var(--animation-primary-ease-in);
+  transition: height var(--animation-primary-ease-in), opacity var(--animation-primary-ease-in);
 }
 .distance-box:hover .content p {
   height: 8rem;
