@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   flipLogo();
   Fancybox.bind("[data-fancybox]", {});
-  ScrollTrigger.refresh();
+  // ScrollTrigger.refresh();
 });
 
 function pageLoad() {
