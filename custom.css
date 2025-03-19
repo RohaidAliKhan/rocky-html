@@ -48,6 +48,13 @@ Font Load
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Knockout-HTF52";
+  src: url("wp-content/themes/rockyrun/fonts/Knockout-HTF52-Cruiserweight.woff2") format("woff2"), url("wp-content/themes/rockyrun/fonts/Knockout-HTF52-Cruiserweight.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 /*===========================
   Global
@@ -362,6 +369,21 @@ section {
   content: "";
   display: table;
   margin-bottom: calc(-0.5lh + 0.32em);
+}
+
+/* LINE HEIGHT TRIM FOR KNOCKOUT HTF52 FONT */
+:is(.border-content h4) {
+  display: flow-root;
+}
+:is(.border-content h4)::before {
+  content: "";
+  display: table;
+  margin-bottom: calc(-0.5lh + 0.36em);
+}
+:is(.border-content h4)::after {
+  content: "";
+  display: table;
+  margin-bottom: calc(-0.5lh + 0.31em);
 }
 
 /*===========================
@@ -778,7 +800,9 @@ header .nav-right {
   padding: 1.25rem 1rem;
 }
 .border-content h4 {
+  font-family: "knockout-HTF52";
   text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 .border-content p {
   margin-bottom: 0;
