@@ -268,7 +268,6 @@ function toggleSound() {
       tl.reverse();
     });
 
-    // Ensure icon updates on reload
     tl.play();
   } else {
     audioStatusElement.setAttribute("data-audio-status", "not-active");
