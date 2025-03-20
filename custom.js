@@ -262,20 +262,18 @@ function toggleSound() {
     audioStatusElement.setAttribute("data-audio-status", "active");
     audioElement.volume = 0.5;
 
-    // Play audio after ensuring it can start
     audioElement.play().catch((e) => {
-      console.log("Autoplay blocked:", e);
       audioStatusElement.setAttribute("data-audio-status", "not-active");
       setCookie("audio-muted", "true", 7);
+      tl.reverse();
     });
 
-    // If playback is blocked initially, resume it when possible
-    audioElement.addEventListener("canplaythrough", () => {
-      audioElement.play().catch((e) => console.log("Playback error:", e));
-    });
+    // Ensure icon updates on reload
+    tl.play();
   } else {
     audioStatusElement.setAttribute("data-audio-status", "not-active");
     audioElement.volume = 0;
+    tl.reverse();
   }
 
   // Handle click events for toggling sound
