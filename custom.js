@@ -3,6 +3,7 @@ let mm = gsap.matchMedia();
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(Flip, ScrollTrigger, CustomEase, CustomWiggle);
   pageLoad();
+  badgeRotation();
   smoothScrolling();
   toggleSound();
   navigationToggle();
@@ -40,7 +41,7 @@ function flipLogo() {
       scrollTrigger: {
         trigger: ".navbar",
         start: "top top",
-        end: "+=15%",
+        // end: "+=15%",
         scrub: 0.3,
         // markers: true,
         onLeave: () => gsap.set("#main-logo", { pointerEvents: "auto" }),
@@ -200,6 +201,7 @@ function swagSlider() {
   });
 
   let targetElementSVG = nextBtn.querySelector(".arrow-bg");
+  const arrow = nextBtn.querySelector(".arrow-icon svg");
 
   if (nextBtn && targetElementSVG) {
     let tl = gsap.timeline({
@@ -213,6 +215,13 @@ function swagSlider() {
       repeat: -1,
       ease: "none",
     });
+
+    // .to(arrow, {
+    //   x: 5,
+    //   transformOrigin: "center",
+    //   duration: 0.3,
+    //   ease: "none",
+    // });
 
     nextBtn.addEventListener("mouseenter", () => {
       tl.restart();
@@ -461,6 +470,16 @@ function stickyScrollContentFade() {
         onEnterBack: () => activateVisual(i),
       });
     });
+  });
+}
+
+function badgeRotation() {
+  const badges = document.querySelectorAll(".badgeSvg");
+
+  badges.forEach((badge) => {
+    const background = badge.querySelector(".badgeBackground");
+    gsap.set(background, { transformOrigin: "center center" });
+    gsap.to(background, { rotation: "+=360", repeat: -1, duration: 13, ease: "none" });
   });
 }
 

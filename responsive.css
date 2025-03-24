@@ -3,14 +3,15 @@
     max-width: 10.5vw;
   }
 }
-
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1920px) {
   .overlay-nav-content {
     gap: 2rem;
   }
   .link .link-click {
     font-size: 6.5rem;
   }
+}
+@media screen and (max-width: 1600px) {
 }
 @media screen and (max-width: 1500px) {
   .section-heading h2 {
@@ -205,6 +206,10 @@
   }
   .section-heading h2 span {
     font-size: 2.15em;
+    margin-top: 10px;
+  }
+  .training-section .section-heading h4 {
+    font-size: 2rem;
   }
   .hero-section {
     padding-top: 3rem;
@@ -428,6 +433,9 @@
   .countdown-section {
     margin-top: 5rem;
   }
+  .countdown-section .countdown-box {
+    padding: 1rem 0;
+  }
   .countdown-section img {
     width: 35%;
   }
@@ -477,6 +485,12 @@
   }
   .copyright {
     margin-top: 3rem;
+  }
+  .how-it-works-section .content {
+    margin-bottom: 5rem;
+  }
+  .training-section .col-md-3 + .col-md-3 {
+    margin-top: 4rem;
   }
 }
 @media screen and (max-width: 480px) {

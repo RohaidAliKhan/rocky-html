@@ -287,7 +287,8 @@ section {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-.border-rounded {
+.border-rounded,
+.border-rounded img {
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -435,6 +436,7 @@ header .nav-right {
   gap: 1rem;
   color: var(--white-color);
   font-size: 1.375rem;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   background: transparent;
@@ -449,6 +451,7 @@ header .nav-right {
   border: 0;
 }
 .nav-right .info {
+  gap: 0 0.25rem;
   text-transform: uppercase;
 }
 .nav-right .info img {
@@ -731,6 +734,11 @@ header .nav-right {
   right: -2%;
   transform: translateY(-50%);
   z-index: 9;
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
+}
+.swag-section .button-next:hover {
+  color: var(--secondary-color);
 }
 .swag-section .button-next svg {
   width: auto;
@@ -768,6 +776,7 @@ header .nav-right {
 
 .challenge-box {
   position: relative;
+  max-height: 90vh;
 }
 .challenge-box .overlay {
   display: flex;
@@ -800,6 +809,7 @@ header .nav-right {
   padding: 1.25rem 1rem;
 }
 .border-content h4 {
+  font-size: 1.25rem;
   font-family: "knockout-HTF52";
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -901,6 +911,9 @@ header .nav-right {
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+.countdown-section .countdown ul li:nth-child(even) {
+  margin-top: -3rem;
 }
 .countdown-section .countdown ul li:last-child {
   min-width: 10rem;
@@ -1013,7 +1026,7 @@ header .nav-right {
 /* INNER PAGES */
 .hero-section figure > img,
 .hero-section .video-container {
-  height: calc(100vh - 100px);
+  height: calc(90vh - 100px);
   object-fit: cover;
 }
 .hero-section .overlay {
@@ -1039,11 +1052,17 @@ header .nav-right {
   display: inline-block;
   width: 0.27em;
   height: 0.27em;
-  background-image: url(wp-content/themes/rockyrun/img/icons/star.svg);
+  background-image: url(wp-content/themes/rockyrun/img/icons/star-skewed.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.main-event-section .border-rounded {
+  max-height: 90vh;
+}
+.main-event-section .details figure {
+  margin-bottom: 1.875rem;
+}
 .main-event-section .details h2 {
   max-width: 12ch;
   margin: 0 auto;
@@ -1093,7 +1112,7 @@ header .nav-right {
   padding: 0.5rem 0;
   border: 0;
   font-size: inherit;
-  font-family: "knockout";
+  font-family: "Knockout-HTF52";
   font-weight: 500;
   color: var(--primary-color);
   display: flex;
@@ -1109,6 +1128,9 @@ header .nav-right {
 }
 .accordion .accordion-button.collapsed svg line {
   transform: rotate(0) translateX(0);
+}
+.accordion .accordion-body p {
+  font-size: 1.25rem;
 }
 
 .lightbox-card {
@@ -1136,6 +1158,7 @@ header .nav-right {
 }
 .cta-section figure {
   position: relative;
+  max-height: 90vh;
 }
 .cta-section .overlay {
   display: flex;
@@ -1150,7 +1173,7 @@ header .nav-right {
   font-family: "Buinton";
   text-transform: capitalize;
   transform: rotate(-11.85deg);
-  margin-bottom: 5rem;
+  margin: auto 0;
 }
 
 .gear-section .gear-content {
@@ -1170,7 +1193,7 @@ header .nav-right {
 .gear-section .gear-content h2 span:not(.price-badge) {
   position: relative;
   display: table;
-  margin: 0 auto;
+  margin: 0 auto 1.25rem;
   letter-spacing: -0.05em;
 }
 .gear-section .gear-content h2 .price-badge {
@@ -1192,7 +1215,10 @@ header .nav-right {
 }
 .gear-section .is-desktop .gear-visual {
   position: sticky;
-  top: 0;
+  top: 10%;
+}
+.gear-section .gear-visual .border-rounded {
+  max-height: 90vh;
 }
 .gear-section .gear-visual figure {
   position: relative;
