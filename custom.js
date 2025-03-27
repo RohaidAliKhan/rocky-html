@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMarqueeScrollV2();
   bellAnimation();
   stickyScrollContentFade();
-
+  gallerySlider();
   // setTimeout(() => {
   //   scroll.start();
   // }, 150);
@@ -181,7 +181,7 @@ function swagSlider() {
   const section = document.querySelector(".swag-section");
   if (!section) return;
   const nextBtn = document.querySelector(".button-next");
-  const swiper = new Swiper(".swiper", {
+  const swiper2 = new Swiper(".swiper", {
     loop: true,
     speed: 800,
     slidesPerView: 1,
@@ -496,4 +496,19 @@ function setCookie(name, value, days) {
     expires = "; expires=" + date.toUTCString();
   }
   document.cookie = name + "=" + value + "; path=/" + expires;
+}
+
+function gallerySlider() {
+  const section = document.querySelector(".gallery-section");
+  if (!section) return;
+
+  let swiper1 = new Swiper(".gallery-swiper", {
+    loop: false,
+    speed: 800,
+    slidesPerView: 1,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      // hide: true,
+    },
+  });
 }
