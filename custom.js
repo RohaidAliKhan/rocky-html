@@ -508,6 +508,7 @@ function gallerySlider() {
     slidesPerView: 1,
     scrollbar: {
       el: ".swiper-scrollbar",
+      draggable: true,
       // hide: true,
     },
   });
