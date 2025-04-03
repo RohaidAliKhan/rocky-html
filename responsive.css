@@ -211,7 +211,8 @@
   .countdown-section .timer {
     border-left: 0;
   }
-  #footer .newsletter-input {
+  #footer .newsletter-input,
+  #footer #ctct_form_0 #email_address_0 {
     font-size: 1.5rem;
   }
   .split-col .section-heading h1 {
@@ -511,7 +512,8 @@
   .footer-logo ul li {
     line-height: 1;
   }
-  #footer .newsletter-form {
+  #footer .newsletter-form,
+  #footer #ctct_form_0 #email_address_0 {
     margin-top: 1.5rem;
     font-size: 1rem;
   }
