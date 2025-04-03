@@ -970,7 +970,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-sm-center">
               <div class="col-lg-4 col-md-6">
                 <div class="distance-box">
                   <figure class="border-rounded">
@@ -1333,7 +1333,7 @@
             <div class="row align-items-center">
               <div class="col-md-7">
                 <figure class="border-rounded">
-                  <img src="wp-content/themes/rockyrun/img/challenge1.webp" class="img-fluid" alt="" />
+                  <img src="wp-content/themes/rockyrun/img/challenge1.webp" class="w-100" alt="" />
                 </figure>
               </div>
               <div class="col-lg-4 col-md-5 mx-auto">
@@ -1371,7 +1371,7 @@
             <div class="row align-items-center flex-md-row-reverse mt-4 mt-md-5">
               <div class="col-md-7">
                 <figure class="border-rounded">
-                  <img src="wp-content/themes/rockyrun/img/challenge2.webp" class="img-fluid" alt="" />
+                  <img src="wp-content/themes/rockyrun/img/challenge2.webp" class="w-100" alt="" />
                 </figure>
               </div>
               <div class="col-lg-4 col-md-5 mx-auto">
@@ -1430,7 +1430,7 @@
               </div>
               <div class="col-md-6">
                 <figure class="border-rounded">
-                  <img src="wp-content/themes/rockyrun/img/run1.webp" class="img-fluid" alt="" />
+                  <img src="wp-content/themes/rockyrun/img/run1.webp" class="w-100" alt="" />
                 </figure>
               </div>
             </div>
@@ -1668,7 +1668,8 @@
                 </div>
                 <div class="col-md-7 newsletter">
                   <h4>newsletter signup</h4>
-                  <form class="newsletter-form" action="">
+                  <div class="ctct-inline-form" data-form-id="3f2fe259-450f-4ce6-ae16-74754a3c8a72"></div>
+                  <form class="newsletter-form d-none" action="">
                     <input type="email" placeholder="you@thecontender.com" class="newsletter-input" />
                     <button class="btn newsletter-button">SUBMIT</button>
                   </form>
@@ -1757,5 +1758,32 @@
     <script src="https://unpkg.com/lenis@1.2.0/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="custom.js"></script>
+
+    <!-- Begin Constant Contact Active Forms -->
+    <script>
+      var _ctct_m = "471dbad895a6c6f06d83433468492d55";
+      // ss_form.hidden = { _usePlaceholders: true };
+      function applyWhenElementExists(selector, myFunction, intervalTime) {
+        var interval = setInterval(function () {
+          if (jQuery(selector).length > 0) {
+            myFunction();
+            clearInterval(interval);
+          }
+        }, intervalTime);
+      }
+      applyWhenElementExists(
+        "#email_address_0",
+        function () {
+          // Here, enter the code corresponding to the modification you wish to implement.
+          document.getElementById("email_address_0").placeholder = "you@thecontender.com";
+        },
+        50
+      );
+
+      // document.getElementById("email_address_0").placeholder = "Email Address";
+    </script>
+
+    <script id="signupScript" src="https://static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+    <!-- End Constant Contact Active Forms -->
   </body>
 </html>

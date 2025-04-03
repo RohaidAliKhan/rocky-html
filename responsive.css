@@ -3,6 +3,14 @@
     max-width: 10.5vw;
   }
 }
+@media screen and (min-width: 2500px) {
+  header #main-logo {
+    max-width: 16.25rem;
+  }
+  header #main-logo img {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 1920px) {
   .overlay-nav-content {
     gap: 2rem;
@@ -59,6 +67,12 @@
   }
   .link .link-click {
     font-size: 6.5rem;
+  }
+  header #main-logo {
+    padding: 0.75em;
+  }
+  header #main-logo img {
+    max-width: 100%;
   }
   .section-heading h2,
   .go-section .content h2 {
@@ -133,6 +147,10 @@
   .link .link-click {
     font-size: 5rem;
   }
+  .video-container > video {
+    height: 100%;
+    object-fit: cover;
+  }
   .section-heading h2,
   .go-section .content h2 {
     font-size: 2.5rem;
@@ -196,6 +214,15 @@
   #footer .newsletter-input {
     font-size: 1.5rem;
   }
+  .split-col .section-heading h1 {
+    margin-block: 2.5rem;
+  }
+  .how-it-works-section .content figure {
+    min-height: 216px;
+  }
+  .training-section .training-box figure .overlay span {
+    font-size: 6rem;
+  }
 }
 @media screen and (max-width: 767.98px) {
   h4 {
@@ -206,7 +233,6 @@
   }
   .section-heading h2 span {
     font-size: 2.15em;
-    margin-top: 10px;
   }
   .training-section .section-heading h4 {
     font-size: 2rem;
@@ -307,6 +333,9 @@
   section {
     padding: 4rem 0;
   }
+  header .navbar {
+    padding: 0.875rem 0;
+  }
   .hero-section .video-container video {
     height: calc(100vh - 100px);
     object-fit: cover;
@@ -322,7 +351,6 @@
   }
   .split-col .section-heading h1 {
     font-size: 4.2rem;
-    margin-block: 2.5rem;
   }
   .btn {
     font-size: 1.1rem;
@@ -340,6 +368,9 @@
   }
   header .nav-left {
     gap: 0.25rem;
+  }
+  .nav-left .audio-toggle {
+    display: none;
   }
   header #main-logo {
     width: 90%;
@@ -428,7 +459,7 @@
   }
   .cta-section .overlay h2 {
     font-size: 4.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: auto;
   }
   .countdown-section {
     margin-top: 5rem;
@@ -482,7 +513,9 @@
   }
   #footer .newsletter-form {
     margin-top: 1.5rem;
+    font-size: 1rem;
   }
+
   .copyright {
     margin-top: 3rem;
   }
@@ -491,6 +524,15 @@
   }
   .training-section .col-md-3 + .col-md-3 {
     margin-top: 4rem;
+  }
+  .explore-section .nav-link {
+    min-width: 5rem;
+  }
+  .pricing-section .pricing-card .price {
+    flex-basis: 40%;
+  }
+  .pricing-section .pricing-card .details {
+    padding-right: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
