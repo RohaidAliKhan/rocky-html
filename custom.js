@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   pageLoad();
   badgeRotation();
   smoothScrolling();
-  toggleSound();
+  // toggleSound();
   navigationToggle();
   swagSlider();
   countDownTimer();
@@ -53,7 +53,7 @@ function flipLogo() {
       y: "15vw",
       scale: 8.8,
       ease: "none",
-    }).from(".video-container", { marginTop: "24vw", ease: "none" }, "<");
+    }).fromTo(".video-container", { marginTop: "24vw", ease: "none" }, { marginTop: "10vw", ease: "none" }, "<");
   });
 }
 
