@@ -34,7 +34,7 @@ function pageLoad() {
 function flipLogo() {
   const section = document.querySelector(".hero-section.is-home");
   if (!section) return;
-  mm.add("(min-width: 1024px)", () => {
+  mm.add("(min-width: 1025px)", () => {
     // gsap.set("#main-logo", { pointerEvents: "none" });
     // let tl = gsap.timeline({
     //   scrollTrigger: {
@@ -74,7 +74,7 @@ function flipLogo() {
           gsap.to(".bannerLogo", { autoAlpha: 1, duration: 0.1 });
           gsap.to("#main-logo", { autoAlpha: 0, duration: 0.1 });
         },
-        markers: true,
+        markers: false,
       },
     });
   });

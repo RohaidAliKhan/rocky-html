@@ -72,6 +72,10 @@
   .go-section .content h2 {
     font-size: 3.5rem;
   }
+  .video-container > video {
+    height: 100%;
+    object-fit: cover;
+  }
   .hero-section figure > img {
     height: 80vh;
     object-fit: cover;
@@ -118,6 +122,20 @@
     font-size: 8rem;
   }
 }
+@media screen and (max-width: 1024.98px) {
+  .bannerLogo {
+    display: none;
+  }
+  body.home #main-logo {
+    visibility: initial;
+  }
+  header #main-logo {
+    position: static;
+    width: 70%;
+    padding: 0;
+    transform: none;
+  }
+}
 @media screen and (max-width: 991.98px) {
   .container {
     padding-left: 20px;
@@ -129,27 +147,17 @@
   section {
     padding: 3rem 0;
   }
-  header #main-logo {
-    position: static;
-    width: 70%;
-    padding: 0;
-    transform: none;
-  }
   #main {
     margin-top: 2rem;
   }
   .link .link-click {
     font-size: 5rem;
   }
-  .video-container > video {
-    height: 100%;
-    object-fit: cover;
-  }
   .section-heading h2,
   .go-section .content h2 {
     font-size: 2.5rem;
   }
-  .hero-section .overlay h1 {
+  .hero-section:not(.is-home) .overlay h1 {
     font-size: 5.3rem;
     gap: 0 3rem;
     margin-bottom: 5rem;
@@ -339,7 +347,17 @@
     max-width: 30ch;
     margin: 0 auto;
   }
+  .hero-section .overlay {
+    padding-bottom: 2rem;
+  }
   .hero-section .overlay h1 {
+    text-align: center;
+    max-width: 16ch;
+  }
+  .hero-section .overlay h1 svg {
+    display: none;
+  }
+  .hero-section:not(.is-home) .overlay h1 {
     font-size: 4.25rem;
     gap: 0 1.5rem;
     margin-bottom: 3rem;

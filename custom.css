@@ -1061,23 +1061,36 @@ header .nav-right {
 }
 .hero-section .overlay {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
   background-color: rgb(0 0 0 / 20%);
+  padding-bottom: 3rem;
 }
+.hero-section:not(.is-home) .overlay {
+  padding-bottom: 0;
+}
+
 .hero-section h1 {
-  font-size: 9.375rem;
   font-family: "Buinton";
   font-weight: normal;
+  margin-bottom: 1.25rem;
+  color: var(--white-color);
+}
+
+.hero-section:not(.is-home) h1 {
+  font-size: 9.375rem;
   text-transform: capitalize;
   margin-bottom: 7rem;
   transform: rotate(-11deg);
   display: flex;
   align-items: center;
   gap: 0 7rem;
+  color: inherit;
 }
-.hero-section h1::before,
-.hero-section h1::after {
+
+.hero-section:not(.is-home) h1::before,
+.hero-section:not(.is-home) h1::after {
   content: "";
   display: inline-block;
   width: 0.27em;
