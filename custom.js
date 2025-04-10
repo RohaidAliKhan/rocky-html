@@ -35,25 +35,48 @@ function flipLogo() {
   const section = document.querySelector(".hero-section.is-home");
   if (!section) return;
   mm.add("(min-width: 1024px)", () => {
-    gsap.set("#main-logo", { pointerEvents: "none" });
+    // gsap.set("#main-logo", { pointerEvents: "none" });
+    // let tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: ".navbar",
+    //     start: "top top",
+    //     // end: "+=15%",
+    //     scrub: 0.3,
+    //     // markers: true,
+    //     onLeave: () => gsap.set("#main-logo", { pointerEvents: "auto" }),
+    //     onEnterBack: () => gsap.set("#main-logo", { pointerEvents: "none" }),
+    //     onLeaveBack: () => gsap.set("#main-logo", { pointerEvents: "none" }),
+    //   },
+    // });
+    // tl.from("#main-logo", {
+    //   yPercent: 300,
+    //   x: "50%",
+    //   xPercent: -50,
+    //   scale: 8.8,
+    //   ease: "none",
+    // }).fromTo(".video-container", { marginTop: "24vw", ease: "none" }, { marginTop: "10vw", ease: "none" }, "<");
 
-    let tl = gsap.timeline({
+    gsap.to(".bannerLogo", {
+      // y: "-56%",
+      scale: 0.115,
+      ease: "none",
       scrollTrigger: {
         trigger: ".navbar",
         start: "top top",
-        // end: "+=15%",
-        scrub: 0.3,
-        // markers: true,
-        onLeave: () => gsap.set("#main-logo", { pointerEvents: "auto" }),
-        onEnterBack: () => gsap.set("#main-logo", { pointerEvents: "none" }),
-        onLeaveBack: () => gsap.set("#main-logo", { pointerEvents: "none" }),
+        endTrigger: ".video-container",
+        end: "top+=158.5 center",
+        scrub: true,
+        onLeave: () => {
+          gsap.to(".bannerLogo", { autoAlpha: 0, duration: 0.1 });
+          gsap.to("#main-logo", { autoAlpha: 1, duration: 0.1 });
+        },
+        onEnterBack: () => {
+          gsap.to(".bannerLogo", { autoAlpha: 1, duration: 0.1 });
+          gsap.to("#main-logo", { autoAlpha: 0, duration: 0.1 });
+        },
+        markers: true,
       },
     });
-    tl.from("#main-logo", {
-      y: "15vw",
-      scale: 8.8,
-      ease: "none",
-    }).fromTo(".video-container", { marginTop: "24vw", ease: "none" }, { marginTop: "10vw", ease: "none" }, "<");
   });
 }
 
@@ -71,16 +94,16 @@ function smoothScrolling() {
     });
 
     // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
-    scroll.on("scroll", ScrollTrigger.update);
+    // scroll.on("scroll", ScrollTrigger.update);
 
     // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
     // This ensures Lenis's smooth scroll animation updates on each GSAP tick
-    gsap.ticker.add((time) => {
-      scroll.raf(time * 1000); // Convert time from seconds to milliseconds
-    });
+    // gsap.ticker.add((time) => {
+    //   scroll.raf(time * 1000); // Convert time from seconds to milliseconds
+    // });
 
-    // Disable lag smoothing in GSAP to prevent any delay in scroll animations
-    gsap.ticker.lagSmoothing(0);
+    // // Disable lag smoothing in GSAP to prevent any delay in scroll animations
+    // gsap.ticker.lagSmoothing(0);
 
     // scroll.scrollTo("top");
 
@@ -104,8 +127,10 @@ function navigationToggle() {
     if (currentStatus === "not-active" || currentStatus === "hover") {
       navStatus.setAttribute("data-navigation-status", "active");
       scroll?.stop();
+      gsap.set(".bannerLogo", { zIndex: 1 });
     } else {
       navStatus.setAttribute("data-navigation-status", "not-active");
+      gsap.set(".bannerLogo", { zIndex: 999 });
     }
   });
 
@@ -130,6 +155,7 @@ function navigationToggle() {
       close.addEventListener("click", function (e) {
         document.querySelector("[data-navigation-status]").setAttribute("data-navigation-status", "not-active");
         scroll?.start();
+        gsap.set(".bannerLogo", { zIndex: 999 });
       });
     }
   });
@@ -141,6 +167,7 @@ function navigationToggle() {
       if (navStatus.getAttribute("data-navigation-status") === "active") {
         navStatus.setAttribute("data-navigation-status", "not-active");
         scroll?.start();
+        gsap.set(".bannerLogo", { zIndex: 999 });
       }
     }
   });

@@ -1,12 +1,6 @@
 @media screen and (min-width: 1024px) {
-  header #main-logo img {
-    max-width: 10.5vw;
-  }
 }
 @media screen and (min-width: 2500px) {
-  header #main-logo {
-    max-width: 16.25rem;
-  }
   header #main-logo img {
     max-width: 100%;
   }

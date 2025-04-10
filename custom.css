@@ -393,6 +393,14 @@ section {
 /*===========================
   Navigation 
 ===========================*/
+.bannerLogo {
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  z-index: 999;
+}
+body.home #main-logo {
+  visibility: hidden;
+}
 #main-logo a {
   display: block;
   transition: none;
